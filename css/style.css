@@ -1,0 +1,167 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+nav ul a,
+nav .brand-logo {
+  color: #444;
+}
+
+p {
+  line-height: 2rem;
+}
+
+.button-collapse {
+  color: #26a69a;
+}
+
+.parallax-container {
+  min-height: 380px;
+  line-height: 0;
+  height: auto;
+  color: rgba(255,255,255,.9);
+}
+  .parallax-container .section {
+    width: 100%;
+  }
+
+@media only screen and (max-width : 992px) {
+  .parallax-container .section {
+    position: absolute;
+    top: 40%;
+  }
+  #index-banner .section {
+    top: 10%;
+  }
+}
+
+@media only screen and (max-width : 600px) {
+  #index-banner .section {
+    top: 0;
+  }
+}
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+  font-size: inherit;
+}
+
+footer.page-footer {
+  margin: 0;
+}
+
+
+/* ==========================================================================
+   CUSTOM
+   ========================================================================== */
+.card .card-content .card-title.content-title{
+  line-height: normal;
+  font-size: 20px;
+}
+
+
+.upvote:hover > i{
+  color: green;
+}
+
+.downvote:hover > i{
+  color: red;
+}
+
+.vote{
+  background-color:white;
+  border-color:gray;
+  border:5px;
+}
+.vote > i{
+  color:grey;
+}
+
+.parallax-container.parallax-thin{
+  min-height:0;
+}
+
+.card-background{
+  float:left;
+  padding-right:4%;
+  background-color: transparent;
+  transition:background-color 0.25s;
+}
+
+.card-background:hover{
+  background-color: #8600B2;
+  transition:background-color 0.25s;
+
+}
+
+
+#sidenav{
+  width:250px;
+  border-right-color:white;
+  border-right-width:5px;
+  border-right-style:solid;
+  z-index:500;
+  transition: width 0.5s;
+}
+
+#viewport{
+  padding-left:250px;
+  padding-top:64px;
+}
+
+#artistContent{
+  display:none;
+}
+
+.side-nav li:hover, .side-nav li.active {
+  background-color: #607d8b;
+  outline:0px;
+}
+
+.side-nav a {
+  color: #444;
+  display: block;
+  font-size: 1rem;
+  height: 64px;
+  line-height: 64px;
+  padding: 0 15px;
+
+}
+
+#sidenav-header{
+  height:250px;
+
+}
+
+#sidenav-header img{
+  height:250px;
+  object-fit: cover;
+}
+
+#materialbox-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: transparent;
+  z-index: 999;
+  will-change: opacity;
+}
+
+#top-nav{
+  position:fixed;
+  z-index:50;
+}
+
+.parallax-overlay-pink{
+  background-color: rgba(197,17,98,0.5);
+}
+
+

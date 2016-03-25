@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+    <title>SONG PROFILE CONCEPT</title>
+
+    <!-- CSS  -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+
+</head>
+<body class="blue-grey white-text">
+<div class="wrapper">
+
+    <header>
+        <nav class="top-nav" id="top-nav">
+            <div class="container">
+                <div class="nav-wrapper"><a class="page-title">Grid</a></div>
+            </div>
+        </nav>
+        <div id="sidenav" class="side-nav fixed blue-grey darken-4 z-depth-3">
+
+            <div id="sidenav-content">
+                <div class="row">
+                    <div id="sidenav-header">
+                        <img src="artist.jpg" class="materialboxed">
+                    </div>
+                </div>
+                <div class="row">
+                    <ul>
+                        <li>
+                            <a href="#" id="songContentAnchor">SONG</a>
+                        </li>
+                        <li>
+                            <a href="#" id="artistContentAnchor">ARTIST</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section id="viewport">
+        <div id="viewport-content">
+            <div id="songContent">
+                <div class="container">
+                dsadasdadsadasdsadasdasasdadasdasdasdasdasdasdasd
+                sadas
+                dasdas
+                das
+                das
+                das
+                das
+                das
+                d
+                asdasdasd
+                <br>
+                <br>
+                </div>
+                <div class="parallax-container valign-wrapper parallax-thin parallax-overlay-pink">
+                    <div class="section no-pad-bot">
+                        <div class="container">
+                            <div class="row center">
+                                <h5 class="header col s12 light">TOP 10 ARTIST SONGS</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="parallax"><img src="artist.jpg" alt="Unsplashed background img 3"></div>
+                </div>
+                <div class="container">
+                dsadasdadsadasdsadasdasasdadasdasdasdasdasdasdasd
+                sadas
+                dasdas
+                das
+                das
+                das
+                das
+                das
+                d
+                asdasdasd
+                <br>
+                <br>
+                dsadasdadsadasdsadasdasasdadasdasdasdasdasdasdasd
+                sadas
+                dasdas
+                das
+                das
+                das
+                das
+                das
+                d
+                asdasdasd
+                <br>
+                <br>
+                dsadasdadsadasdsadasdasasdadasdasdasdasdasdasdasd
+                sadas
+                dasdas
+                das
+                das
+                das
+                das
+                das
+                d
+                asdasdasd
+                <br>
+                <br>
+                dsadasdadsadasdsadasdasasdadasdasdasdasdasdasdasd
+                sadas
+                dasdas
+                das
+                das
+                das
+                das
+                das
+                d
+                asdasdasd
+                <br>
+                <br>
+                dsadasdadsadasdsadasdasasdadasdasdasdasdasdasdasd
+                sadas
+                dasdas
+                das
+                das
+                das
+                das
+                das
+                d
+                asdasdasd
+                <br>
+                <br>dsadasdadsadasdsadasdasasdadasdasdasdasdasdasdasd
+                sadas
+                dasdas
+                das
+                das
+                das
+                das
+                das
+                d
+                asdasdasd
+                <br>
+                <br>dsadasdadsadasdsadasdasasdadasdasdasdasdasdasdasd
+                sadas
+                dasdas
+                das
+                das
+                das
+                das
+                das
+                d
+                asdasdasd
+                <br>
+                <br>dsadasdadsadasdsadasdasasdadasdasdasdasdasdasdasd
+                sadas
+                dasdas
+                das
+                das
+                das
+                das
+                das
+                d
+                asdasdasd
+                <br>
+                <br>
+                </div>
+            </div>
+            <div id="artistContent">
+                ARTIST ARTIST ARTIST CONTENT
+            </div>
+        </div>
+    </section>
+</div>
+
+<!--  Scripts-->
+<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script src="js/materialize.js"></script>
+<script src="js/init.js"></script>
+
+
+<!-- CUSTOM SCRIPTS -->
+<script>
+    $(document).ready(function () {
+        $('.materialboxed').materialbox();
+
+        var artistColor = "red darken-4";
+        var artistColorHex = "#B71C1C";
+
+        var songColor = "pink darken-4";
+        var songColorHex = "#880e4f";
+
+        $('#artistContentAnchor').click(function openArtistContent(event) {
+            event.preventDefault();
+            $('#songContent').hide();
+            $('#artistContent').show();
+
+
+            deactivateLink($('#songContentAnchor'), songColor);
+            activateLink($(this), artistColor, artistColorHex);
+
+
+            $('#sidenav-header img').attr("src","artist.jpg");
+
+        })
+
+        $('#songContentAnchor').click(function openSongContent(event) {
+            event.preventDefault();
+            $('#artistContent').hide();
+            $('#songContent').show();
+
+            deactivateLink($('#artistContentAnchor'), artistColor);
+            activateLink($(this), songColor, songColorHex);
+
+
+            $('#sidenav-header img').attr("src","album.jpg");
+
+
+        })
+
+        function activateLink(element, color, colorHex) {
+            $(element).addClass("white-text");
+            $(element).parent().addClass(color);
+            $('#top-nav').addClass(color);
+            $('#sidenav').css("border-right-color", colorHex);
+        }
+
+        function deactivateLink(element, color) {
+            $(element).removeClass("white-text");
+            $(element).parent().removeClass();
+            $('#top-nav').attr('class', 'top-nav');
+        }
+
+
+
+
+    });
+
+
+</script>
+</body>
+</html>
