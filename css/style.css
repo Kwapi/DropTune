@@ -94,8 +94,8 @@ footer.page-footer {
   transition:background-color 0.25s;
 }
 
-.card-background:hover{
-  background-color: #8600B2;
+.cat-live:hover{
+  background-color: #f50057;
   transition:background-color 0.25s;
 
 }
@@ -229,7 +229,26 @@ textarea.materialize-textarea:focus:not([readonly]) + label {
   background-color:rgba(0,0,0,0.34);
 }
 
+#topNavText{
+  text-transform: uppercase;
+}
+
 #songAlbumArtistContent{
   position:relative;
   padding-left:10px;
+}
+
+#navLinksRow *{color:white;}
+
+.ratings{
+  padding-top:7.5px;
+  width:24px;
+  display:none;
+}
+.rating{
+  font-size:23px;
+}
+
+.content-card{
+  padding-right:0 !important;
 }
