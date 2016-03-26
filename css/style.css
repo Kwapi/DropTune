@@ -144,24 +144,92 @@ footer.page-footer {
   object-fit: cover;
 }
 
-#materialbox-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: transparent;
-  z-index: 999;
-  will-change: opacity;
-}
 
 #top-nav{
   position:fixed;
   z-index:50;
+  padding-left:250px;
 }
 
 .parallax-overlay-pink{
   background-color: rgba(197,17,98,0.5);
 }
 
+#topNavContent{
+height:100%;
+  padding-left:5%;
+  padding-right:5%;
+}
 
+.ratingWrapper{
+  padding-left: 15px;
+}
+
+.rating-btn{
+  border:0;
+  background-color:transparent;
+  font-size:13px;
+}
+
+button:focus {
+  background-color: transparent;
+  color:#ff6d00;
+}
+
+button:hover {
+  background-color: transparent;
+  color: #ff4b00;
+}
+
+input:not([type]):focus:not([readonly]),
+input[type=text]:focus:not([readonly]),
+input[type=password]:focus:not([readonly]),
+input[type=email]:focus:not([readonly]),
+input[type=url]:focus:not([readonly]),
+input[type=time]:focus:not([readonly]),
+input[type=date]:focus:not([readonly]),
+input[type=datetime-local]:focus:not([readonly]),
+input[type=tel]:focus:not([readonly]),
+input[type=number]:focus:not([readonly]),
+input[type=search]:focus:not([readonly]),
+textarea.materialize-textarea:focus:not([readonly]) {
+  border-bottom: 1px solid #ff9800;
+  box-shadow: 0 1px 0 0 #ff9800;
+}
+
+input:not([type]):focus:not([readonly]) + label,
+input[type=text]:focus:not([readonly]) + label,
+input[type=password]:focus:not([readonly]) + label,
+input[type=email]:focus:not([readonly]) + label,
+input[type=url]:focus:not([readonly]) + label,
+input[type=time]:focus:not([readonly]) + label,
+input[type=date]:focus:not([readonly]) + label,
+input[type=datetime-local]:focus:not([readonly]) + label,
+input[type=tel]:focus:not([readonly]) + label,
+input[type=number]:focus:not([readonly]) + label,
+input[type=search]:focus:not([readonly]) + label,
+textarea.materialize-textarea:focus:not([readonly]) + label {
+  color: #ff9800;
+}
+
+.modal-yt{
+  width:612px;
+}
+
+.pad-right{
+  padding-right:5px;
+}
+
+#songAlbumArtistFloat{
+  position:absolute;
+  top:140px;
+  width:250px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  background-color:rgba(0,0,0,0.34);
+}
+
+#songAlbumArtistContent{
+  position:relative;
+  padding-left:10px;
+}

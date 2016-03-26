@@ -13,26 +13,90 @@
     <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
+    <!-- RATING THEMES -->
+    <link rel="stylesheet" href="css/bars-square.css" type="text/css">
+    <link rel="stylesheet" href="css/css-stars.css" type="text/css">
+
 
 </head>
 <body class="blue-grey white-text">
 <div class="wrapper">
 
     <header>
+        <!--        TOPNAV          -->
         <nav class="top-nav" id="top-nav">
-            <div class="container">
-                <div class="nav-wrapper"><a class="page-title">Grid</a></div>
+            <div class="row valign-wrapper" id="topNavContent">
+                <div class="col s3 offset-s9">
+                </div>
+                <p>dsadas</p>
             </div>
         </nav>
-        <div id="sidenav" class="side-nav fixed blue-grey darken-4 z-depth-3">
 
+        <!--         SIDENAV        -->
+        <div id="sidenav" class="side-nav fixed blue-grey darken-4 z-depth-3">
             <div id="sidenav-content">
-                <div class="row">
+                <div class="row z-depth-1">
                     <div id="sidenav-header">
                         <img src="artist.jpg" class="materialboxed">
                     </div>
                 </div>
-                <div class="row">
+
+                <div id="songAlbumArtistFloat">
+                    <div id="songAlbumArtistContent">
+                        <div class="valign-wrapper">
+                            <i class="small material-icons pad-right">equalizer</i><h6 class="valign" class="songTitle">
+                            Song title</h6><br>
+                        </div>
+                        <div class="valign-wrapper">
+                            <i class="small material-icons pad-right">album</i><h6 class="valign" class="albumTitle">
+                            Album title</h6><br>
+                        </div>
+                        <div class="valign-wrapper">
+                            <i class="small material-icons pad-right">perm_identity</i><h6 class="valign"
+                                                                                           class="artistName">Artist
+                            name</h6><br>
+                        </div>
+                    </div>
+                </div>
+                <div class="row" id="avgRatRow">
+                    <div class="col s12">
+                        <div class="ratingWrapper">
+                            <div id="avgSongRatingWrap">
+                                <select id="avgSongRating">
+                                    <option value="" selected disabled hidden></option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                </select>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col s12 center-align light orange-text text-darken-3">
+                        <button class="rating-btn" id="average-rating-show-reviews">AVERAGE SONG RATING</button>
+                    </div>
+                </div>
+
+                <div class="row" id="yourRatRow">
+                    <div class="col s12">
+                        <div class="ratingWrapper">
+                            <select id="yourSongRating">
+                                <option value="" selected disabled hidden></option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col s12 center-align light orange-text text-darken-3" style="font-size:13px">
+                        YOUR RATING
+                    </div>
+                </div>
+                <div class="row" id="navLinksRow">
                     <ul>
                         <li>
                             <a href="#" id="songContentAnchor">SONG</a>
@@ -44,23 +108,25 @@
                 </div>
             </div>
         </div>
+
     </header>
+
     <section id="viewport">
         <div id="viewport-content">
             <div id="songContent">
                 <div class="container">
-                dsadasdadsadasdsadasdasasdadasdasdasdasdasdasdasd
-                sadas
-                dasdas
-                das
-                das
-                das
-                das
-                das
-                d
-                asdasdasd
-                <br>
-                <br>
+                    dsadasdadsadasdsadasdasasdadasdasdasdasdasdasdasd
+                    sadas
+                    dasdas
+                    das
+                    das
+                    das
+                    das
+                    das
+                    d
+                    asdasdasd
+                    <br>
+                    <br>
                 </div>
                 <div class="parallax-container valign-wrapper parallax-thin parallax-overlay-pink">
                     <div class="section no-pad-bot">
@@ -73,112 +139,199 @@
                     <div class="parallax"><img src="artist.jpg" alt="Unsplashed background img 3"></div>
                 </div>
                 <div class="container">
-                dsadasdadsadasdsadasdasasdadasdasdasdasdasdasdasd
-                sadas
-                dasdas
-                das
-                das
-                das
-                das
-                das
-                d
-                asdasdasd
-                <br>
-                <br>
-                dsadasdadsadasdsadasdasasdadasdasdasdasdasdasdasd
-                sadas
-                dasdas
-                das
-                das
-                das
-                das
-                das
-                d
-                asdasdasd
-                <br>
-                <br>
-                dsadasdadsadasdsadasdasasdadasdasdasdasdasdasdasd
-                sadas
-                dasdas
-                das
-                das
-                das
-                das
-                das
-                d
-                asdasdasd
-                <br>
-                <br>
-                dsadasdadsadasdsadasdasasdadasdasdasdasdasdasdasd
-                sadas
-                dasdas
-                das
-                das
-                das
-                das
-                das
-                d
-                asdasdasd
-                <br>
-                <br>
-                dsadasdadsadasdsadasdasasdadasdasdasdasdasdasdasd
-                sadas
-                dasdas
-                das
-                das
-                das
-                das
-                das
-                d
-                asdasdasd
-                <br>
-                <br>dsadasdadsadasdsadasdasasdadasdasdasdasdasdasdasd
-                sadas
-                dasdas
-                das
-                das
-                das
-                das
-                das
-                d
-                asdasdasd
-                <br>
-                <br>dsadasdadsadasdsadasdasasdadasdasdasdasdasdasdasd
-                sadas
-                dasdas
-                das
-                das
-                das
-                das
-                das
-                d
-                asdasdasd
-                <br>
-                <br>dsadasdadsadasdsadasdasasdadasdasdasdasdasdasdasd
-                sadas
-                dasdas
-                das
-                das
-                das
-                das
-                das
-                d
-                asdasdasd
-                <br>
-                <br>
+                    dsadasdadsadasdsadasdasasdadasdasdasdasdasdasdasd
+                    sadas
+                    dasdas
+                    das
+                    das
+                    das
+                    das
+                    das
+                    d
+                    asdasdasd
+                    <br>
+                    <br>
+                    dsadasdadsadasdsadasdasasdadasdasdasdasdasdasdasd
+                    sadas
+                    dasdas
+                    das
+                    das
+                    das
+                    das
+                    das
+                    d
+                    asdasdasd
+                    <br>
+                    <br>
+                    dsadasdadsadasdsadasdasasdadasdasdasdasdasdasdasd
+                    sadas
+                    dasdas
+                    das
+                    das
+                    das
+                    das
+                    das
+                    d
+                    asdasdasd
+                    <br>
+                    <br>
+                    dsadasdadsadasdsadasdasasdadasdasdasdasdasdasdasd
+                    sadas
+                    dasdas
+                    das
+                    das
+                    das
+                    das
+                    das
+                    d
+                    asdasdasd
+                    <br>
+                    <br>
+                    dsadasdadsadasdsadasdasasdadasdasdasdasdasdasdasd
+                    sadas
+                    dasdas
+                    das
+                    das
+                    das
+                    das
+                    das
+                    d
+                    asdasdasd
+                    <br>
+                    <br>dsadasdadsadasdsadasdasasdadasdasdasdasdasdasdasd
+                    sadas
+                    dasdas
+                    das
+                    das
+                    das
+                    das
+                    das
+                    d
+                    asdasdasd
+                    <br>
+                    <br>dsadasdadsadasdsadasdasasdadasdasdasdasdasdasdasd
+                    sadas
+                    dasdas
+                    das
+                    das
+                    das
+                    das
+                    das
+                    d
+                    asdasdasd
+                    <br>
+                    <br>dsadasdadsadasdsadasdasasdadasdasdasdasdasdasdasd
+                    sadas
+                    dasdas
+                    das
+                    das
+                    das
+                    das
+                    das
+                    d
+                    asdasdasd
+                    <br>
+                    <br>
                 </div>
+                <section id="reviews">
+                    <div class="parallax-container valign-wrapper parallax-thin parallax-overlay-pink">
+                        <div class="section no-pad-bot">
+                            <div class="container">
+                                <div class="row center">
+                                    <h5 class="header col s12 light">REVIEWS</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="parallax"><img src="artist.jpg" alt="Unsplashed background img 3"></div>
+                    </div>
+                    <div class="container" id="reviews-content">
+                        <p>dsadsadasdasdasdasdasdadadsdasdasd
+                            asdsa
+                            dasddsdadasrwe43ntkdfjksljfsdjfsdf
+                            sad
+                            asd
+                            asd
+                            asdasds</p>dsajdksadas
+                        <br>
+                        dsadadas
+                        <br>
+                        sdasdasdasdasgdvxc
+                        <br>
+                        REVIEWS REVEIWS
+
+                        <h5>dsadasdasdasda</h5>
+                    </div>
+                </section>
             </div>
             <div id="artistContent">
                 ARTIST ARTIST ARTIST CONTENT
             </div>
         </div>
     </section>
+
+    <!-- ADD REVIEW MODAL STRUCTURE -->
+    <div id="addReviewModal" class="modal blue-grey darken-4">
+
+        <div class="modal-content">
+            <div class="row">
+                <div class="col s8">
+                    <h4 class="text-darken-3 orange-text">Your rating</h4>
+                </div>
+
+                <div class="col s4">
+                    <select id="yourSongRatingModal">
+                        <option value="" selected disabled hidden></option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <form class="col s12">
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <textarea id="addReviewText" class="materialize-textarea"></textarea>
+                            <label for="addReviewText">Attach a review (optional)</label>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="modal-footer grey darken-4">
+            <a href="#!" class="modal-action modal-close waves-effect waves-orange btn-flat white-text "
+               id="addReviewButton">CONFIRM</a>
+        </div>
+    </div>
+
+    <div id="YouTubeVideoModal" class="modal blue-grey darken-4 modal-yt">
+
+        <div class="modal-content">
+
+
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/-6vLp07ZePY" frameborder="0"
+                    allowfullscreen></iframe>
+        </div>
+
+    </div>
 </div>
 
 <!--  Scripts-->
 <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 <script src="js/materialize.js"></script>
 <script src="js/init.js"></script>
+
+
+<!-- STAR RATING -->
+<script src="js/jquery.barrating.min.js"></script>
+
+
+<!-- Include jQuery ScrollTo -->
+<script src="js/jquery-scrollto.js"></script>
 
 
 <!-- CUSTOM SCRIPTS -->
@@ -202,7 +355,7 @@
             activateLink($(this), artistColor, artistColorHex);
 
 
-            $('#sidenav-header img').attr("src","artist.jpg");
+            $('#sidenav-header img').attr("src", "artist.jpg");
 
         })
 
@@ -215,7 +368,7 @@
             activateLink($(this), songColor, songColorHex);
 
 
-            $('#sidenav-header img').attr("src","album.jpg");
+            $('#sidenav-header img').attr("src", "album.jpg");
 
 
         })
@@ -234,8 +387,83 @@
         }
 
 
+        //AVG RATING INITIALISE
+        $('#avgSongRating').barrating('show', {
+                    theme: 'bars-square',
+                    showValues: true,
+                    showSelectedRating: false,
+                    readonly: true,
+                }
+        );
+
+        //AVG RATING INITIALISE
+        $('#yourSongRatingModal').barrating('show', {
+                    theme: 'bars-square',
+                    showValues: true,
+                    showSelectedRating: false,
+                    readonly: true,
+                }
+        );
 
 
+        //YOUR RATING INITIALISE
+        $('#yourSongRating').barrating('show', {
+                    theme: 'bars-square',
+                    showValues: true,
+                    showSelectedRating: false,
+                    initialRating: null,
+
+                    onSelect: function (value, text, event) {
+                        if (typeof(event) !== 'undefined') {
+                            // rating was selected by a user
+
+                            $('#yourSongRatingModal').barrating("set", value);
+
+                            //open review modal
+                            $('#addReviewModal').openModal();
+
+                            //change to read only
+                            $('#yourSongRating').barrating('readonly', true);
+
+
+                        } else {
+                            // rating was selected programmatically
+                            // by calling `set` method
+                        }
+                    }
+                }
+        );
+
+
+        //SET AVERAGE RATING
+        $('#avgSongRating').barrating('set', 5);
+
+
+        // CLICK WHOLE AVERAGE RATING DIV
+        $('#avgSongRatingWrap').click(function () {
+            $('#songContentAnchor').trigger("click");
+
+            $('#reviews').ScrollTo({
+                duration: 1000,
+            });
+        });
+
+        // CLICK JUST THE BUTTON
+        $('#average-rating-show-reviews').click(function (e) {
+            $(this).blur();
+
+            $('#songContentAnchor').trigger("click");
+
+            $('#reviews').ScrollTo({
+                duration: 1000,
+            });
+
+        });
+
+
+        $('#addReviewButton').click(function () {
+            Materialize.toast("Review added", 2000);
+        });
     });
 
 

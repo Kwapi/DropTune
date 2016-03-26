@@ -2645,7 +2645,7 @@ if ($) {
                             returnToOriginal();
                     });
                 // Animate Overlay
-                $('body').append(overlay);
+                $('#sidenav').append(overlay);
                 overlay.velocity({opacity: 1}, {duration: inDuration, queue: false, easing: 'easeOutQuad'}
                 );
 

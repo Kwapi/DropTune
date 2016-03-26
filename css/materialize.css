@@ -9838,6 +9838,7 @@ select {
   left: auto;
 }
 
+/*
 @media only screen and (max-width: 992px) {
   .side-nav.fixed {
     left: -105%;
@@ -9847,7 +9848,7 @@ select {
     left: auto;
   }
 }
-
+*/
 .side-nav .collapsible-body li.active,
 .side-nav.fixed .collapsible-body li.active {
   background-color: #ee6e73;
