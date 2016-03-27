@@ -252,3 +252,18 @@ textarea.materialize-textarea:focus:not([readonly]) + label {
 .content-card{
   padding-right:0 !important;
 }
+
+
+
+.collapsible{
+  border:none;
+  box-shadow:none;
+}
+
+.collapsible-body{
+  border-bottom-color:#37474F;
+}
+.collapsible-header{
+  background-color: transparent;
+  border:none;
+}

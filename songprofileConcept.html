@@ -17,6 +17,8 @@
     <link rel="stylesheet" href="css/bars-square.css" type="text/css">
     <link rel="stylesheet" href="css/css-stars.css" type="text/css">
 
+    <!-- FREEPIK ICONS -->
+    <link rel="stylesheet" href="css/flaticon/flaticon.css" type="text/css">
 
 </head>
 <body class="blue-grey darken-3 white-text">
@@ -114,19 +116,105 @@
     <section id="viewport">
         <div id="viewport-content">
             <div id="songContent">
-                <section id="songDashboardSection">
-                    <div class="container" id="songDashboard">
-                        <h3>Song Dashboard</h3>
-                        dsadasdadsadasdsadasdasasdadasdasdasdasdasdasdasd
-                        sadas
-                        dasdas
-                        das
-                        das
-                        das
-                        das
-                        das
-                        d
-                        asdasdasd
+                <section class="container" id="songDashboardSection">
+                    <div id="songDashboard">
+                        <div class="row">
+                            <h3>Song Dashboard</h3>
+                            dsadasdadsadasdsadasdasasdadasdasdasdasdasdasdasd
+                            sadas
+                            dasdas
+                            das
+                            das
+                            das
+                            das
+                            das
+                            d
+                            asdasdasd
+                        </div>
+                        <div id="songStatsCard" class="card blue-grey darken-4 hoverable">
+                            <div class="card-content">
+                                <div class="row songStatsTop valign-wrapper center-align">
+                                    <div class="col s4">
+                                        DURATION
+                                    </div>
+                                    <div class="col s4">
+                                        KEY AND MODE
+                                    </div>
+                                    <div class="col s4 valign-wrapper center-align">
+                                        <div class="col s4">
+                                            <div class="col s12">
+                                                4
+                                            </div>
+                                            <div class="col s12">
+                                                4
+                                            </div>
+                                        </div>
+                                        <div class="col s8">
+                                            178
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+                                <ul class="collapsible" data-collapsible="accordion">
+                                    <li>
+                                        <div class="collapsible-header">
+                                            <div class="row songStatsBar valign-wrapper tooltipped" data-position="left"
+                                                 data-delay="50" data-tooltip="Popularity">
+                                                <div class="col s2">
+                                                    <i class="flaticon-favorite"></i>
+                                                </div>
+                                                <div id="songPopularityBar" class="col s10">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="collapsible-body"><p>The popularity is calculated by algorithm and is based, in the most part, on the total number of plays the track has had and how recent those plays are. Generally speaking, songs that are being played a lot now will have a higher popularity than songs that were played a lot in the past.</p></div>
+                                    </li>
+                                    <li>
+                                        <div class="collapsible-header">
+                                            <div class="row songStatsBar valign-wrapper tooltipped" data-position="left"
+                                                 data-delay="50" data-tooltip="Energy">
+                                                <div class="col s2">
+                                                    <i class="flaticon-power"></i>
+                                                </div>
+                                                <div id="songEnergyBar" class="col s10">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="collapsible-body"><p>Represents a perceptual measure of intensity and powerful activity released throughout the track. Typical energetic tracks feel fast, loud, and noisy. For example, death metal has high energy, while a Bach prelude scores low on the scale. Perceptual features contributing to this attribute include dynamic range, perceived loudness, timbre, onset rate, and general entropy.</p></div>
+                                    </li>
+                                    <li>
+                                        <div class="collapsible-header">
+                                            <div class="row songStatsBar valign-wrapper tooltipped" data-position="left"
+                                                 data-delay="50" data-tooltip="Danceability">
+                                                <div class="col s2">
+                                                    <i class="flaticon-party"></i>
+                                                </div>
+                                                <div id="songDanceabilityBar" class="col s10">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="collapsible-body">
+                                            <p>Describes how suitable a track is for dancing using a number of musical elements (the more suitable for dancing, the closer to 1.0 the value). The combination of musical elements that best characterize danceability include tempo, rhythm stability, beat strength, and overall regularity.</p></div>
+                                    </li>
+                                    <li>
+                                        <div class="collapsible-header">
+
+                                            <div class="row songStatsBar valign-wrapper tooltipped" data-position="left"
+                                                 data-delay="50" data-tooltip="Valence">
+                                                <div class="col s2">
+                                                    <i class="flaticon-happy"></i>
+                                                </div>
+                                                <div id="songValenceBar" class="col s10">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="collapsible-body"><p>Describes the musical positiveness conveyed by a track. Tracks with high valence sound more positive (e.g., happy, cheerful, euphoric), while tracks with low valence sound more negative (e.g. sad, depressed, angry). This attribute in combination with energy is a strong indicator of acoustic mood, the general emotional qualities that may characterize the track's acoustics. Note that in the case of vocal music, lyrics may differ semantically from the perceived acoustic mood.</p></div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </section>
 
@@ -178,7 +266,7 @@
                                                     <p><a href="#" class="pink-text">Go to content</a></p>
                                                 </div>
                                                 <div class="card-reveal card-reveal blue-grey darken-4">
-                        <i class="material-icons right card-title">close</i>
+                                                    <i class="material-icons right card-title">close</i>
 
                                                     <p>Content description</p>
 
@@ -367,6 +455,8 @@
 <script src="js/jquery-scrollto.js"></script>
 
 
+<!--PROGRESS BAR -->
+<script src="js/progressbar.js"></script>
 <!-- CUSTOM SCRIPTS -->
 <script>
     $(document).ready(function () {
@@ -517,6 +607,8 @@
 
         });
 
+        // CONTENT CARD BACKGROUND MOUSEOVER
+
         $('.card-background').mouseover(function () {
                     $(this).find('.ratings').show();
                 })
@@ -532,10 +624,121 @@
         $('#songContentAnchor').trigger("click"); // WHEN EVERYTHING LOADS START WITH SONG PAGE
 
 
-        $(document).ready(function () {
-            $('.select-material').material_select();
+        /*=================SONG STATS===============*/
 
+        var songPopularity = 45;
+        var songEnergy = 0.567;
+        var songDanceability = 0.89;
+        var songValence = 0.10;
+
+        //  bars
+        var songPopularityBar;
+        var songEnergyBar;
+        var songDanceabilityBar;
+        var songValenceBar;
+
+
+        //  colours
+        var songPopularityStartCol = '#ff9800';  //  orange
+        var songPopularityEndCol = '#e65100';  //  orange darken -4
+
+        var songEnergyStartCol = '#f44336';  //  red
+        var songEnergyEndCol = '#b71c1c'; //  red darken -4
+
+        var songDanceabilityStartCol = '#e91e63';  //  pink
+        var songDanceabilityEndCol = '#880e4f';  //  pink darken -4
+
+        var songValenceStartCol = '#9c27b0';  //  purple
+        var songValenceEndCol = '#b71c1c';  //  purple darken -4
+
+        var trailColor = '#37474f';
+
+        songPopularityBar = new ProgressBar.Line('#songPopularityBar', {
+            color: songPopularityStartCol,
+            trailColor: trailColor,
+            trailWidth: 2,
+            strokeWidth: 2,
+            easing: 'easeIn',
+            duration: 500,
+
+            from: {color: songPopularityStartCol},
+            to: {color: songPopularityEndCol},
+
+            step: function (state, songPopularityBar) {
+                songPopularityBar.path.setAttribute('stroke', state.color);
+            }
         });
+
+        songEnergyBar = new ProgressBar.Line('#songEnergyBar', {
+            color: songEnergyStartCol,
+            trailColor: trailColor,
+            trailWidth: 2,
+            strokeWidth: 2,
+            easing: 'easeIn',
+            duration: 500,
+
+            from: {color: songEnergyStartCol},
+            to: {color: songEnergyEndCol},
+
+            step: function (state, songEnergyBar) {
+                songEnergyBar.path.setAttribute('stroke', state.color);
+            }
+        });
+
+        songDanceabilityBar = new ProgressBar.Line('#songDanceabilityBar', {
+            color: songDanceabilityStartCol,
+            trailColor: trailColor,
+            trailWidth: 2,
+            strokeWidth: 2,
+            easing: 'easeIn',
+            duration: 500,
+
+            from: {color: songDanceabilityStartCol},
+            to: {color: songDanceabilityEndCol},
+
+            step: function (state, songDanceabilityBar) {
+                songDanceabilityBar.path.setAttribute('stroke', state.color);
+            }
+        });
+
+        songValenceBar = new ProgressBar.Line('#songValenceBar', {
+            color: songValenceStartCol,
+            trailColor: trailColor,
+            trailWidth: 2,
+            strokeWidth: 2,
+            easing: 'easeIn',
+            duration: 500,
+
+            from: {color: songValenceStartCol},
+            to: {color: songValenceEndCol},
+
+            step: function (state, songValenceBar) {
+                songValenceBar.path.setAttribute('stroke', state.color);
+            }
+        });
+
+
+        //  ANIMATE IN AND OUT
+        $('#songStatsCard').mouseover(function () {
+                    songPopularityBar.animate(songPopularity / 100);
+                    songEnergyBar.animate(songEnergy);
+                    songDanceabilityBar.animate(songDanceability);
+                    songValenceBar.animate(songValence);
+
+
+                })
+                .mouseout(function () {
+                    songPopularityBar.animate(0);
+                    songEnergyBar.animate(0);
+                    songDanceabilityBar.animate(0);
+                    songValenceBar.animate(0);
+                });
+
+
+        /*=================INITIALISE MATERIAL SELECTS===============*/
+        $('.select-material').material_select();
+
+
     });
 
 
