@@ -1,6 +1,6 @@
     /*
     Flaticon icon font: Flaticon
-    Creation date: 28/03/2016 00:45
+    Creation date: 28/03/2016 01:52
     */
 
     @font-face {
@@ -38,10 +38,18 @@
 
     .flaticon-favorite:before { content: "\f100"; }
 .flaticon-happy:before { content: "\f101"; }
-.flaticon-party:before { content: "\f102"; }
-.flaticon-power:before { content: "\f103"; }
+.flaticon-music:before { content: "\f102"; }
+.flaticon-music-1:before { content: "\f103"; }
+.flaticon-party:before { content: "\f104"; }
+.flaticon-power:before { content: "\f105"; }
+.flaticon-sound:before { content: "\f106"; }
+.flaticon-time:before { content: "\f107"; }
     
     $font-Flaticon-favorite: "\f100";
     $font-Flaticon-happy: "\f101";
-    $font-Flaticon-party: "\f102";
-    $font-Flaticon-power: "\f103";
+    $font-Flaticon-music: "\f102";
+    $font-Flaticon-music-1: "\f103";
+    $font-Flaticon-party: "\f104";
+    $font-Flaticon-power: "\f105";
+    $font-Flaticon-sound: "\f106";
+    $font-Flaticon-time: "\f107";

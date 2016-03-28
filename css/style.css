@@ -267,3 +267,21 @@ textarea.materialize-textarea:focus:not([readonly]) + label {
   background-color: transparent;
   border:none;
 }
+
+.card-header-custom{
+  border: solid 2px #ff5722;
+  margin-left: 2% !important;;
+  margin-right: 2%;
+}
+
+.divider-custom{
+  margin-left: 2% !important;;
+  margin-right: 2%;
+  background: rgb(55, 71, 79) !important;
+  height: 1px;
+  overflow: hidden;
+}
+
+.smaller{
+  font-size:11px;
+}
