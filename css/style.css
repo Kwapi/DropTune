@@ -88,16 +88,27 @@ footer.page-footer {
 }
 
 .card-background{
+  width:100%;
   float:left;
   padding-right:4%;
   background-color: transparent;
   transition:background-color 0.25s;
+  border-radius:2px;
 }
 
 .cat-live:hover{
   background-color: #f50057;
   transition:background-color 0.25s;
 
+}
+
+.review-bg:hover{
+  background-color: rgb(240, 95, 64);
+  transition:background-color 0.25s;
+}
+
+.review-bg{
+  padding-right: 0;
 }
 
 
@@ -249,11 +260,9 @@ textarea.materialize-textarea:focus:not([readonly]) + label {
   font-size:23px;
 }
 
-.content-card{
+.content-card .review-card{
   padding-right:0 !important;
 }
-
-
 
 .collapsible{
   border:none;
@@ -282,6 +291,20 @@ textarea.materialize-textarea:focus:not([readonly]) + label {
   overflow: hidden;
 }
 
+.reviewRatingWrapper{
+  padding-left:1.5%;
+}
+
 .smaller{
   font-size:11px;
+}
+
+
+.dropdown-content li > a, .dropdown-content li > span {
+  font-size: 16px;
+  background-color: #263238;
+  color: #ff5722;
+  display: block;
+  line-height: 22px;
+  padding: 14px 16px;
 }

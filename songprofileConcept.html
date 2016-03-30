@@ -293,7 +293,7 @@
                         <div class="row content-filters">
                             <div class="input-field col s3">
                                 <select class="select-material">
-                                    <option value="1" disabled selected>All</option>
+                                    <option value="1" selected>All</option>
                                     <option value="2">Live</option>
                                     <option value="3">Cover</option>
                                     <option value="4">Remix</option>
@@ -423,25 +423,110 @@
                         </div>
                         <div class="parallax"><img src="artist.jpg" alt="Unsplashed background img 3"></div>
                     </div>
+
                     <div class="container" id="reviews-content">
-                        <p>dsadsadasdasdasdasdasdadadsdasdasd
-                            asdsa
-                            dasddsdadasrwe43ntkdfjksljfsdjfsdf
-                            sad
-                            asd
-                            asd
-                            asdasds</p>dsajdksadas
-                        <br>
-                        dsadadas
-                        <br>
-                        sdasdasdasdasgdvxc
-                        <br>
-                        REVIEWS REVEIWS
-
-                        <h5>dsadasdasdasda</h5>
+                        <div class="row review-filters">
+                            <div class="input-field col s3">
+                                <select class="select-material">
+                                    <option value="1" selected>Top rated</option>
+                                    <option value="2">Latest</option>
+                                </select>
+                                <label>Display</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="review-template col s12">
+                                <div class="row">
+                                    <div class="review-bg hoverable card-background">
+                                        <div class="col review-card s11">
+                                            <div class="card blue-grey darken-4 grey-text lighten-2">
+                                                <div class="card-content">
+                                                    <div class="row reviewRatingWrapper">
+                                                    <select class="reviewRating">
+                                                        <option value="" selected disabled hidden></option>
+                                                        <option value="1">1</option>
+                                                        <option value="2">2</option>
+                                                        <option value="3">3</option>
+                                                        <option value="4">4</option>
+                                                        <option value="5">5</option>
+                                                    </select>
+                                                    </div>
+                                                    <p class="flow-text review-text">Not a fan but I do admire the strings section - absolutely amazing</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col s1">
+                                            <div class="ratings center-align">
+                                                <div class="rating">2</div>
+                                                <i class="material-icons">thumb_up</i>
+                                                <i class="material-icons">thumb_down</i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="review-template col s12">
+                                <div class="row">
+                                    <div class="review-bg hoverable card-background">
+                                        <div class="col review-card s11">
+                                            <div class="card blue-grey darken-4 grey-text lighten-2">
+                                                <div class="card-content">
+                                                    <div class="row reviewRatingWrapper">
+                                                        <select class="reviewRating">
+                                                            <option value="" selected disabled hidden></option>
+                                                            <option value="1">1</option>
+                                                            <option value="2">2</option>
+                                                            <option value="3">3</option>
+                                                            <option value="4">4</option>
+                                                            <option value="5">5</option>
+                                                        </select>
+                                                    </div>
+                                                    <p class="flow-text review-text">This song is awesome</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col s1">
+                                            <div class="ratings center-align">
+                                                <div class="rating">2</div>
+                                                <i class="material-icons">thumb_up</i>
+                                                <i class="material-icons">thumb_down</i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="review-template col s12">
+                                <div class="row">
+                                    <div class="review-bg hoverable card-background">
+                                        <div class="col review-card s11">
+                                            <div class="card blue-grey darken-4 grey-text lighten-2">
+                                                <div class="card-content">
+                                                    <div class="row reviewRatingWrapper">
+                                                        <select class="reviewRating">
+                                                            <option value="" selected disabled hidden></option>
+                                                            <option value="1">1</option>
+                                                            <option value="2">2</option>
+                                                            <option value="3">3</option>
+                                                            <option value="4">4</option>
+                                                            <option value="5">5</option>
+                                                        </select>
+                                                    </div>
+                                                    <p class="flow-text review-text">I don't like it, way too long and convoluted. The live version found on the deluxe edition is way better.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col s1">
+                                            <div class="ratings center-align">
+                                                <div class="rating">2</div>
+                                                <i class="material-icons">thumb_up</i>
+                                                <i class="material-icons">thumb_down</i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </section>
-
             </div>
             <div id="artistContent">
                 ARTIST ARTIST ARTIST CONTENT
@@ -449,55 +534,59 @@
         </div>
     </section>
 
-    <!-- ADD REVIEW MODAL STRUCTURE -->
-    <div id="addReviewModal" class="modal blue-grey darken-4">
+</div>
 
-        <div class="modal-content">
-            <div class="row">
-                <div class="col s8">
-                    <h4 class="text-darken-3 orange-text">Your rating</h4>
-                </div>
 
-                <div class="col s4">
-                    <select id="yourSongRatingModal">
-                        <option value="" selected disabled hidden></option>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                    </select>
-                </div>
+
+<!--    MODALS      -->
+
+<!-- ADD REVIEW MODAL STRUCTURE -->
+<div id="addReviewModal" class="modal blue-grey darken-4">
+
+    <div class="modal-content">
+        <div class="row">
+            <div class="col s8">
+                <h4 class="text-darken-3 orange-text">Your rating</h4>
             </div>
 
+            <div class="col s4">
+                <select id="yourSongRatingModal">
+                    <option value="" selected disabled hidden></option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+            </div>
+        </div>
 
-            <div class="row">
-                <form class="col s12">
-                    <div class="row">
-                        <div class="input-field col s12">
-                            <textarea id="addReviewText" class="materialize-textarea"></textarea>
-                            <label for="addReviewText">Attach a review (optional)</label>
-                        </div>
+
+        <div class="row">
+            <form class="col s12">
+                <div class="row">
+                    <div class="input-field col s12">
+                        <textarea id="addReviewText" class="materialize-textarea"></textarea>
+                        <label for="addReviewText">Attach a review (optional)</label>
                     </div>
-                </form>
-            </div>
-        </div>
-        <div class="modal-footer grey darken-4">
-            <a href="#!" class="modal-action modal-close waves-effect waves-orange btn-flat white-text "
-               id="addReviewButton">CONFIRM</a>
+                </div>
+            </form>
         </div>
     </div>
-
-    <div id="YouTubeVideoModal" class="modal blue-grey darken-4 modal-yt">
-
-        <div class="modal-content">
-
-
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/-6vLp07ZePY" frameborder="0"
-                    allowfullscreen></iframe>
-        </div>
-
+    <div class="modal-footer grey darken-4">
+        <a href="#!" class="modal-action modal-close waves-effect waves-orange btn-flat white-text "
+           id="addReviewButton">CONFIRM</a>
     </div>
+</div>
+
+<!-- YOUTBE MODAL STRUCTURE -->
+<div id="YouTubeVideoModal" class="modal blue-grey darken-4 modal-yt">
+
+    <div class="modal-content">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/-6vLp07ZePY" frameborder="0"
+                allowfullscreen></iframe>
+    </div>
+</div>
 </div>
 
 <!--  Scripts-->
@@ -611,6 +700,15 @@
                 }
         );
 
+        //TEMPLATE REVIEW RATING INITIALISE
+        $('.reviewRating').barrating('show', {
+                    theme: 'bars-square',
+                    showValues: true,
+                    showSelectedRating: false,
+                    readonly: true,
+                }
+        );
+
 
         //YOUR RATING INITIALISE
         $('#yourSongRating').barrating('show', {
@@ -646,29 +744,26 @@
 
 
         // CLICK WHOLE AVERAGE RATING DIV
-        $('#avgSongRatingWrap').click(function () {
+        $('#avgSongRatingWrap, #average-rating-show-reviews').click(function () {
             $('#songContentAnchor').trigger("click");
 
             $('#reviews').ScrollTo({
                 duration: 1000,
+                offsetTop:64,
             });
         });
 
-        // CLICK JUST THE BUTTON
-        $('#average-rating-show-reviews').click(function (e) {
-            $(this).blur();
-
-            $('#songContentAnchor').trigger("click");
-
-            $('#reviews').ScrollTo({
-                duration: 1000,
-            });
-
-        });
 
         // CONTENT CARD BACKGROUND MOUSEOVER
-
         $('.card-background').mouseover(function () {
+                    $(this).find('.ratings').show();
+                })
+                .mouseout(function () {
+                    $(this).find('.ratings').hide();
+                });
+
+        // REVIEW CARD BACKGROUND MOUSEOVER
+        $('.review-bg').mouseover(function () {
                     $(this).find('.ratings').show();
                 })
                 .mouseout(function () {
@@ -798,7 +893,8 @@
         $('.select-material').material_select();
 
 
-    });
+    })
+    ;
 
 
 </script>
