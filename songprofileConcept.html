@@ -2,6 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <!-- ANDROID CHROME STATUS BAR COLOUR -->
+    <meta name="theme-color" content="#263238">
 
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
@@ -119,159 +121,180 @@
                 <section class="container" id="songDashboardSection">
                     <div id="songDashboard">
                         <div class="row">
-                            <h3>Song Dashboard</h3>
-                            dsadasdadsadasdsadasdasasdadasdasdasdasdasdasdasd
-                            sadas
-                            dasdas
-                            das
-                            das
-                            das
-                            das
-                            das
-                            d
-                            asdasdasd
+                            <div id="songStatsCard" class="card blue-grey darken-4 hoverable">
+                                <div class="card-content">
+                                    <div class="row valign-wrapper center-align">
+                                        <div class="col s12 card-header-custom">
+                                            <h5 class="deep-orange-text light">AUDIO SUMMARY</h5>
+                                        </div>
+                                    </div>
+                                    <div class="row songStatsTop valign-wrapper center-align">
+                                        <div class="col s3 valign-wrapper tooltipped" data-position="left"
+                                             data-delay="50" data-tooltip="Duration">
+                                            <div class="col s4">
+                                                <i class="flaticon-time"></i>
+                                            </div>
+                                            <div class="col s8" id="songDuration">
+                                                2:38
+                                            </div>
+                                        </div>
+                                        <div class="col s3 valign-wrapper tooltipped" data-position="top"
+                                             data-delay="50" data-tooltip="Loudness">
+                                            <div class="col s4">
+                                                <i class="flaticon-sound"></i>
+                                            </div>
+                                            <div class="col s8" id="songLoudness">
+                                                -0.787dB
+                                            </div>
+                                        </div>
+                                        <div class="col s3 valign-wrapper tooltipped" data-position="top"
+                                             data-delay="50" data-tooltip="Key and Mode">
+                                            <div class="col s4">
+                                                <i class="flaticon-music"></i>
+                                            </div>
+                                            <div class="col s8">
+                                                <div class="col s12" id="songKey">
+                                                    A♯/B♭
+                                                </div>
+                                                <div class="col s12 smaller" id="songMode">
+                                                    MINOR
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col s3 valign-wrapper tooltipped" data-position="right"
+                                             data-delay="50" data-tooltip="Time Signature and Tempo">
+                                            <div class="col s4">
+                                                <i class="flaticon-music-1"></i>
+                                            </div>
+                                            <div class="col s2">
+                                                <div class="col s12" id="songTimeSignature">
+                                                    4
+                                                </div>
+                                                <div class="col s12">
+                                                    4
+                                                </div>
+                                            </div>
+                                            <div class="col s8">
+                                                <div class="col s12" id="songBPM">
+                                                    176
+                                                </div>
+                                                <div class="col s12 smaller">
+                                                    BPM
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="divider-custom"></div>
+
+                                    <ul class="collapsible" data-collapsible="accordion">
+                                        <li>
+                                            <div class="collapsible-header">
+                                                <div class="row songStatsBar valign-wrapper tooltipped"
+                                                     data-position="left"
+                                                     data-delay="50" data-tooltip="Popularity">
+                                                    <div class="col s2">
+                                                        <i class="flaticon-black"></i>
+                                                    </div>
+                                                    <div id="songPopularityBar" class="col s10">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="collapsible-body"><p>The popularity is calculated by algorithm
+                                                and
+                                                is based, in the most part, on the total number of plays the track has
+                                                had
+                                                and how recent those plays are. Generally speaking, songs that are being
+                                                played a lot now will have a higher popularity than songs that were
+                                                played a
+                                                lot in the past.</p></div>
+                                        </li>
+                                        <li>
+                                            <div class="collapsible-header">
+                                                <div class="row songStatsBar valign-wrapper tooltipped"
+                                                     data-position="left"
+                                                     data-delay="50" data-tooltip="Energy">
+                                                    <div class="col s2">
+                                                        <i class="flaticon-power"></i>
+                                                    </div>
+                                                    <div id="songEnergyBar" class="col s10">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="collapsible-body"><p>Represents a perceptual measure of
+                                                intensity
+                                                and powerful activity released throughout the track. Typical energetic
+                                                tracks feel fast, loud, and noisy. For example, death metal has high
+                                                energy,
+                                                while a Bach prelude scores low on the scale. Perceptual features
+                                                contributing to this attribute include dynamic range, perceived
+                                                loudness,
+                                                timbre, onset rate, and general entropy.</p></div>
+                                        </li>
+                                        <li>
+                                            <div class="collapsible-header">
+                                                <div class="row songStatsBar valign-wrapper tooltipped"
+                                                     data-position="left"
+                                                     data-delay="50" data-tooltip="Danceability">
+                                                    <div class="col s2">
+                                                        <i class="flaticon-party"></i>
+                                                    </div>
+                                                    <div id="songDanceabilityBar" class="col s10">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="collapsible-body">
+                                                <p>Describes how suitable a track is for dancing using a number of
+                                                    musical
+                                                    elements (the more suitable for dancing, the closer to 1.0 the
+                                                    value).
+                                                    The combination of musical elements that best characterize
+                                                    danceability
+                                                    include tempo, rhythm stability, beat strength, and overall
+                                                    regularity.</p></div>
+                                        </li>
+                                        <li>
+                                            <div class="collapsible-header">
+
+                                                <div class="row songStatsBar valign-wrapper tooltipped"
+                                                     data-position="left"
+                                                     data-delay="50" data-tooltip="Valence">
+                                                    <div class="col s2">
+                                                        <i class="flaticon-happy"></i>
+                                                    </div>
+                                                    <div id="songValenceBar" class="col s10">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="collapsible-body"><p>Describes the musical positiveness conveyed
+                                                by
+                                                a track. Tracks with high valence sound more positive (e.g., happy,
+                                                cheerful, euphoric), while tracks with low valence sound more negative
+                                                (e.g.
+                                                sad, depressed, angry). This attribute in combination with energy is a
+                                                strong indicator of acoustic mood, the general emotional qualities that
+                                                may
+                                                characterize the track's acoustics. Note that in the case of vocal
+                                                music,
+                                                lyrics may differ semantically from the perceived acoustic mood.</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
-                        <div id="songStatsCard" class="card blue-grey darken-4 hoverable">
-                            <div class="card-content">
-                                <div class="row valign-wrapper center-align">
-                                    <div class="col s12 card-header-custom">
-                                        <h5 class="deep-orange-text light">AUDIO SUMMARY</h5>
-                                    </div>
-                                </div>
-                                <div class="row songStatsTop valign-wrapper center-align">
-                                    <div class="col s3 valign-wrapper tooltipped" data-position="left"
-                                         data-delay="50" data-tooltip="Duration">
-                                        <div class="col s4">
-                                            <i class="flaticon-time"></i>
-                                        </div>
-                                        <div class="col s8" id="songDuration">
-                                            2:38
-                                        </div>
-                                    </div>
-                                    <div class="col s3 valign-wrapper tooltipped" data-position="top"
-                                         data-delay="50" data-tooltip="Loudness">
-                                        <div class="col s4">
-                                            <i class="flaticon-sound"></i>
-                                        </div>
-                                        <div class="col s8" id="songLoudness">
-                                            -0.787dB
-                                        </div>
-                                    </div>
-                                    <div class="col s3 valign-wrapper tooltipped" data-position="top"
-                                         data-delay="50" data-tooltip="Key and Mode">
-                                        <div class="col s4">
-                                            <i class="flaticon-music"></i>
-                                        </div>
-                                        <div class="col s8">
-                                            <div class="col s12" id="songKey">
-                                                A♯/B♭
-                                            </div>
-                                            <div class="col s12 smaller" id="songMode">
-                                                MINOR
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col s3 valign-wrapper tooltipped" data-position="right"
-                                         data-delay="50" data-tooltip="Time Signature and Tempo">
-                                        <div class="col s4">
-                                            <i class="flaticon-music-1"></i>
-                                        </div>
-                                        <div class="col s2">
-                                            <div class="col s12" id="songTimeSignature">
-                                                4
-                                            </div>
-                                            <div class="col s12">
-                                                4
-                                            </div>
-                                        </div>
-                                        <div class="col s8">
-                                            <div class="col s12" id="songBPM">
-                                                176
-                                            </div>
-                                            <div class="col s12 smaller">
-                                                BPM
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="divider-custom"></div>
-
-                                <ul class="collapsible" data-collapsible="accordion">
-                                    <li>
-                                        <div class="collapsible-header">
-                                            <div class="row songStatsBar valign-wrapper tooltipped" data-position="left"
-                                                 data-delay="50" data-tooltip="Popularity">
-                                                <div class="col s2">
-                                                    <i class="flaticon-favorite"></i>
-                                                </div>
-                                                <div id="songPopularityBar" class="col s10">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="collapsible-body"><p>The popularity is calculated by algorithm and
-                                            is based, in the most part, on the total number of plays the track has had
-                                            and how recent those plays are. Generally speaking, songs that are being
-                                            played a lot now will have a higher popularity than songs that were played a
-                                            lot in the past.</p></div>
-                                    </li>
-                                    <li>
-                                        <div class="collapsible-header">
-                                            <div class="row songStatsBar valign-wrapper tooltipped" data-position="left"
-                                                 data-delay="50" data-tooltip="Energy">
-                                                <div class="col s2">
-                                                    <i class="flaticon-power"></i>
-                                                </div>
-                                                <div id="songEnergyBar" class="col s10">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="collapsible-body"><p>Represents a perceptual measure of intensity
-                                            and powerful activity released throughout the track. Typical energetic
-                                            tracks feel fast, loud, and noisy. For example, death metal has high energy,
-                                            while a Bach prelude scores low on the scale. Perceptual features
-                                            contributing to this attribute include dynamic range, perceived loudness,
-                                            timbre, onset rate, and general entropy.</p></div>
-                                    </li>
-                                    <li>
-                                        <div class="collapsible-header">
-                                            <div class="row songStatsBar valign-wrapper tooltipped" data-position="left"
-                                                 data-delay="50" data-tooltip="Danceability">
-                                                <div class="col s2">
-                                                    <i class="flaticon-party"></i>
-                                                </div>
-                                                <div id="songDanceabilityBar" class="col s10">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="collapsible-body">
-                                            <p>Describes how suitable a track is for dancing using a number of musical
-                                                elements (the more suitable for dancing, the closer to 1.0 the value).
-                                                The combination of musical elements that best characterize danceability
-                                                include tempo, rhythm stability, beat strength, and overall
-                                                regularity.</p></div>
-                                    </li>
-                                    <li>
-                                        <div class="collapsible-header">
-
-                                            <div class="row songStatsBar valign-wrapper tooltipped" data-position="left"
-                                                 data-delay="50" data-tooltip="Valence">
-                                                <div class="col s2">
-                                                    <i class="flaticon-happy"></i>
-                                                </div>
-                                                <div id="songValenceBar" class="col s10">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="collapsible-body"><p>Describes the musical positiveness conveyed by
-                                            a track. Tracks with high valence sound more positive (e.g., happy,
-                                            cheerful, euphoric), while tracks with low valence sound more negative (e.g.
-                                            sad, depressed, angry). This attribute in combination with energy is a
-                                            strong indicator of acoustic mood, the general emotional qualities that may
-                                            characterize the track's acoustics. Note that in the case of vocal music,
-                                            lyrics may differ semantically from the perceived acoustic mood.</p></div>
-                                    </li>
-                                </ul>
+                        <div class="row" id="mediaLinks">
+                            <div class="col s4 center-align">
+                                <a href="#" id="youtubeButton" class="active"><i class="flaticon-video media-icon"></i>
+                                <h6>YouTube Video</h6></a>
+                            </div>
+                            <div class="col s4 center-align">
+                                <a href="#" id="imvdbVidButton" class="active"><i class="flaticon-multimedia media-icon"></i>
+                                <h6>Official Music Video</h6></a>
+                            </div>
+                            <div class="col s4 center-align">
+                                <a href="#" id="whoSampledButton" class="disabled"><i class="flaticon-music-4 media-icon"></i>
+                                <h6>Samples and Covers</h6></a>
                             </div>
                         </div>
                     </div>
@@ -442,16 +465,17 @@
                                             <div class="card blue-grey darken-4 grey-text lighten-2">
                                                 <div class="card-content">
                                                     <div class="row reviewRatingWrapper">
-                                                    <select class="reviewRating">
-                                                        <option value="" selected disabled hidden></option>
-                                                        <option value="1">1</option>
-                                                        <option value="2">2</option>
-                                                        <option value="3">3</option>
-                                                        <option value="4">4</option>
-                                                        <option value="5">5</option>
-                                                    </select>
+                                                        <select class="reviewRating">
+                                                            <option value="" selected disabled hidden></option>
+                                                            <option value="1">1</option>
+                                                            <option value="2">2</option>
+                                                            <option value="3">3</option>
+                                                            <option value="4">4</option>
+                                                            <option value="5">5</option>
+                                                        </select>
                                                     </div>
-                                                    <p class="flow-text review-text">Not a fan but I do admire the strings section - absolutely amazing</p>
+                                                    <p class="flow-text review-text">Not a fan but I do admire the
+                                                        strings section - absolutely amazing</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -511,7 +535,9 @@
                                                             <option value="5">5</option>
                                                         </select>
                                                     </div>
-                                                    <p class="flow-text review-text">I don't like it, way too long and convoluted. The live version found on the deluxe edition is way better.</p>
+                                                    <p class="flow-text review-text">I don't like it, way too long and
+                                                        convoluted. The live version found on the deluxe edition is way
+                                                        better.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -535,7 +561,6 @@
     </section>
 
 </div>
-
 
 
 <!--    MODALS      -->
@@ -587,6 +612,16 @@
                 allowfullscreen></iframe>
     </div>
 </div>
+
+<!--    IMVDB MODAL     -->
+
+<div id="IMVDBModal" class="modal blue-grey darken-4 modal-imvdb">
+        <div class="imvdb-embed" data-embed-type="video" data-id="263039060632" data-include-credits="y"></div>
+</div>
+
+
+
+
 </div>
 
 <!--  Scripts-->
@@ -602,6 +637,8 @@
 <!-- Include jQuery ScrollTo -->
 <script src="js/jquery-scrollto.js"></script>
 
+<!-- IMVDB EMBED LOAD -->
+<script async type="text/javascript" src="//s3.amazonaws.com/static.imvdb.com/embed.min.js" charset="utf-8"></script>
 
 <!--PROGRESS BAR -->
 <script src="js/progressbar.js"></script>
@@ -749,7 +786,7 @@
 
             $('#reviews').ScrollTo({
                 duration: 1000,
-                offsetTop:64,
+                offsetTop: 64,
             });
         });
 
@@ -887,6 +924,18 @@
                     songDanceabilityBar.animate(0);
                     songValenceBar.animate(0);
                 });
+
+
+        /*=================MEDIA LINKS===============================*/
+        $('#youtubeButton').click(function(e){
+            e.preventDefault();    //stop hash from positioning the view to the top
+            $('#YouTubeVideoModal').openModal();
+        });
+
+        $('#imvdbVidButton').click(function(e){
+            e.preventDefault();    //stop hash from positioning the view to the top
+            $('#IMVDBModal').openModal();
+        });
 
 
         /*=================INITIALISE MATERIAL SELECTS===============*/

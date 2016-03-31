@@ -308,3 +308,41 @@ textarea.materialize-textarea:focus:not([readonly]) + label {
   line-height: 22px;
   padding: 14px 16px;
 }
+
+.media-icon:before{
+  font-size:100px !important;
+  padding-right:20px;
+}
+
+a{
+  color:white;
+  transition:color 0.25s;
+}
+a.active:hover{
+  color: #ff3508;
+  text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
+  transition:color 0.25s;
+}
+
+a.disabled{
+  color: #9e9e9e;
+  text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
+  pointer-events:none;
+}
+
+.imvdb-embed h3{
+  font-size:15px;
+}
+.imvdb-embed{
+  max-width:480px;
+  margin-bottom: 0 !important;
+}
+.modal-imvdb{
+  width:500px;
+}
+.modal{
+  max-height: 86%;
+}
+
