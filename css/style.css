@@ -346,3 +346,7 @@ a.disabled{
   max-height: 86%;
 }
 
+.similarArtist{
+  display:inline-block;
+}
+

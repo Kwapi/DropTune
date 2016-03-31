@@ -115,22 +115,23 @@
 
     </header>
 
-    <section id="viewport">
+    <div id="viewport">
         <div id="viewport-content">
             <div id="songContent">
-                <div id="songDashboardParallax"
-                     class="parallax-container valign-wrapper parallax-thin parallax-overlay-pink">
-                    <div class="section no-pad-bot">
-                        <div class="container">
-                            <div class="row center">
-                                <h5 class="header col s12 light">DASHBOARD</h5>
+
+                <section id="songDashboardSection">
+                    <div id="songDashboardParallax"
+                         class="parallax-container valign-wrapper parallax-thin parallax-overlay-pink">
+                        <div class="section no-pad-bot">
+                            <div class="container">
+                                <div class="row center">
+                                    <h5 class="header col s12 light">DASHBOARD</h5>
+                                </div>
                             </div>
                         </div>
+                        <div class="parallax"><img src="album.jpg" alt="album art" class="albumArtIMG"></div>
                     </div>
-                    <div class="parallax"><img src="album.jpg" alt="album art" class="albumArtIMG"></div>
-                </div>
-                <section class="container" id="songDashboardSection">
-                    <div id="songDashboard">
+                    <div id="songDashboard" class="container">
                         <div class="row">
                             <div id="songStatsCard" class="card blue-grey darken-4 hoverable">
                                 <div class="card-content">
@@ -471,117 +472,121 @@
                     </div>
                 </section>
 
-                <section id="reviews">
-                    <div class="parallax-container valign-wrapper parallax-thin parallax-overlay-pink">
-                        <div class="section no-pad-bot">
-                            <div class="container">
-                                <div class="row center">
-                                    <h5 class="header col s12 light">REVIEWS</h5>
+                <section id="reviewsSection">
+                    <div id="reviews">
+                        <div class="parallax-container valign-wrapper parallax-thin parallax-overlay-pink">
+                            <div class="section no-pad-bot">
+                                <div class="container">
+                                    <div class="row center">
+                                        <h5 class="header col s12 light">REVIEWS</h5>
+                                    </div>
                                 </div>
                             </div>
+                            <div class="parallax"><img src="album.jpg" alt="album art" class="albumArtIMG"></div>
                         </div>
-                        <div class="parallax"><img src="album.jpg" alt="album art" class="albumArtIMG"></div>
-                    </div>
 
-                    <div class="container" id="reviews-content">
-                        <div class="row review-filters">
-                            <div class="input-field col s3">
-                                <select class="select-material">
-                                    <option value="1" selected>Top rated</option>
-                                    <option value="2">Latest</option>
-                                </select>
-                                <label>Display</label>
+                        <div class="container" id="reviews-content">
+                            <div class="row review-filters">
+                                <div class="input-field col s3">
+                                    <select class="select-material">
+                                        <option value="1" selected>Top rated</option>
+                                        <option value="2">Latest</option>
+                                    </select>
+                                    <label>Display</label>
+                                </div>
                             </div>
-                        </div>
-                        <div class="row">
-                            <div class="review-template col s12">
-                                <div class="row">
-                                    <div class="review-bg hoverable card-background">
-                                        <div class="col review-card s11">
-                                            <div class="card blue-grey darken-4 grey-text lighten-2">
-                                                <div class="card-content">
-                                                    <div class="row reviewRatingWrapper">
-                                                        <select class="reviewRating">
-                                                            <option value="" selected disabled hidden></option>
-                                                            <option value="1">1</option>
-                                                            <option value="2">2</option>
-                                                            <option value="3">3</option>
-                                                            <option value="4">4</option>
-                                                            <option value="5">5</option>
-                                                        </select>
+                            <div class="row">
+                                <div class="review-template col s12">
+                                    <div class="row">
+                                        <div class="review-bg hoverable card-background">
+                                            <div class="col review-card s11">
+                                                <div class="card blue-grey darken-4 grey-text lighten-2">
+                                                    <div class="card-content">
+                                                        <div class="row reviewRatingWrapper">
+                                                            <select class="reviewRating">
+                                                                <option value="" selected disabled hidden></option>
+                                                                <option value="1">1</option>
+                                                                <option value="2">2</option>
+                                                                <option value="3">3</option>
+                                                                <option value="4">4</option>
+                                                                <option value="5">5</option>
+                                                            </select>
+                                                        </div>
+                                                        <p class="flow-text review-text">Not a fan but I do admire the
+                                                            strings section - absolutely amazing</p>
                                                     </div>
-                                                    <p class="flow-text review-text">Not a fan but I do admire the
-                                                        strings section - absolutely amazing</p>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div class="col s1">
-                                            <div class="ratings center-align">
-                                                <div class="rating">2</div>
-                                                <i class="material-icons">thumb_up</i>
-                                                <i class="material-icons">thumb_down</i>
+                                            <div class="col s1">
+                                                <div class="ratings center-align">
+                                                    <div class="rating">2</div>
+                                                    <i class="material-icons">thumb_up</i>
+                                                    <i class="material-icons">thumb_down</i>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="review-template col s12">
-                                <div class="row">
-                                    <div class="review-bg hoverable card-background">
-                                        <div class="col review-card s11">
-                                            <div class="card blue-grey darken-4 grey-text lighten-2">
-                                                <div class="card-content">
-                                                    <div class="row reviewRatingWrapper">
-                                                        <select class="reviewRating">
-                                                            <option value="" selected disabled hidden></option>
-                                                            <option value="1">1</option>
-                                                            <option value="2">2</option>
-                                                            <option value="3">3</option>
-                                                            <option value="4">4</option>
-                                                            <option value="5">5</option>
-                                                        </select>
+                                <div class="review-template col s12">
+                                    <div class="row">
+                                        <div class="review-bg hoverable card-background">
+                                            <div class="col review-card s11">
+                                                <div class="card blue-grey darken-4 grey-text lighten-2">
+                                                    <div class="card-content">
+                                                        <div class="row reviewRatingWrapper">
+                                                            <select class="reviewRating">
+                                                                <option value="" selected disabled hidden></option>
+                                                                <option value="1">1</option>
+                                                                <option value="2">2</option>
+                                                                <option value="3">3</option>
+                                                                <option value="4">4</option>
+                                                                <option value="5">5</option>
+                                                            </select>
+                                                        </div>
+                                                        <p class="flow-text review-text">This song is awesome</p>
                                                     </div>
-                                                    <p class="flow-text review-text">This song is awesome</p>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div class="col s1">
-                                            <div class="ratings center-align">
-                                                <div class="rating">2</div>
-                                                <i class="material-icons">thumb_up</i>
-                                                <i class="material-icons">thumb_down</i>
+                                            <div class="col s1">
+                                                <div class="ratings center-align">
+                                                    <div class="rating">2</div>
+                                                    <i class="material-icons">thumb_up</i>
+                                                    <i class="material-icons">thumb_down</i>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="review-template col s12">
-                                <div class="row">
-                                    <div class="review-bg hoverable card-background">
-                                        <div class="col review-card s11">
-                                            <div class="card blue-grey darken-4 grey-text lighten-2">
-                                                <div class="card-content">
-                                                    <div class="row reviewRatingWrapper">
-                                                        <select class="reviewRating">
-                                                            <option value="" selected disabled hidden></option>
-                                                            <option value="1">1</option>
-                                                            <option value="2">2</option>
-                                                            <option value="3">3</option>
-                                                            <option value="4">4</option>
-                                                            <option value="5">5</option>
-                                                        </select>
+                                <div class="review-template col s12">
+                                    <div class="row">
+                                        <div class="review-bg hoverable card-background">
+                                            <div class="col review-card s11">
+                                                <div class="card blue-grey darken-4 grey-text lighten-2">
+                                                    <div class="card-content">
+                                                        <div class="row reviewRatingWrapper">
+                                                            <select class="reviewRating">
+                                                                <option value="" selected disabled hidden></option>
+                                                                <option value="1">1</option>
+                                                                <option value="2">2</option>
+                                                                <option value="3">3</option>
+                                                                <option value="4">4</option>
+                                                                <option value="5">5</option>
+                                                            </select>
+                                                        </div>
+                                                        <p class="flow-text review-text">I don't like it, way too long
+                                                            and
+                                                            convoluted. The live version found on the deluxe edition is
+                                                            way
+                                                            better.</p>
                                                     </div>
-                                                    <p class="flow-text review-text">I don't like it, way too long and
-                                                        convoluted. The live version found on the deluxe edition is way
-                                                        better.</p>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div class="col s1">
-                                            <div class="ratings center-align">
-                                                <div class="rating">2</div>
-                                                <i class="material-icons">thumb_up</i>
-                                                <i class="material-icons">thumb_down</i>
+                                            <div class="col s1">
+                                                <div class="ratings center-align">
+                                                    <div class="rating">2</div>
+                                                    <i class="material-icons">thumb_up</i>
+                                                    <i class="material-icons">thumb_down</i>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -590,12 +595,183 @@
                         </div>
                     </div>
                 </section>
-                <div id="artistContent">
-                    ARTIST ARTIST ARTIST CONTENT
-                </div>
+
             </div>
+            <div id="artistContent">
+                <section id="artistDashboardSection">
+                    <div id="artistDashboard" class="container">
+                        <div class="row">
+                            <div class="card-panel blue-grey darken-4 white-text">
+
+
+                                <!-- ON TOUR -->
+                                <div class="col s12 center-align">
+                                    <span id="onTour">ON TOUR</span>
+                                </div>
+
+                                <!-- FAMILIARITY -->
+                                <div class="col s3" id="artistFamiliarity">
+                                    50
+                                </div>
+                                <!-- MIDDLE BAR -->
+                                <div class="col s6">
+                                    <!-- YEARS ACTIVE -->
+                                    <div class="col s12">
+                                        <i class="flaticon-video"></i>
+                                        <span id="yearsActive">YEARS ACTIVE</span>
+                                    </div>
+                                    <!-- LOCATION -->
+                                    <div class="col s12">
+                                        <i class="flaticon-power"></i>
+                                        <span id="location">LOCATION</span>
+                                    </div>
+                                </div>
+                                <!-- HOTNESS -->
+                                <div class="col s3" id="artistHotness">
+                                    80
+                                </div>
+
+
+                                <!-- POPULARITY -->
+                                <div class="col s8" id="artistPopularity">
+                                    POPULARITY BAR
+                                </div>
+                                <!-- LISTENERS -->
+                                <div class="col s2">
+                                    LISTENERS
+                                </div>
+                                <!-- PLAYCOUNT -->
+                                <div class="col s2">
+                                    PLAYCOUNT
+                                </div>
+
+                                <!-- BIOGRAPHY HEADER -->
+                                <div class="col s12">
+                                    BIOGRAPHY
+                                </div>
+                                <!-- BIOGRAPHY CONTENT -->
+                                <div class="col s12">
+                                    <p id="biography">There are at least three artists who have used this name 1. A
+                                        popular indie band from London, England 2. A singer from Belgium 3. A rock band
+                                        from Devon, England 1) A three-piece London indie band formed from the ashes of
+                                        Fear Of Flying in late 2007. The line-up consists of singer/guitarist Harry
+                                        McVeigh, bassist/lyricist Charles Cave and drummer Jack Brown. Unfinished
+                                        Business (released April 29th 2007) was their first single, released on Jack
+                                        Brown's label Chess Club Records. Read more on Last.fm</p>
+                                </div>
+                                <!-- TAGS -->
+                                <div class="col s12">
+                                    TAGS
+                                </div>
+                                <div class="col s12" id="tags">
+                                    <div class="chip deep-orange darken-4">
+                                        <a href="#" class="tag">Funk rock</a>
+                                    </div>
+                                    <div class="chip deep-orange darken-4">
+                                        <a href="#" class="tag">Elevator music</a>
+                                    </div>
+                                    <div class="chip deep-orange darken-4">
+                                        <a href="#" class="tag">Christmas</a>
+                                    </div>
+                                    <div class="chip deep-orange darken-4">
+                                        <a href="#" class="tag">Doom jazz</a>
+                                    </div>
+                                    <div class="chip deep-orange darken-4">
+                                        <a href="#" class="tag">Prog-country</a>
+                                    </div>
+                                </div>
+                                <!-- SIMILAR ARTISTS -->
+                                <div class="col s12">
+                                    SIMILAR ARTISTS
+                                </div>
+                                <div class="col s12" id="similarArtists">
+                                    <div class="similarArtist">
+                                        <a href="?song=5ZKMPRDHc7qElVJFh3uRqB" class="similarArtistURL">
+                                            <div class="chip red darken-4 white-text">
+                                                <img src="familiarArtist1.jpg" class="similarArtistIMG">
+                                                <span class="similarArtistName">Jane Doe</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="similarArtist">
+                                        <a href="?song=5ZKMPRDHc7qElVJFh3uRqB" class="similarArtistURL">
+                                            <div class="chip red darken-4 white-text">
+                                                <img src="familiarArtist1.jpg" class="similarArtistIMG">
+                                                <span class="similarArtistName">Yass Band</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="similarArtist">
+                                        <a href="?song=5ZKMPRDHc7qElVJFh3uRqB" class="similarArtistURL">
+                                            <div class="chip red darken-4 white-text">
+                                                <img src="familiarArtist1.jpg" class="similarArtistIMG">
+                                                <span class="similarArtistName">Jiggly Bum</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="similarArtist">
+                                        <a href="?song=5ZKMPRDHc7qElVJFh3uRqB" class="similarArtistURL">
+                                            <div class="chip red darken-4 white-text">
+                                                <img src="familiarArtist1.jpg" class="similarArtistIMG">
+                                                <span class="similarArtistName">Your mom</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <!-- LINKS -->
+                                <div class="row" id="artistLinksRow">
+
+                                    <div class="col s2 center-align">
+                                        <a href="#" id="soundcloud" class="active"><i
+                                                class="flaticon-video"></i><br>SOUNDCLOUD</a>
+                                    </div>
+                                    <div class="col s2 center-align">
+                                        <a href="#" id="wikipedia" class="active"><i
+                                                class="flaticon-video"></i><br>WIKIPEDIA</a>
+                                    </div>
+                                    <div class="col s2 center-align">
+                                        <a href="#" id="youtube" class="active"><i
+                                                class="flaticon-video"></i><br>YOUTUBE</a>
+                                    </div>
+                                    <div class="col s2 center-align">
+                                        <a href="#" id="lastFm" class="active">
+                                            <i class="flaticon-video"></i><br>SOUNDCLOUD</a>
+                                    </div>
+                                    <div class="col s2 center-align">
+                                        <a href="#" id="musicbrainz" class="active">
+                                            <i class="flaticon-video"></i><br>WIKIPEDIA</a>
+                                    </div>
+                                    <div class="col s2 center-align">
+                                        <a href="#" id="official" class="active"><i
+                                                class="flaticon-video"></i><br>OFFICIAL</a>
+                                    </div>
+                                    <div class="col s2 center-align">
+                                        <a href="#" id="whosampled" class="active"><i
+                                                class="flaticon-video"></i><br>WHOSAMPLED</a>
+                                    </div>
+                                    <div class="col s2 center-align">
+                                        <a href="#" id="facebook" class="active"><i
+                                                class="flaticon-video"></i><br>FACEBOOK</a>
+                                    </div>
+                                    <div class="col s2 center-align">
+                                        <a href="#" id="myspace" class="active"><i
+                                                class="flaticon-video"></i><br>MYSPACE</a>
+                                    </div>
+                                    <div class="col s2 center-align">
+                                        <a href="#" id="twitter" class="active"><i
+                                                class="flaticon-video"></i><br>TWITTER</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
         </div>
-    </section>
+    </div>
+</div>
 
 
 </div>
@@ -661,14 +837,18 @@
 </div>
 
 <!--  Scripts-->
+<!--JQUERY ONLINE -->
+<!--
 <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+-->
+<!--JQUERY OFFLINE -->
+<script src="js/jquery-2.2.2.min.js"></script>
+
 <script src="js/materialize.js"></script>
 <script src="js/init.js"></script>
 
-
 <!-- STAR RATING -->
 <script src="js/jquery.barrating.min.js"></script>
-
 
 <!-- Include jQuery ScrollTo -->
 <script src="js/jquery-scrollto.js"></script>
@@ -678,19 +858,37 @@
 
 <!--PROGRESS BAR -->
 <script src="js/progressbar.js"></script>
-<!-- CUSTOM SCRIPTS -->
+
+<!-- API SCRIPTS -->
+<script src="js/musicbrainz.js"></script>
+
+<!-- THIS PAGE SCRIPTS -->
 <script>
     $(document).ready(function () {
         $('.materialboxed').materialbox();
 
+        /*-----------------INFO VARIABLES-------------------*/
+        // PHOTOS
         var albumArtURL = "album.jpg";
         var artistPhotoURL = "artist.jpg";
 
+        // IDs
+        var musicbrainzId = "5bdb38bd-5c5b-4d0f-8901-8bbe1d7062d8";
+
+
+        /*-----------------MAIN FLOW------------------------*/
+
+        // ARTIST   ->   LINKS   ->   SOUNDCLOUD,YT,WIKI
+        getMusicbrainzLinks(musicbrainzId);
+
+
+        /*--------------END OF MAIN FLOW--------------------*/
+
 
         // INITIALISE PARALLAX IMAGES
-        function initialiseParallaxImages(){
-            $('.albumArtIMG').attr("src",albumArtURL);
-            $('.artistPhotoIMG').attr("src",artistPhotoURL);
+        function initialiseParallaxImages() {
+            $('.albumArtIMG').attr("src", albumArtURL);
+            $('.artistPhotoIMG').attr("src", artistPhotoURL);
         }
 
         var artistColor = "red darken-4";
