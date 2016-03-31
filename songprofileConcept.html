@@ -118,6 +118,17 @@
     <section id="viewport">
         <div id="viewport-content">
             <div id="songContent">
+                <div id="songDashboardParallax"
+                     class="parallax-container valign-wrapper parallax-thin parallax-overlay-pink">
+                    <div class="section no-pad-bot">
+                        <div class="container">
+                            <div class="row center">
+                                <h5 class="header col s12 light">DASHBOARD</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="parallax"><img src="album.jpg" alt="album art" class="albumArtIMG"></div>
+                </div>
                 <section class="container" id="songDashboardSection">
                     <div id="songDashboard">
                         <div class="row">
@@ -186,7 +197,7 @@
                                     </div>
 
                                     <div class="divider-custom"></div>
-
+                                    <!-- PROGRESS BARS -->
                                     <ul class="collapsible" data-collapsible="accordion">
                                         <li>
                                             <div class="collapsible-header">
@@ -283,21 +294,46 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="row" id="mediaLinks">
+
+                        <!-- MEDIALINKS -->
+                        <div class="row" id="mediaLinksRow">
                             <div class="col s4 center-align">
                                 <a href="#" id="youtubeButton" class="active"><i class="flaticon-video media-icon"></i>
-                                <h6>YouTube Video</h6></a>
+                                    <h6>YouTube Video</h6></a>
                             </div>
                             <div class="col s4 center-align">
-                                <a href="#" id="imvdbVidButton" class="active"><i class="flaticon-multimedia media-icon"></i>
-                                <h6>Official Music Video</h6></a>
+                                <a href="#" id="imvdbVidButton" class="active"><i
+                                        class="flaticon-multimedia media-icon"></i>
+                                    <h6>Official Music Video</h6></a>
                             </div>
                             <div class="col s4 center-align">
-                                <a href="#" id="whoSampledButton" class="disabled"><i class="flaticon-music-4 media-icon"></i>
-                                <h6>Samples and Covers</h6></a>
+                                <a href="#" id="whoSampledButton" class="disabled"><i
+                                        class="flaticon-music-4 media-icon"></i>
+                                    <h6>Samples and Covers</h6></a>
+                            </div>
+                        </div>
+
+                        <!-- SONGFACTS -->
+                        <div class="row" id="songFactRow">
+                            <div class="col s12">
+                                <div class="card blue-grey darken-3">
+                                    <div class="card-content white-text">
+                                        <span class="card-title">Song fact</span>
+
+                                        <p id="songFactText">This is the first single by British alternative rock band
+                                            White Lies, from their sophomore album Ritual. The song received its first
+                                            airplay on Zane Lowe's BBC Radio 1 show on November 16, 2010. It was
+                                            officially released in the U.K. on January 3, 2011 and as a download in
+                                            North America on November 22, 2010</p>
+                                    </div>
+                                    <div class="card-action">
+                                        <a href="#" id="songFactURL">More facts</a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
+
                 </section>
 
                 <section id="userLinkedContentSection">
@@ -310,7 +346,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="parallax"><img src="album.jpg" alt="Unsplashed background img 3"></div>
+                        <div class="parallax"><img src="album.jpg" alt="album art" class="albumArtIMG"></div>
                     </div>
                     <div class="container section" id="userLinkedContent">
                         <div class="row content-filters">
@@ -444,7 +480,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="parallax"><img src="artist.jpg" alt="Unsplashed background img 3"></div>
+                        <div class="parallax"><img src="album.jpg" alt="album art" class="albumArtIMG"></div>
                     </div>
 
                     <div class="container" id="reviews-content">
@@ -553,12 +589,14 @@
                             </div>
                         </div>
                     </div>
-            </div>
-            <div id="artistContent">
-                ARTIST ARTIST ARTIST CONTENT
+                </section>
+                <div id="artistContent">
+                    ARTIST ARTIST ARTIST CONTENT
+                </div>
             </div>
         </div>
     </section>
+
 
 </div>
 
@@ -616,10 +654,8 @@
 <!--    IMVDB MODAL     -->
 
 <div id="IMVDBModal" class="modal blue-grey darken-4 modal-imvdb">
-        <div class="imvdb-embed" data-embed-type="video" data-id="263039060632" data-include-credits="y"></div>
+    <div class="imvdb-embed" data-embed-type="video" data-id="263039060632" data-include-credits="y"></div>
 </div>
-
-
 
 
 </div>
@@ -647,6 +683,15 @@
     $(document).ready(function () {
         $('.materialboxed').materialbox();
 
+        var albumArtURL = "album.jpg";
+        var artistPhotoURL = "artist.jpg";
+
+
+        // INITIALISE PARALLAX IMAGES
+        function initialiseParallaxImages(){
+            $('.albumArtIMG').attr("src",albumArtURL);
+            $('.artistPhotoIMG').attr("src",artistPhotoURL);
+        }
 
         var artistColor = "red darken-4";
         var artistColorHex = "#B71C1C";
@@ -927,12 +972,12 @@
 
 
         /*=================MEDIA LINKS===============================*/
-        $('#youtubeButton').click(function(e){
+        $('#youtubeButton').click(function (e) {
             e.preventDefault();    //stop hash from positioning the view to the top
             $('#YouTubeVideoModal').openModal();
         });
 
-        $('#imvdbVidButton').click(function(e){
+        $('#imvdbVidButton').click(function (e) {
             e.preventDefault();    //stop hash from positioning the view to the top
             $('#IMVDBModal').openModal();
         });
