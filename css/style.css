@@ -311,7 +311,6 @@ textarea.materialize-textarea:focus:not([readonly]) + label {
 
 .media-icon:before{
   font-size:100px !important;
-  padding-right:20px;
 }
 
 a{
@@ -349,4 +348,48 @@ a.disabled{
 .similarArtist{
   display:inline-block;
 }
+
+
+[class^="flaticon-"]:before, [class*=" flaticon-"]:before, [class^="flaticon-"]:after, [class*=" flaticon-"]:after {
+  margin-left:0 !important;
+}
+
+.link-icon:before{
+  font-size:30px !important;
+}
+.link-text{
+  font-size:13px;
+}
+
+.link-img{
+  width:30px;
+  height:30px;
+}
+
+.link-icon{
+  display:block !important;
+}
+
+.artistCircle{
+  height:120px;
+  width:120px;
+  margin:auto;
+}
+
+.onTour.active{
+  background-color: #bf360c !important;
+  color:white !important;
+  transition:background-color 1s ,color 1s;
+}
+
+#onTour{
+  background-color: #37474f;
+  border-radius:5px;
+  color:#9e9e9e;
+  transition:background-color 1s ,color 1s;
+}
+
+
+
+
 

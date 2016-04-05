@@ -1,6 +1,6 @@
 	/*
   	Flaticon icon font: Flaticon
-  	Creation date: 31/03/2016 00:52
+  	Creation date: 04/04/2016 18:49
   	*/
 
 @font-face {
@@ -26,19 +26,34 @@
   font-family: Flaticon;
         font-size: 20px;
 font-style: normal;
-margin-left: 20px;
 }
 
-.flaticon-black:before { content: "\f100"; }
-.flaticon-happy:before { content: "\f101"; }
-.flaticon-multimedia:before { content: "\f102"; }
-.flaticon-music:before { content: "\f103"; }
-.flaticon-music-1:before { content: "\f104"; }
-.flaticon-music-2:before { content: "\f105"; }
-.flaticon-music-3:before { content: "\f106"; }
-.flaticon-music-4:before { content: "\f107"; }
-.flaticon-party:before { content: "\f108"; }
-.flaticon-power:before { content: "\f109"; }
-.flaticon-sound:before { content: "\f10a"; }
-.flaticon-time:before { content: "\f10b"; }
-.flaticon-video:before { content: "\f10c"; }
+.flaticon-arrow:before { content: "\f100"; }
+.flaticon-black:before { content: "\f101"; }
+.flaticon-circle:before { content: "\f102"; }
+.flaticon-happy:before { content: "\f103"; }
+.flaticon-home:before { content: "\f104"; }
+.flaticon-location:before { content: "\f105"; }
+.flaticon-medical:before { content: "\f106"; }
+.flaticon-multimedia:before { content: "\f107"; }
+.flaticon-music:before { content: "\f108"; }
+.flaticon-music-1:before { content: "\f109"; }
+.flaticon-music-2:before { content: "\f10a"; }
+.flaticon-music-3:before { content: "\f10b"; }
+.flaticon-music-4:before { content: "\f10c"; }
+.flaticon-music-5:before { content: "\f10d"; }
+.flaticon-nature:before { content: "\f10e"; }
+.flaticon-party:before { content: "\f10f"; }
+.flaticon-people:before { content: "\f110"; }
+.flaticon-people-1:before { content: "\f111"; }
+.flaticon-power:before { content: "\f112"; }
+.flaticon-sign:before { content: "\f113"; }
+.flaticon-social:before { content: "\f114"; }
+.flaticon-social-1:before { content: "\f115"; }
+.flaticon-social-2:before { content: "\f116"; }
+.flaticon-social-3:before { content: "\f117"; }
+.flaticon-sound:before { content: "\f118"; }
+.flaticon-technology:before { content: "\f119"; }
+.flaticon-time:before { content: "\f11a"; }
+.flaticon-time-1:before { content: "\f11b"; }
+.flaticon-video:before { content: "\f11c"; }

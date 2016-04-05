@@ -2,9 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="57aa088a-fde4-4114-8b0a-203cd5101ec3" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/musicbrainz.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/hover.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/numbro.js" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/my-icons-collection-04c939056beb4d62c5c2cfbfa45096a0.zip" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/my-icons-collection-2d1c52bed1e7fddc0799ca8b1b59ff5d.zip" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/flaticon/Flaticon.eot" afterPath="$PROJECT_DIR$/css/flaticon/Flaticon.eot" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/flaticon/Flaticon.ttf" afterPath="$PROJECT_DIR$/css/flaticon/Flaticon.ttf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/flaticon/Flaticon.woff" afterPath="$PROJECT_DIR$/css/flaticon/Flaticon.woff" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/icons/songdata.zip" afterPath="$PROJECT_DIR$/icons/songdata.zip" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/parallax-template.iml" afterPath="$PROJECT_DIR$/.idea/parallax-template.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/flaticon/Flaticon.svg" afterPath="$PROJECT_DIR$/css/flaticon/Flaticon.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/flaticon/_flaticon.scss" afterPath="$PROJECT_DIR$/css/flaticon/_flaticon.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/flaticon/flaticon.css" afterPath="$PROJECT_DIR$/css/flaticon/flaticon.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/flaticon/flaticon.html" afterPath="$PROJECT_DIR$/css/flaticon/flaticon.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/css/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/musicbrainz.js" afterPath="$PROJECT_DIR$/js/musicbrainz.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/songprofileConcept.html" afterPath="$PROJECT_DIR$/songprofileConcept.html" />
     </list>
     <ignored path="parallax-template.iws" />
@@ -27,50 +41,59 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
-      <file leaf-file-name="materialize.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/css/materialize.css">
+      <file leaf-file-name="songprofileConcept.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/songprofileConcept.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.320513">
-              <caret line="2306" column="61" selection-start-line="2306" selection-start-column="54" selection-end-line="2306" selection-end-column="61" />
+            <state vertical-scroll-proportion="0.5761448">
+              <caret line="1013" column="0" selection-start-line="1013" selection-start-column="0" selection-end-line="1013" selection-end-column="0" />
+              <folding>
+                <element signature="n#style#0;n#div#1;n#div#3;n#div#0;n#div#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="e#56779#56992#0" expanded="false" />
+                <element signature="e#57078#57238#0" expanded="false" />
+                <element signature="e#57379#57516#0" expanded="false" />
+                <element signature="e#57624#57934#0" expanded="false" />
+                <element signature="e#58778#59194#0" expanded="false" />
+                <element signature="e#59299#59712#0" expanded="false" />
+                <element signature="e#63341#63789#0" expanded="false" />
+                <element signature="e#63856#64284#0" expanded="false" />
+                <element signature="e#64363#64821#0" expanded="false" />
+                <element signature="e#64890#65323#0" expanded="false" />
+                <element signature="e#66294#66746#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="h2.js" pinned="false" current-in-tab="false">
+        <entry file="mock://chrome-extension://bmnlcjabgnpnenekpadlanbbkooimhnj/h2.js">
+          <provider selected="true" editor-type-id="vmFileEditor">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="jquery-2.2.2.min.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/jquery-2.2.2.min.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.625">
+              <caret line="1" column="397" selection-start-line="1" selection-start-column="397" selection-end-line="1" selection-end-column="397" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="materialize.min.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/materialize.min.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
-            </state>
+      <file leaf-file-name="www-embed-player.js" pinned="false" current-in-tab="false">
+        <entry file="https://s.ytimg.com/yts/jsbin/www-embed-player-vflN7TBRz/www-embed-player.js">
+          <provider selected="true" editor-type-id="httpFileEditor">
+            <state />
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="materialize.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/materialize.js">
+      <file leaf-file-name="hover.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/css/hover.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="2640" column="34" selection-start-line="2640" selection-start-column="34" selection-end-line="2640" selection-end-column="34" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-                <marker date="1459004924716" expanded="true" signature="275454:275483" placeholder="..." />
-                <marker date="1459004924716" expanded="true" signature="275762:275772" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="songprofileConcept.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/songprofileConcept.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.19261637">
-              <caret line="689" column="84" selection-start-line="689" selection-start-column="84" selection-end-line="689" selection-end-column="84" />
-              <folding>
-                <element signature="n#style#0;n#div#1;n#div#3;n#div#0;n#div#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
+            <state vertical-scroll-proportion="9.807693">
+              <caret line="215" column="44" selection-start-line="215" selection-start-column="44" selection-end-line="215" selection-end-column="44" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -79,20 +102,8 @@
         <entry file="file://$PROJECT_DIR$/js/musicbrainz.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="29" column="52" selection-start-line="29" selection-start-column="52" selection-end-line="29" selection-end-column="52" />
+              <caret line="37" column="49" selection-start-line="37" selection-start-column="49" selection-end-line="37" selection-end-column="49" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="progressbar.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/progressbar.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="4" column="357" selection-start-line="4" selection-start-column="357" selection-end-line="4" selection-end-column="357" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -100,7 +111,7 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.679487">
+            <state vertical-scroll-proportion="0.0">
               <caret line="263" column="30" selection-start-line="263" selection-start-column="30" selection-end-line="263" selection-end-column="30" />
               <folding>
                 <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -117,31 +128,33 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="bars-square.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/css/bars-square.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="8" column="16" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="jquery.barrating.min.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/jquery.barrating.min.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="151" column="32" selection-start-line="151" selection-start-column="31" selection-end-line="151" selection-end-column="32" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-9.5">
-              <caret line="349" column="23" selection-start-line="349" selection-start-column="23" selection-end-line="349" selection-end-column="23" />
+            <state vertical-scroll-proportion="-10.372881">
+              <caret line="382" column="1" selection-start-line="382" selection-start-column="1" selection-end-line="382" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="numbro.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/numbro.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-3.3863637">
+              <caret line="669" column="4" selection-start-line="669" selection-start-column="4" selection-end-line="669" selection-end-column="4" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="flaticon.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/css/flaticon/flaticon.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-3.525641">
+              <caret line="11" column="52" selection-start-line="11" selection-start-column="52" selection-end-line="11" selection-end-column="52" />
               <folding />
             </state>
           </provider>
@@ -171,8 +184,13 @@
         <option value="$PROJECT_DIR$/js/materialize.js" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/js/progressbar.js" />
+        <option value="$PROJECT_DIR$/css/flaticon/flaticon.css" />
         <option value="$PROJECT_DIR$/js/musicbrainz.js" />
         <option value="$PROJECT_DIR$/css/style.css" />
+        <option value="$PROJECT_DIR$/js/numeral.js" />
+        <option value="vm:589" />
+        <option value="s.ytimg.com/yts/jsbin/www-embed-player-vflN7TBRz/www-embed-player.js" />
+        <option value="chrome-extension://bmnlcjabgnpnenekpadlanbbkooimhnj/h2.js" />
         <option value="$PROJECT_DIR$/songprofileConcept.html" />
       </list>
     </option>
@@ -187,10 +205,10 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="730" />
-    <option name="y" value="-1586" />
-    <option name="width" value="2542" />
-    <option name="height" value="1552" />
+    <option name="x" value="-11" />
+    <option name="y" value="-1631" />
+    <option name="width" value="2902" />
+    <option name="height" value="1597" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -217,6 +235,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -263,17 +283,33 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="parallax-template" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="parallax-template" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="flaticon" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../spotify_webapi" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../metacritic" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
   <component name="RecentsManager">
@@ -340,26 +376,26 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="730" y="-1586" width="2542" height="1552" extended-state="6" />
+    <frame x="-11" y="-1631" width="2902" height="1597" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2216789" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22103767" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19396903" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3084577" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25035563" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25055107" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -375,69 +411,18 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="1" />
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/songprofileConcept.html</url>
+          <line>1372</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="6" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/js/materialize.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="2640" column="34" selection-start-line="2640" selection-start-column="34" selection-end-line="2640" selection-end-column="34" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <marker date="1459004924716" expanded="true" signature="275454:275483" placeholder="..." />
-            <marker date="1459004924716" expanded="true" signature="275762:275772" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/songprofileConcept.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="617" column="66" selection-start-line="617" selection-start-column="66" selection-end-line="617" selection-end-column="66" />
-          <folding>
-            <element signature="n#style#0;n#div#1;n#div#3;n#div#0;n#div#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/progressbar.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="114" column="48" selection-start-line="114" selection-start-column="48" selection-end-line="114" selection-end-column="48" />
-          <folding>
-            <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#div#0;n#div#1;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#2;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#div#0;n#div#2;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#1;n#div#0;n#div#2;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#1;n#div#6;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/css-stars.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="5" column="26" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/bars-square.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -459,7 +444,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="n#!!doc" expanded="true" />
+            <element signature="n#!!doc" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -482,6 +467,17 @@
           <caret line="167" column="50" selection-start-line="167" selection-start-column="50" selection-end-line="167" selection-end-column="50" />
           <folding>
             <element signature="n#style#0;n#div#1;n#div#3;n#div#0;n#div#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#56779#56992#0" expanded="false" />
+            <element signature="e#57078#57238#0" expanded="false" />
+            <element signature="e#57379#57516#0" expanded="false" />
+            <element signature="e#57624#57934#0" expanded="false" />
+            <element signature="e#58778#59194#0" expanded="false" />
+            <element signature="e#59299#59712#0" expanded="false" />
+            <element signature="e#63341#63789#0" expanded="false" />
+            <element signature="e#63856#64284#0" expanded="false" />
+            <element signature="e#64363#64821#0" expanded="false" />
+            <element signature="e#64890#65323#0" expanded="false" />
+            <element signature="e#66294#66746#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -491,7 +487,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
           <folding>
-            <element signature="n#!!doc" expanded="true" />
+            <element signature="n#!!doc" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -559,7 +555,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="n#!!doc" expanded="true" />
+            <element signature="n#!!doc" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -582,6 +578,17 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="n#style#0;n#div#1;n#div#3;n#div#0;n#div#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#56779#56992#0" expanded="false" />
+            <element signature="e#57078#57238#0" expanded="false" />
+            <element signature="e#57379#57516#0" expanded="false" />
+            <element signature="e#57624#57934#0" expanded="false" />
+            <element signature="e#58778#59194#0" expanded="false" />
+            <element signature="e#59299#59712#0" expanded="false" />
+            <element signature="e#63341#63789#0" expanded="false" />
+            <element signature="e#63856#64284#0" expanded="false" />
+            <element signature="e#64363#64821#0" expanded="false" />
+            <element signature="e#64890#65323#0" expanded="false" />
+            <element signature="e#66294#66746#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -649,7 +656,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="n#!!doc" expanded="true" />
+            <element signature="n#!!doc" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -672,6 +679,17 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="n#style#0;n#div#1;n#div#3;n#div#0;n#div#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#56779#56992#0" expanded="false" />
+            <element signature="e#57078#57238#0" expanded="false" />
+            <element signature="e#57379#57516#0" expanded="false" />
+            <element signature="e#57624#57934#0" expanded="false" />
+            <element signature="e#58778#59194#0" expanded="false" />
+            <element signature="e#59299#59712#0" expanded="false" />
+            <element signature="e#63341#63789#0" expanded="false" />
+            <element signature="e#63856#64284#0" expanded="false" />
+            <element signature="e#64363#64821#0" expanded="false" />
+            <element signature="e#64890#65323#0" expanded="false" />
+            <element signature="e#66294#66746#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -752,6 +770,17 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="n#style#0;n#div#1;n#div#3;n#div#0;n#div#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#56779#56992#0" expanded="false" />
+            <element signature="e#57078#57238#0" expanded="false" />
+            <element signature="e#57379#57516#0" expanded="false" />
+            <element signature="e#57624#57934#0" expanded="false" />
+            <element signature="e#58778#59194#0" expanded="false" />
+            <element signature="e#59299#59712#0" expanded="false" />
+            <element signature="e#63341#63789#0" expanded="false" />
+            <element signature="e#63856#64284#0" expanded="false" />
+            <element signature="e#64363#64821#0" expanded="false" />
+            <element signature="e#64890#65323#0" expanded="false" />
+            <element signature="e#66294#66746#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -808,7 +837,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/css/materialize.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.320513">
+        <state vertical-scroll-proportion="0.0">
           <caret line="2306" column="61" selection-start-line="2306" selection-start-column="54" selection-end-line="2306" selection-end-column="61" />
           <folding />
         </state>
@@ -827,7 +856,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="n#!!doc" expanded="true" />
+            <element signature="n#!!doc" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -837,7 +866,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="4" column="357" selection-start-line="4" selection-start-column="357" selection-end-line="4" selection-end-column="357" />
           <folding>
-            <element signature="n#!!doc" expanded="true" />
+            <element signature="n#!!doc" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -856,7 +885,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.679487">
+        <state vertical-scroll-proportion="0.0">
           <caret line="263" column="30" selection-start-line="263" selection-start-column="30" selection-end-line="263" selection-end-column="30" />
           <folding>
             <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -875,25 +904,75 @@
     <entry file="file://$PROJECT_DIR$/js/musicbrainz.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="29" column="52" selection-start-line="29" selection-start-column="52" selection-end-line="29" selection-end-column="52" />
+          <caret line="37" column="49" selection-start-line="37" selection-start-column="49" selection-end-line="37" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/hover.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="9.807693">
+          <caret line="215" column="44" selection-start-line="215" selection-start-column="44" selection-end-line="215" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/flaticon/flaticon.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.525641">
+          <caret line="11" column="52" selection-start-line="11" selection-start-column="52" selection-end-line="11" selection-end-column="52" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.5">
-          <caret line="349" column="23" selection-start-line="349" selection-start-column="23" selection-end-line="349" selection-end-column="23" />
+        <state vertical-scroll-proportion="-10.372881">
+          <caret line="382" column="1" selection-start-line="382" selection-start-column="1" selection-end-line="382" selection-end-column="1" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/jquery-2.2.2.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.625">
+          <caret line="1" column="397" selection-start-line="1" selection-start-column="397" selection-end-line="1" selection-end-column="397" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="https://s.ytimg.com/yts/jsbin/www-embed-player-vflN7TBRz/www-embed-player.js">
+      <provider selected="true" editor-type-id="httpFileEditor">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/numbro.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.3863637">
+          <caret line="669" column="4" selection-start-line="669" selection-start-column="4" selection-end-line="669" selection-end-column="4" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/songprofileConcept.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.19261637">
-          <caret line="689" column="84" selection-start-line="689" selection-start-column="84" selection-end-line="689" selection-end-column="84" />
+        <state vertical-scroll-proportion="0.5761448">
+          <caret line="1013" column="0" selection-start-line="1013" selection-start-column="0" selection-end-line="1013" selection-end-column="0" />
           <folding>
             <element signature="n#style#0;n#div#1;n#div#3;n#div#0;n#div#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#56779#56992#0" expanded="false" />
+            <element signature="e#57078#57238#0" expanded="false" />
+            <element signature="e#57379#57516#0" expanded="false" />
+            <element signature="e#57624#57934#0" expanded="false" />
+            <element signature="e#58778#59194#0" expanded="false" />
+            <element signature="e#59299#59712#0" expanded="false" />
+            <element signature="e#63341#63789#0" expanded="false" />
+            <element signature="e#63856#64284#0" expanded="false" />
+            <element signature="e#64363#64821#0" expanded="false" />
+            <element signature="e#64890#65323#0" expanded="false" />
+            <element signature="e#66294#66746#0" expanded="false" />
           </folding>
         </state>
       </provider>

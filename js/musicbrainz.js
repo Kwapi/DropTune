@@ -22,21 +22,39 @@ function explodeMusicbrainzLinks(relations){
 
     //REMEMBER TO REMOVE ACTIVE AND ADD DISABLED TO ALL LINKS FIRST
 
+    var found = false;
     for(var i=0; i<relations.length; i++){
         var relation = relations[i];
+        var found = false;
+        var url = relations[i].url.resource;
         switch(relation.type){
             case "soundcloud":
                 $("#soundcloud").addClass("active");
-                $("#soundcloud").attr("href",relations[i].url.resource);
+                $("#soundcloud").attr("href",url);
+                found=true;
                 break;
             case "wikipedia":
                 $("#wikipedia").addClass("active");
-                $("#wikipedia").attr("href",relations[i].url.resource);
+                $("#wikipedia").attr("href",url);
+                found=true;
                 break;
             case "youtube":
                 $("#youtube").addClass("active");
-                $("#youtube").attr("href",relations[i].url.resource);
+                $("#youtube").attr("href",url);
+                found=true;
                 break;
+        }
+
+        if(!found){
+            if(url.indexOf("instagram")){
+                $("#instagram").addClass("active");
+                $("#instagram").attr("href",url);
+            }else if(url.indexOf("rateyourmusic")){
+                if(url.indexOf("rateyourmusic")){
+                    $("#rateyourmusic").addClass("active");
+                    $("#rateyourmusic").attr("href",url);
+                }
+            }
         }
     }
 }

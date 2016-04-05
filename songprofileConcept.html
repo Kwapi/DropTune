@@ -5,6 +5,8 @@
     <!-- ANDROID CHROME STATUS BAR COLOUR -->
     <meta name="theme-color" content="#263238">
 
+    <!-- OPEN LINKS IN NEW TAB -->
+    <base target="_blank">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
     <title>SONG PROFILE CONCEPT</title>
@@ -21,6 +23,7 @@
 
     <!-- FREEPIK ICONS -->
     <link rel="stylesheet" href="css/flaticon/flaticon.css" type="text/css">
+
 
 </head>
 <body class="blue-grey darken-3 white-text">
@@ -601,62 +604,102 @@
                 <section id="artistDashboardSection">
                     <div id="artistDashboard" class="container">
                         <div class="row">
-                            <div class="card-panel blue-grey darken-4 white-text">
+                            <div id="artistCard" class="card-panel blue-grey darken-4 white-text hoverable">
 
+                                <div class="row">
+                                    <!-- FAMILIARITY -->
+                                    <div class="col s3">
+                                        <div class="artistCircle" id="artistFamiliarityCircle">
 
-                                <!-- ON TOUR -->
-                                <div class="col s12 center-align">
-                                    <span id="onTour">ON TOUR</span>
-                                </div>
-
-                                <!-- FAMILIARITY -->
-                                <div class="col s3" id="artistFamiliarity">
-                                    50
-                                </div>
-                                <!-- MIDDLE BAR -->
-                                <div class="col s6">
-                                    <!-- YEARS ACTIVE -->
-                                    <div class="col s12">
-                                        <i class="flaticon-video"></i>
-                                        <span id="yearsActive">YEARS ACTIVE</span>
+                                        </div>
                                     </div>
-                                    <!-- LOCATION -->
-                                    <div class="col s12">
-                                        <i class="flaticon-power"></i>
-                                        <span id="location">LOCATION</span>
+                                    <!-- MIDDLE BAR -->
+
+                                    <!-- ON TOUR -->
+                                    <div class="col s6">
+                                        <div class="row">
+                                            <div class="col s12 center-align hvr-shutter-out-horizontal" id="onTour">
+                                                NOT ON TOUR
+                                            </div>
+                                        </div>
+                                        <!-- YEARS ACTIVE -->
+                                        <div class="col s12">
+                                            <div class="col s4">
+                                                <i class="flaticon-time-1"></i>
+                                            </div>
+                                            <div class="col s8 center-align" id="yearsActive">
+                                                2014-
+                                            </div>
+                                        </div>
+                                        <!-- LOCATION -->
+                                        <div class="col s12">
+                                            <div class="col s4">
+                                                <i class="flaticon-location"></i>
+                                            </div>
+                                            <div class="col s8 center-align" id="location">
+                                                LOCATION
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- HOTNESS -->
+                                    <div class="col s3">
+                                        <div class="artistCircle" id="artistHotnessCircle">
+                                        </div>
                                     </div>
                                 </div>
-                                <!-- HOTNESS -->
-                                <div class="col s3" id="artistHotness">
-                                    80
-                                </div>
+                                <div class="row">
 
+                                    <!-- POPULARITY -->
 
-                                <!-- POPULARITY -->
-                                <div class="col s8" id="artistPopularity">
-                                    POPULARITY BAR
-                                </div>
-                                <!-- LISTENERS -->
-                                <div class="col s2">
-                                    LISTENERS
-                                </div>
-                                <!-- PLAYCOUNT -->
-                                <div class="col s2">
-                                    PLAYCOUNT
-                                </div>
+                                    <div class="col s6 tooltipped valign-wrapper" id="artistPopularity"
+                                         data-position="left"
+                                         data-delay="50" data-tooltip="Popularity">
+                                        <div class="col s2">
+                                            <i class="flaticon-black"></i>
+                                        </div>
+                                        <div id="artistPopularityBar" class="col s10">
+                                        </div>
+                                    </div>
 
-                                <!-- BIOGRAPHY HEADER -->
-                                <div class="col s12">
-                                    BIOGRAPHY
+                                    <!-- LISTENERS -->
+                                    <div class="col s3 tooltipped" data-position="bottom" data-delay="50"
+                                         data-tooltip="Listeners">
+                                        <div class="col s4">
+                                            <i class="flaticon-people-1"></i>
+                                        </div>
+                                        <div class="col s8 center-align" id="listeners">
+                                            1232415
+                                        </div>
+
+                                    </div>
+                                    <!-- PLAYCOUNT -->
+                                    <div class="col s3 tooltipped" data-position="right" data-delay="50"
+                                         data-tooltip="Playcount">
+                                        <div class="col s4">
+                                            <i class="flaticon-arrow"></i>
+                                        </div>
+                                        <div class="col s8 center-align" id="playcount">
+                                            1232415342
+                                        </div>
+                                    </div>
                                 </div>
                                 <!-- BIOGRAPHY CONTENT -->
                                 <div class="col s12">
-                                    <p id="biography">There are at least three artists who have used this name 1. A
-                                        popular indie band from London, England 2. A singer from Belgium 3. A rock band
-                                        from Devon, England 1) A three-piece London indie band formed from the ashes of
-                                        Fear Of Flying in late 2007. The line-up consists of singer/guitarist Harry
-                                        McVeigh, bassist/lyricist Charles Cave and drummer Jack Brown. Unfinished
-                                        Business (released April 29th 2007) was their first single, released on Jack
+                                    <p id="biography">There are at least three artists who have used this name
+                                        1. A
+                                        popular indie band from London, England 2. A singer from Belgium 3. A
+                                        rock
+                                        band
+                                        from Devon, England 1) A three-piece London indie band formed from the
+                                        ashes
+                                        of
+                                        Fear Of Flying in late 2007. The line-up consists of singer/guitarist
+                                        Harry
+                                        McVeigh, bassist/lyricist Charles Cave and drummer Jack Brown.
+                                        Unfinished
+                                        Business (released April 29th 2007) was their first single, released on
+                                        Jack
                                         Brown's label Chess Club Records. Read more on Last.fm</p>
                                 </div>
                                 <!-- TAGS -->
@@ -664,19 +707,19 @@
                                     TAGS
                                 </div>
                                 <div class="col s12" id="tags">
-                                    <div class="chip deep-orange darken-4">
+                                    <div class="chip deep-orange darken-4 hoverable">
                                         <a href="#" class="tag">Funk rock</a>
                                     </div>
-                                    <div class="chip deep-orange darken-4">
+                                    <div class="chip deep-orange darken-4 hoverable">
                                         <a href="#" class="tag">Elevator music</a>
                                     </div>
-                                    <div class="chip deep-orange darken-4">
+                                    <div class="chip deep-orange darken-4 hoverable">
                                         <a href="#" class="tag">Christmas</a>
                                     </div>
-                                    <div class="chip deep-orange darken-4">
+                                    <div class="chip deep-orange darken-4 hoverable">
                                         <a href="#" class="tag">Doom jazz</a>
                                     </div>
-                                    <div class="chip deep-orange darken-4">
+                                    <div class="chip deep-orange darken-4 hoverable">
                                         <a href="#" class="tag">Prog-country</a>
                                     </div>
                                 </div>
@@ -687,7 +730,7 @@
                                 <div class="col s12" id="similarArtists">
                                     <div class="similarArtist">
                                         <a href="?song=5ZKMPRDHc7qElVJFh3uRqB" class="similarArtistURL">
-                                            <div class="chip red darken-4 white-text">
+                                            <div class="chip red darken-4 white-text hoverable">
                                                 <img src="familiarArtist1.jpg" class="similarArtistIMG">
                                                 <span class="similarArtistName">Jane Doe</span>
                                             </div>
@@ -695,7 +738,7 @@
                                     </div>
                                     <div class="similarArtist">
                                         <a href="?song=5ZKMPRDHc7qElVJFh3uRqB" class="similarArtistURL">
-                                            <div class="chip red darken-4 white-text">
+                                            <div class="chip red darken-4 white-text hoverable">
                                                 <img src="familiarArtist1.jpg" class="similarArtistIMG">
                                                 <span class="similarArtistName">Yass Band</span>
                                             </div>
@@ -703,7 +746,7 @@
                                     </div>
                                     <div class="similarArtist">
                                         <a href="?song=5ZKMPRDHc7qElVJFh3uRqB" class="similarArtistURL">
-                                            <div class="chip red darken-4 white-text">
+                                            <div class="chip red darken-4 white-text hoverable ">
                                                 <img src="familiarArtist1.jpg" class="similarArtistIMG">
                                                 <span class="similarArtistName">Jiggly Bum</span>
                                             </div>
@@ -711,7 +754,7 @@
                                     </div>
                                     <div class="similarArtist">
                                         <a href="?song=5ZKMPRDHc7qElVJFh3uRqB" class="similarArtistURL">
-                                            <div class="chip red darken-4 white-text">
+                                            <div class="chip red darken-4 white-text hoverable">
                                                 <img src="familiarArtist1.jpg" class="similarArtistIMG">
                                                 <span class="similarArtistName">Your mom</span>
                                             </div>
@@ -721,47 +764,83 @@
 
                                 <!-- LINKS -->
                                 <div class="row" id="artistLinksRow">
+                                    <div class="col s2 center-align">
+                                        <a href="#" id="official" class="active">
+                                            <i class="flaticon-home link-icon"></i>
+                                            <span class="link-name">Official</span>
+                                        </a>
+                                    </div>
+                                    <div class="col s2 center-align">
+                                        <a href="#" id="facebook" class="active">
+                                            <i class="flaticon-social-2 link-icon"></i>
+                                            <span class="link-name">Facebook</span>
+                                        </a>
+                                    </div>
+                                    <div class="col s2 center-align">
+                                        <a href="#" id="instagram" class="active">
+                                            <i class="flaticon-social-3 link-icon"></i>
+                                            <span class="link-name">Instagram</span>
+                                        </a>
+                                    </div>
+                                    <div class="col s2 center-align">
+                                        <a href="#" id="twitter" class="active">
+                                            <i class="flaticon-social-1 link-icon"></i>
+                                            <span class="link-name">Twitter</span>
+                                        </a>
+                                    </div>
+                                    <div class="col s2 center-align">
+                                        <a href="#" id="youtube" class="active">
+                                            <i class="flaticon-video link-icon"></i>
+                                            <span class="link-name">YouTube</span>
+                                        </a>
+                                    </div>
+                                    <div class="col s2 center-align">
+                                        <a href="#" id="soundcloud" class="active">
+                                            <i class="flaticon-technology link-icon"></i>
+                                            <span class="link-name">Soundcloud</span>
+                                        </a>
+                                    </div>
+                                    <div class="col s2 center-align">
+                                        <a href="#" id="wikipedia" class="active">
+                                            <i class="flaticon-sign link-icon"></i>
+                                            <span class="link-name">Wikipedia</span>
+                                        </a>
+                                    </div>
 
                                     <div class="col s2 center-align">
-                                        <a href="#" id="soundcloud" class="active"><i
-                                                class="flaticon-video"></i><br>SOUNDCLOUD</a>
-                                    </div>
-                                    <div class="col s2 center-align">
-                                        <a href="#" id="wikipedia" class="active"><i
-                                                class="flaticon-video"></i><br>WIKIPEDIA</a>
-                                    </div>
-                                    <div class="col s2 center-align">
-                                        <a href="#" id="youtube" class="active"><i
-                                                class="flaticon-video"></i><br>YOUTUBE</a>
-                                    </div>
-                                    <div class="col s2 center-align">
                                         <a href="#" id="lastFm" class="active">
-                                            <i class="flaticon-video"></i><br>SOUNDCLOUD</a>
+                                            <i class="flaticon-music-5 link-icon"></i>
+                                            <span class="link-name">Last.fm</span>
+                                        </a>
                                     </div>
                                     <div class="col s2 center-align">
                                         <a href="#" id="musicbrainz" class="active">
-                                            <i class="flaticon-video"></i><br>WIKIPEDIA</a>
+                                            <i class="flaticon-medical link-icon"></i>
+                                            <span class="link-name">MusicBrainz</span>
+                                        </a>
                                     </div>
+
                                     <div class="col s2 center-align">
-                                        <a href="#" id="official" class="active"><i
-                                                class="flaticon-video"></i><br>OFFICIAL</a>
+                                        <a href="#" id="whosampled" class="active">
+                                            <i class="flaticon-music-4 link-icon"></i>
+                                            <span class="link-name">Whosampled</span>
+                                        </a>
                                     </div>
+
                                     <div class="col s2 center-align">
-                                        <a href="#" id="whosampled" class="active"><i
-                                                class="flaticon-video"></i><br>WHOSAMPLED</a>
+                                        <a href="#" id="myspace" class="active">
+                                            <i class="flaticon-social link-icon"></i>
+                                            <span class="link-name">MySpace</span>
+                                        </a>
                                     </div>
+
                                     <div class="col s2 center-align">
-                                        <a href="#" id="facebook" class="active"><i
-                                                class="flaticon-video"></i><br>FACEBOOK</a>
+                                        <a href="#" id="rateyourmusic" class="active">
+                                            <i class="flaticon-people link-icon"></i>
+                                            <span class="link-name">RateYourMusic</span>
+                                        </a>
                                     </div>
-                                    <div class="col s2 center-align">
-                                        <a href="#" id="myspace" class="active"><i
-                                                class="flaticon-video"></i><br>MYSPACE</a>
-                                    </div>
-                                    <div class="col s2 center-align">
-                                        <a href="#" id="twitter" class="active"><i
-                                                class="flaticon-video"></i><br>TWITTER</a>
-                                    </div>
+
                                 </div>
                             </div>
                         </div>
@@ -859,11 +938,16 @@
 <!--PROGRESS BAR -->
 <script src="js/progressbar.js"></script>
 
+<!-- NUMERAL JS -->
+<script src="js/numbro.js"></script>
+
 <!-- API SCRIPTS -->
 <script src="js/musicbrainz.js"></script>
 
+
 <!-- THIS PAGE SCRIPTS -->
 <script>
+
     $(document).ready(function () {
         $('.materialboxed').materialbox();
 
@@ -871,6 +955,16 @@
         // PHOTOS
         var albumArtURL = "album.jpg";
         var artistPhotoURL = "artist.jpg";
+
+
+        var songTitle = "What is Your Name";
+        var albumTitle = "Break the Bananas";
+        var artistName = "Happycopters";
+
+        var artistListeners = "121231";
+        var artistPlaycount = "34834293";
+
+        var onTour = true;
 
         // IDs
         var musicbrainzId = "5bdb38bd-5c5b-4d0f-8901-8bbe1d7062d8";
@@ -881,15 +975,71 @@
         // ARTIST   ->   LINKS   ->   SOUNDCLOUD,YT,WIKI
         getMusicbrainzLinks(musicbrainzId);
 
+        displaySongAlbumArtist(songTitle, albumTitle, artistName);
+
+        displayTour(onTour);
+
+        displayArtistListenersPlaycount(artistListeners, artistPlaycount);
+
+        initialiseParallaxImages(albumArtURL, artistPhotoURL);
+
 
         /*--------------END OF MAIN FLOW--------------------*/
 
 
+        /*----MAIN FLOW FUNCTIONS----*/
+
+        //  SONG/ARTIST PAGE CHANGE
+        function activateLink(element, color, colorHex) {
+            $(element).addClass("white-text");
+            $(element).parent().addClass(color);
+            $('#top-nav').addClass(color);
+            $('#sidenav').css("border-right-color", colorHex);
+        }
+
+        //  SONG/ARTIST PAGE CHANGE
+        function deactivateLink(element, color) {
+            $(element).removeClass("white-text");
+            $(element).parent().removeClass();
+            $('#top-nav').attr('class', 'top-nav');
+        }
+
+        //  set songTitle, albumTitle and artistName to corresponding classes
+        function displaySongAlbumArtist(song, album, artist) {
+
+            $('.songTitle').html(song);
+            $('.albumTitle').html(album);
+            $('.artistName').html(artist);
+        }
+
+        // set the onTour panel, initialise and show songkick events
+        function displayTour(onTour) {
+
+            if (onTour) {
+                $('#onTour').html("ON TOUR");
+                $('#onTour').addClass("onTour");
+
+                //initialise songkick
+
+            } else {
+                $('#onTour').html("NOT ON TOUR");
+                $('#onTour').removeClass("onTour");
+            }
+        }
+
+        function displayArtistListenersPlaycount(listeners, playcount) {
+            var listenersFormatted = numbro(listeners).format('0a');
+            var playcountFormatted = numbro(playcount).format('0a');
+            $('#listeners').html(listenersFormatted);
+            $('#playcount').html(playcountFormatted);
+        }
+
         // INITIALISE PARALLAX IMAGES
-        function initialiseParallaxImages() {
+        function initialiseParallaxImages(albumArtURL, artistPhotoURL) {
             $('.albumArtIMG').attr("src", albumArtURL);
             $('.artistPhotoIMG').attr("src", artistPhotoURL);
         }
+
 
         var artistColor = "red darken-4";
         var artistColorHex = "#B71C1C";
@@ -915,7 +1065,7 @@
 
             $('#topNavText').html(artistName);
 
-        })
+        });
 
         // CHANGE TO SONG INFO
         $('#songContentAnchor').click(function openSongContent(event) {
@@ -936,30 +1086,7 @@
             $('#topNavText').html(songTitle);
 
 
-        })
-
-        function activateLink(element, color, colorHex) {
-            $(element).addClass("white-text");
-            $(element).parent().addClass(color);
-            $('#top-nav').addClass(color);
-            $('#sidenav').css("border-right-color", colorHex);
-        }
-
-        function deactivateLink(element, color) {
-            $(element).removeClass("white-text");
-            $(element).parent().removeClass();
-            $('#top-nav').attr('class', 'top-nav');
-        }
-
-        function displaySongAlbumArtist() {
-            var songTitle = "Song Title";
-            var albumTitle = "Album Title";
-            var artistName = "Artist Name";
-
-            $('.songTitle').html(songTitle);
-            $('.albumTitle').html(albumTitle);
-            $('.artistName').html(artistName);
-        }
+        });
 
 
         //AVG RATING INITIALISE
@@ -1023,7 +1150,7 @@
         $('#avgSongRating').barrating('set', 5);
 
 
-        // CLICK WHOLE AVERAGE RATING DIV
+        // CLICK AVERAGE RATING -> SCROLL TO REVIEWS
         $('#avgSongRatingWrap, #average-rating-show-reviews').click(function () {
             $('#songContentAnchor').trigger("click");
 
@@ -1034,16 +1161,8 @@
         });
 
 
-        // CONTENT CARD BACKGROUND MOUSEOVER
-        $('.card-background').mouseover(function () {
-                    $(this).find('.ratings').show();
-                })
-                .mouseout(function () {
-                    $(this).find('.ratings').hide();
-                });
-
-        // REVIEW CARD BACKGROUND MOUSEOVER
-        $('.review-bg').mouseover(function () {
+        // CONTENT AND REVIEW CARD BACKGROUND MOUSEOVER -> REVEAL RATINGS
+        $('.card-background, .review-bg').mouseover(function () {
                     $(this).find('.ratings').show();
                 })
                 .mouseout(function () {
@@ -1055,11 +1174,8 @@
             Materialize.toast("Review added", 2000);
         });
 
-        $('#songContentAnchor').trigger("click"); // WHEN EVERYTHING LOADS START WITH SONG PAGE
-
 
         /*=================SONG STATS===============*/
-
         var songPopularity = 45;
         var songEnergy = 0.567;
         var songDanceability = 0.89;
@@ -1151,21 +1267,99 @@
             }
         });
 
-
         //  ANIMATE IN AND OUT
         $('#songStatsCard').mouseover(function () {
                     songPopularityBar.animate(songPopularity / 100);
                     songEnergyBar.animate(songEnergy);
                     songDanceabilityBar.animate(songDanceability);
                     songValenceBar.animate(songValence);
-
-
                 })
                 .mouseout(function () {
                     songPopularityBar.animate(0);
                     songEnergyBar.animate(0);
                     songDanceabilityBar.animate(0);
                     songValenceBar.animate(0);
+                });
+
+
+        /*=================ARTIST STATS==============================*/
+
+        var artistPopularity = 50;
+        var artistPopularityBar;
+        var artistFamiliarity = 0.67;
+        var artistFamiliarityCircle;
+        var artistHotness = 0.98;
+        var artistHotnessCircle;
+
+
+        artistPopularityBar = new ProgressBar.Line('#artistPopularityBar', {
+            color: songPopularityStartCol,
+            trailColor: trailColor,
+            trailWidth: 4,
+            strokeWidth: 4,
+            easing: 'easeIn',
+            duration: 500,
+
+            from: {color: songPopularityStartCol},
+            to: {color: songPopularityEndCol},
+
+            step: function (state, artistPopularityBar) {
+                artistPopularityBar.path.setAttribute('stroke', state.color);
+            }
+        });
+
+        artistFamiliarityCircle = new ProgressBar.Circle('#artistFamiliarityCircle', {
+            color: '#ffffff',
+            trailColor: trailColor,
+            trailWidth: 8,
+            strokeWidth: 8,
+            easing: 'easeIn',
+            duration: 500,
+
+            from: {color: songValenceStartCol},
+            to: {color: songValenceEndCol},
+            text: {
+                value: 'Familiarity',
+            },
+
+            step: function (state, artistFamiliarityCircle) {
+                artistFamiliarityCircle.path.setAttribute('stroke', state.color);
+            }
+        });
+
+        artistHotnessCircle = new ProgressBar.Circle('#artistHotnessCircle', {
+            color: '#ffffff',
+            trailColor: trailColor,
+            trailWidth: 8,
+            strokeWidth: 8,
+            easing: 'easeIn',
+            duration: 500,
+
+            from: {color: songEnergyStartCol},
+            to: {color: songEnergyEndCol},
+            text: {
+                value: 'Hotness',
+            },
+
+            step: function (state, artistHotnessCircle) {
+                artistHotnessCircle.path.setAttribute('stroke', state.color);
+            }
+        });
+
+
+        // animate all stats on artistCard mouseover/mouseout
+        $('#artistCard').mouseenter(function () {
+                    artistPopularityBar.animate(artistPopularity / 100);
+                    artistFamiliarityCircle.animate(artistFamiliarity);
+                    artistHotnessCircle.animate(artistHotness);
+                    $('#onTour').addClass("active");
+
+                })
+                .mouseleave(function () {
+                    artistPopularityBar.animate(0);
+                    artistFamiliarityCircle.animate(0);
+                    artistHotnessCircle.animate(0);
+                    $('#onTour').removeClass("active");
                 });
 
 
@@ -1185,8 +1379,12 @@
         $('.select-material').material_select();
 
 
-    })
-    ;
+    });
+
+    $(window).load(function () {
+        $('#songContentAnchor').trigger("click"); // WHEN EVERYTHING LOADS START WITH SONG PAGE
+        alert("finished loading");
+    });
 
 
 </script>
