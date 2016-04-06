@@ -278,7 +278,7 @@ textarea.materialize-textarea:focus:not([readonly]) + label {
 }
 
 .card-header-custom{
-  border: solid 2px #ff5722;
+  border: solid 4px #ff5722;
   margin-left: 2% !important;;
   margin-right: 2%;
 }
@@ -297,6 +297,10 @@ textarea.materialize-textarea:focus:not([readonly]) + label {
 
 .smaller{
   font-size:11px;
+}
+
+.bigger{
+  font-size:20px;
 }
 
 
@@ -322,6 +326,10 @@ a.active:hover{
   text-decoration: none;
   -webkit-tap-highlight-color: transparent;
   transition:color 0.25s;
+}
+#biography{
+  margin-left: 2% !important;
+  margin-right: 2%;
 }
 
 a.disabled{

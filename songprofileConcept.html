@@ -605,45 +605,56 @@
                     <div id="artistDashboard" class="container">
                         <div class="row">
                             <div id="artistCard" class="card-panel blue-grey darken-4 white-text hoverable">
-
+                                <div class="row valign-wrapper center-align">
+                                    <div class="col s12 card-header-custom">
+                                        <h5 class="deep-orange-text light">ARTIST SUMMARY</h5>
+                                    </div>
+                                </div>
                                 <div class="row">
                                     <!-- FAMILIARITY -->
-                                    <div class="col s3">
+                                    <div class="col s3 tooltipped"   data-position="left"
+                                         data-delay="50" data-tooltip="How well known this artist is">
                                         <div class="artistCircle" id="artistFamiliarityCircle">
-
                                         </div>
                                     </div>
                                     <!-- MIDDLE BAR -->
 
                                     <!-- ON TOUR -->
-                                    <div class="col s6">
+                                    <div class="col s6 ">
                                         <div class="row">
                                             <div class="col s12 center-align hvr-shutter-out-horizontal" id="onTour">
                                                 NOT ON TOUR
                                             </div>
                                         </div>
                                         <!-- YEARS ACTIVE -->
-                                        <div class="col s12">
-                                            <div class="col s4">
-                                                <i class="flaticon-time-1"></i>
-                                            </div>
-                                            <div class="col s8 center-align" id="yearsActive">
-                                                2014-
+                                        <div class="col s12 tooltipped"   data-position="top"
+                                             data-delay="50" data-tooltip="Years active">
+                                            <div class="row">
+                                                <div class="col s4">
+                                                    <i class="flaticon-time-1"></i>
+                                                </div>
+                                                <div class="col s8 center-align" id="yearsActive">
+                                                    2014-
+                                                </div>
                                             </div>
                                         </div>
                                         <!-- LOCATION -->
-                                        <div class="col s12">
-                                            <div class="col s4">
-                                                <i class="flaticon-location"></i>
-                                            </div>
-                                            <div class="col s8 center-align" id="location">
-                                                LOCATION
+                                        <div class="col s12 tooltipped"   data-position="bottom"
+                                             data-delay="50" data-tooltip="Location">
+                                            <div class="row">
+                                                <div class="col s4">
+                                                    <i class="flaticon-location"></i>
+                                                </div>
+                                                <div class="col s8 center-align" id="location">
+                                                    LOCATION
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
 
                                     <!-- HOTNESS -->
-                                    <div class="col s3">
+                                    <div class="col s3 tooltipped"   data-position="right"
+                                         data-delay="50" data-tooltip="The buzz right now">
                                         <div class="artistCircle" id="artistHotnessCircle">
                                         </div>
                                     </div>
@@ -668,7 +679,7 @@
                                         <div class="col s4">
                                             <i class="flaticon-people-1"></i>
                                         </div>
-                                        <div class="col s8 center-align" id="listeners">
+                                        <div class="col s8 center-align bigger" id="listeners">
                                             1232415
                                         </div>
 
@@ -679,91 +690,102 @@
                                         <div class="col s4">
                                             <i class="flaticon-arrow"></i>
                                         </div>
-                                        <div class="col s8 center-align" id="playcount">
+                                        <div class="col s8 center-align bigger" id="playcount">
                                             1232415342
                                         </div>
                                     </div>
                                 </div>
+                                <div class="divider-custom"></div>
                                 <!-- BIOGRAPHY CONTENT -->
-                                <div class="col s12">
-                                    <p id="biography">There are at least three artists who have used this name
-                                        1. A
-                                        popular indie band from London, England 2. A singer from Belgium 3. A
-                                        rock
-                                        band
-                                        from Devon, England 1) A three-piece London indie band formed from the
-                                        ashes
-                                        of
-                                        Fear Of Flying in late 2007. The line-up consists of singer/guitarist
-                                        Harry
-                                        McVeigh, bassist/lyricist Charles Cave and drummer Jack Brown.
-                                        Unfinished
-                                        Business (released April 29th 2007) was their first single, released on
-                                        Jack
-                                        Brown's label Chess Club Records. Read more on Last.fm</p>
+                                <div class="row">
+                                    <div class="col s12 tooltipped" data-position="left"
+                                         data-delay="50" data-tooltip="Biography">
+                                        <p id="biography">There are at least three artists who have used this name
+                                            1. A
+                                            popular indie band from London, England 2. A singer from Belgium 3. A
+                                            rock
+                                            band
+                                            from Devon, England 1) A three-piece London indie band formed from the
+                                            ashes
+                                            of
+                                            Fear Of Flying in late 2007. The line-up consists of singer/guitarist
+                                            Harry
+                                            McVeigh, bassist/lyricist Charles Cave and drummer Jack Brown.
+                                            Unfinished
+                                            Business (released April 29th 2007) was their first single, released on
+                                            Jack
+                                            Brown's label Chess Club Records. Read more on Last.fm</p>
+                                    </div>
+
                                 </div>
+                                <div class="divider-custom row"></div>
+
                                 <!-- TAGS -->
-                                <div class="col s12">
-                                    TAGS
-                                </div>
-                                <div class="col s12" id="tags">
-                                    <div class="chip deep-orange darken-4 hoverable">
-                                        <a href="#" class="tag">Funk rock</a>
-                                    </div>
-                                    <div class="chip deep-orange darken-4 hoverable">
-                                        <a href="#" class="tag">Elevator music</a>
-                                    </div>
-                                    <div class="chip deep-orange darken-4 hoverable">
-                                        <a href="#" class="tag">Christmas</a>
-                                    </div>
-                                    <div class="chip deep-orange darken-4 hoverable">
-                                        <a href="#" class="tag">Doom jazz</a>
-                                    </div>
-                                    <div class="chip deep-orange darken-4 hoverable">
-                                        <a href="#" class="tag">Prog-country</a>
-                                    </div>
-                                </div>
-                                <!-- SIMILAR ARTISTS -->
-                                <div class="col s12">
-                                    SIMILAR ARTISTS
-                                </div>
-                                <div class="col s12" id="similarArtists">
-                                    <div class="similarArtist">
-                                        <a href="?song=5ZKMPRDHc7qElVJFh3uRqB" class="similarArtistURL">
-                                            <div class="chip red darken-4 white-text hoverable">
-                                                <img src="familiarArtist1.jpg" class="similarArtistIMG">
-                                                <span class="similarArtistName">Jane Doe</span>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="similarArtist">
-                                        <a href="?song=5ZKMPRDHc7qElVJFh3uRqB" class="similarArtistURL">
-                                            <div class="chip red darken-4 white-text hoverable">
-                                                <img src="familiarArtist1.jpg" class="similarArtistIMG">
-                                                <span class="similarArtistName">Yass Band</span>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="similarArtist">
-                                        <a href="?song=5ZKMPRDHc7qElVJFh3uRqB" class="similarArtistURL">
-                                            <div class="chip red darken-4 white-text hoverable ">
-                                                <img src="familiarArtist1.jpg" class="similarArtistIMG">
-                                                <span class="similarArtistName">Jiggly Bum</span>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="similarArtist">
-                                        <a href="?song=5ZKMPRDHc7qElVJFh3uRqB" class="similarArtistURL">
-                                            <div class="chip red darken-4 white-text hoverable">
-                                                <img src="familiarArtist1.jpg" class="similarArtistIMG">
-                                                <span class="similarArtistName">Your mom</span>
-                                            </div>
-                                        </a>
+                                <div class="row">
+                                    <div class="col s12 center-align tooltipped" data-position="left"
+                                         data-delay="50" data-tooltip="Tags" id="tags">
+                                        <div class="chip deep-orange darken-4 hoverable">
+                                            <a href="#" class="tag">Funk rock</a>
+                                        </div>
+                                        <div class="chip deep-orange darken-4 hoverable">
+                                            <a href="#" class="tag">Elevator music</a>
+                                        </div>
+                                        <div class="chip deep-orange darken-4 hoverable">
+                                            <a href="#" class="tag">Christmas</a>
+                                        </div>
+                                        <div class="chip deep-orange darken-4 hoverable">
+                                            <a href="#" class="tag">Doom jazz</a>
+                                        </div>
+                                        <div class="chip deep-orange darken-4 hoverable">
+                                            <a href="#" class="tag">Prog-country</a>
+                                        </div>
                                     </div>
                                 </div>
+                                <div class="divider-custom row"></div>
+                                <div class="row">
+                                    <div class="col s12 center-align tooltipped" data-position="left"
+                                         data-delay="50" data-tooltip="Similar artists" id="similarArtists">
+                                        <div class="similarArtist">
+                                            <a href="?song=5ZKMPRDHc7qElVJFh3uRqB" class="similarArtistURL">
+                                                <div class="chip red darken-4 white-text hoverable">
+                                                    <img src="familiarArtist1.jpg" class="similarArtistIMG">
+                                                    <span class="similarArtistName">Jane Doe</span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="similarArtist">
+                                            <a href="?song=5ZKMPRDHc7qElVJFh3uRqB" class="similarArtistURL">
+                                                <div class="chip red darken-4 white-text hoverable">
+                                                    <img src="familiarArtist1.jpg" class="similarArtistIMG">
+                                                    <span class="similarArtistName">Yass Band</span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="similarArtist">
+                                            <a href="?song=5ZKMPRDHc7qElVJFh3uRqB" class="similarArtistURL">
+                                                <div class="chip red darken-4 white-text hoverable ">
+                                                    <img src="familiarArtist1.jpg" class="similarArtistIMG">
+                                                    <span class="similarArtistName">Jiggly Bum</span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="similarArtist">
+                                            <a href="?song=5ZKMPRDHc7qElVJFh3uRqB" class="similarArtistURL">
+                                                <div class="chip red darken-4 white-text hoverable">
+                                                    <img src="familiarArtist1.jpg" class="similarArtistIMG">
+                                                    <span class="similarArtistName">Your mom</span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="divider-custom row"></div>
+
 
                                 <!-- LINKS -->
-                                <div class="row" id="artistLinksRow">
+                                <div class="row tooltipped"   data-position="left"
+                                     data-delay="50" data-tooltip="Online presence" id="artistLinksRow">
                                     <div class="col s2 center-align">
                                         <a href="#" id="official" class="active">
                                             <i class="flaticon-home link-icon"></i>
@@ -843,6 +865,7 @@
 
                                 </div>
                             </div>
+
                         </div>
                     </div>
                 </section>
@@ -964,6 +987,9 @@
         var artistListeners = "121231";
         var artistPlaycount = "34834293";
 
+        var artistLocation = "London, United Kingdom";
+        var artistYearsActive = "2014 - ";
+
         var onTour = true;
 
         // IDs
@@ -982,6 +1008,8 @@
         displayArtistListenersPlaycount(artistListeners, artistPlaycount);
 
         initialiseParallaxImages(albumArtURL, artistPhotoURL);
+
+        displayArtistLocationYearsActive(artistLocation, artistYearsActive);
 
 
         /*--------------END OF MAIN FLOW--------------------*/
@@ -1025,6 +1053,12 @@
                 $('#onTour').html("NOT ON TOUR");
                 $('#onTour').removeClass("onTour");
             }
+        }
+
+        function displayArtistLocationYearsActive(location, yearsActive) {
+            $('#location').html(location);
+            $('#yearsActive').html(yearsActive);
+
         }
 
         function displayArtistListenersPlaycount(listeners, playcount) {
