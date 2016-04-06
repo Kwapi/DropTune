@@ -123,17 +123,6 @@
             <div id="songContent">
 
                 <section id="songDashboardSection">
-                    <div id="songDashboardParallax"
-                         class="parallax-container valign-wrapper parallax-thin parallax-overlay-pink">
-                        <div class="section no-pad-bot">
-                            <div class="container">
-                                <div class="row center">
-                                    <h5 class="header col s12 light">DASHBOARD</h5>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="parallax"><img src="album.jpg" alt="album art" class="albumArtIMG"></div>
-                    </div>
                     <div id="songDashboard" class="container">
                         <div class="row">
                             <div id="songStatsCard" class="card blue-grey darken-4 hoverable">
@@ -296,6 +285,10 @@
                                         </li>
                                     </ul>
                                 </div>
+                                <!-- SPOTIFY PLAY BUTTON -->
+                                <iframe src="https://embed.spotify.com/?uri=spotify:track:5JunxkcjfCYcY7xJ29tLai"
+                                        id="spotifyPlayButton" width="731" height="80" frameborder="0"
+                                        allowtransparency="true"></iframe>
                             </div>
                         </div>
 
@@ -317,6 +310,7 @@
                             </div>
                         </div>
 
+
                         <!-- SONGFACTS -->
                         <div class="row" id="songFactRow">
                             <div class="col s12">
@@ -336,6 +330,8 @@
                                 </div>
                             </div>
                         </div>
+
+
                     </div>
 
                 </section>
@@ -602,6 +598,8 @@
             </div>
             <div id="artistContent">
                 <section id="artistDashboardSection">
+
+                    <!-- DASHBOARD -->
                     <div id="artistDashboard" class="container">
                         <div class="row">
                             <div id="artistCard" class="card-panel blue-grey darken-4 white-text hoverable">
@@ -612,7 +610,7 @@
                                 </div>
                                 <div class="row">
                                     <!-- FAMILIARITY -->
-                                    <div class="col s3 tooltipped"   data-position="left"
+                                    <div class="col s3 tooltipped" data-position="left"
                                          data-delay="50" data-tooltip="How well known this artist is">
                                         <div class="artistCircle" id="artistFamiliarityCircle">
                                         </div>
@@ -627,7 +625,7 @@
                                             </div>
                                         </div>
                                         <!-- YEARS ACTIVE -->
-                                        <div class="col s12 tooltipped"   data-position="top"
+                                        <div class="col s12 tooltipped" data-position="top"
                                              data-delay="50" data-tooltip="Years active">
                                             <div class="row">
                                                 <div class="col s4">
@@ -639,7 +637,7 @@
                                             </div>
                                         </div>
                                         <!-- LOCATION -->
-                                        <div class="col s12 tooltipped"   data-position="bottom"
+                                        <div class="col s12 tooltipped" data-position="bottom"
                                              data-delay="50" data-tooltip="Location">
                                             <div class="row">
                                                 <div class="col s4">
@@ -653,7 +651,7 @@
                                     </div>
 
                                     <!-- HOTNESS -->
-                                    <div class="col s3 tooltipped"   data-position="right"
+                                    <div class="col s3 tooltipped" data-position="right"
                                          data-delay="50" data-tooltip="The buzz right now">
                                         <div class="artistCircle" id="artistHotnessCircle">
                                         </div>
@@ -784,7 +782,7 @@
 
 
                                 <!-- LINKS -->
-                                <div class="row tooltipped"   data-position="left"
+                                <div class="row tooltipped" data-position="left"
                                      data-delay="50" data-tooltip="Online presence" id="artistLinksRow">
                                     <div class="col s2 center-align">
                                         <a href="#" id="official" class="active">
@@ -869,6 +867,85 @@
                         </div>
                     </div>
                 </section>
+
+                <section id="artistTopTracksSection">
+                    <div id="artistTopTracksParallax"
+                         class="parallax-container valign-wrapper parallax-thin parallax-overlay-red">
+                        <div class="section no-pad-bot">
+                            <div class="container">
+                                <div class="row center">
+                                    <h5 class="header col s12 light">TOP TRACKS</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="parallax"><img src="album.jpg" alt="artist" class="artistPhotoIMG"></div>
+                    </div>
+
+                    <div id=artistTopTracks" class="container">
+                        <ul class="collection blue-grey darken-4 hoverable z-depth-1">
+                            <li class="collection-item avatar topTrack">
+                                <img src="album.jpg" alt="" class="circle topTrackAlbumArtIMG">
+                                <span class="title topTrackTitle">Best Song Ever</span>
+
+                                <p class="topTrackAlbumTitle">Best album ever
+                                </p>
+                                <a href="#" class="topTrackLink secondary-content">SONG PROFILE</a>
+                            </li>
+                            <li class="collection-item avatar topTrack">
+                                <img src="album.jpg" alt="" class="circle topTrackAlbumArtIMG">
+                                <span class="title topTrackTitle">Best Song Ever</span>
+
+                                <p class="topTrackAlbumTitle">Best album ever
+                                </p>
+                                <a href="#" class="topTrackLink secondary-content">SONG PROFILE</a>
+                            </li>
+                            <li class="collection-item avatar topTrack">
+                                <img src="album.jpg" alt="" class="circle topTrackAlbumArtIMG">
+                                <span class="title topTrackTitle">Best Song Ever</span>
+
+                                <p class="topTrackAlbumTitle">Best album ever
+                                </p>
+                                <a href="#" class="topTrackLink secondary-content">SONG PROFILE</a>
+                            </li>
+                            <li class="collection-item avatar topTrack">
+                                <img src="album.jpg" alt="" class="circle topTrackAlbumArtIMG">
+                                <span class="title topTrackTitle">Best Song Ever</span>
+
+                                <p class="topTrackAlbumTitle">Best album ever
+                                </p>
+                                <a href="#" class="topTrackLink secondary-content">SONG PROFILE</a>
+                            </li>
+                            <li class="collection-item avatar topTrack">
+                                <img src="album.jpg" alt="" class="circle topTrackAlbumArtIMG">
+                                <span class="title topTrackTitle">Best Song Ever</span>
+
+                                <p class="topTrackAlbumTitle">Best album ever
+                                </p>
+                                <a href="#" class="topTrackLink secondary-content">SONG PROFILE</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </section>
+                <!--PARALLAX -->
+                <section id="artistGigsSection">
+                    <div id="artistGigsParallax"
+                         class="parallax-container valign-wrapper parallax-thin parallax-overlay-red">
+                        <div class="section no-pad-bot">
+                            <div class="container">
+                                <div class="row center">
+                                    <h5 class="header col s12 light">GIGS</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="parallax"><img src="album.jpg" alt="artist" class="artistPhotoIMG"></div>
+                    </div>
+                </section>
+
+
+
+
+
             </div>
 
         </div>

@@ -166,6 +166,10 @@ footer.page-footer {
   background-color: rgba(197,17,98,0.5);
 }
 
+.parallax-overlay-red{
+  background-color: rgba(183,28,28,0.5);
+}
+
 #topNavContent{
 height:100%;
   padding-left:5%;
@@ -396,6 +400,35 @@ a.disabled{
   color:#9e9e9e;
   transition:background-color 1s ,color 1s;
 }
+
+.collection .collection-item {
+  background-color: transparent;
+  line-height: 1.5rem;
+  padding: 10px 20px;
+  margin: 0;
+  border-bottom: 1px solid #F44336;
+  min-height:0;
+}
+
+.collection{
+  border:none;
+  border-radius:4px;
+}
+
+.topTrackAlbumTitle{
+  font-weight:lighter;
+}
+.collection .collection-item.avatar {
+  min-height: 0px;
+}
+
+.secondary-content{
+  color: #FF4900;
+  margin-top: 6px;
+}
+
+
+
 
 
 
