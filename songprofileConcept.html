@@ -24,6 +24,8 @@
     <!-- FREEPIK ICONS -->
     <link rel="stylesheet" href="css/flaticon/flaticon.css" type="text/css">
 
+    <!-- RANGESLIDER -->
+    <link rel="stylesheet" href="css/nouislider.min.css" type="text/css">
 
 </head>
 <body class="blue-grey darken-3 white-text">
@@ -934,16 +936,134 @@
                         <div class="section no-pad-bot">
                             <div class="container">
                                 <div class="row center">
-                                    <h5 class="header col s12 light">GIGS</h5>
+                                    <h5 class="header col s12 light">GIGS NEAR YOU</h5>
                                 </div>
                             </div>
                         </div>
                         <div class="parallax"><img src="album.jpg" alt="artist" class="artistPhotoIMG"></div>
                     </div>
+
+
+                    <div class="container row">
+                        <!--EVENTS FILTER OPTIONS -->
+                        <div class="row" id="eventsOptions">
+                            <div class="col s12">
+                                <div class="card-panel blue-grey darken-4 tooltipped" data-position="left"
+                                     data-delay="50" data-tooltip="Browser location permission required">
+                                    <div class="row  no-pad-bot">
+                                        <div class="row valign-wrapper center-align">
+                                            <div class="col s12 card-header-custom">
+                                                <h5 class="deep-orange-text light">SEARCH RADIUS</h5>
+                                            </div>
+                                        </div>
+
+                                        <div class="col s12 valign-wrapper" id="radiusCardContent">
+                                            <div class="col s8" id="artistEventSlider">
+                                            </div>
+                                            <div class="col s2 center-align" id="artistEventSliderValue">
+                                            </div>
+                                            <div class="col s2">
+                                                <a id="applyFilterEventBTN"
+                                                   class="waves-effect btn deep-orange darken-3">APPLY</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--EVENTS LIST -->
+                        <div class="row">
+                            <div class="row eventTemplate">
+                                <div class="card-panel white-text med-rounded hoverable">
+                                    <div class="row no-mar-bot">
+                                        <div class="col s10">
+                                            <h5 class="eventName">Wolf ALice @ Brixton
+                                                Academy )2 London (2014)</h5>
+
+                                            <div class="row no-mar-bot">
+                                                <div class="valign-wrapper no-mar-bot light">
+                                                    <div class="col s4">
+                                                        <i class="flaticon-location"></i>
+                                                        <span class="eventLocation nudge-right">London, UK</span>
+                                                    </div>
+                                                    <div class="col s8">
+                                                        <i class="flaticon-time-1"></i>
+                                                        <span class="eventDateTime nudge-right">2015-04-23</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col s2 center-align tooltipped" data-position="right"
+                                             data-delay="50" data-tooltip="Get tickets">
+                                            <a href="#" class="eventURL">
+                                                <i class="flaticon-commerce media-icon-smaller"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row eventTemplate">
+                                <div class="card-panel white-text med-rounded hoverable">
+                                    <div class="row no-mar-bot">
+                                        <div class="col s10">
+                                            <h5 class="eventName">Wolf ALice @ Brixton
+                                                Academy )2 London (2014)</h5>
+
+                                            <div class="row no-mar-bot">
+                                                <div class="valign-wrapper no-mar-bot light">
+                                                    <div class="col s4">
+                                                        <i class="flaticon-location"></i>
+                                                        <span class="eventLocation nudge-right">London, UK</span>
+                                                    </div>
+                                                    <div class="col s8">
+                                                        <i class="flaticon-time-1"></i>
+                                                        <span class="eventDateTime nudge-right">2015-04-23</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col s2 center-align tooltipped" data-position="right"
+                                             data-delay="50" data-tooltip="Get tickets">
+                                            <a href="#" class="eventURL">
+                                                <i class="flaticon-commerce media-icon-smaller"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row eventTemplate">
+                                <div class="card-panel white-text med-rounded hoverable">
+                                    <div class="row no-mar-bot">
+                                        <div class="col s10">
+                                            <h5 class="eventName">Wolf ALice @ Brixton
+                                                Academy )2 London (2014)</h5>
+
+                                            <div class="row no-mar-bot">
+                                                <div class="valign-wrapper no-mar-bot light">
+                                                    <div class="col s4">
+                                                        <i class="flaticon-location"></i>
+                                                        <span class="eventLocation nudge-right">London, UK</span>
+                                                    </div>
+                                                    <div class="col s8">
+                                                        <i class="flaticon-time-1"></i>
+                                                        <span class="eventDateTime nudge-right">2015-04-23</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col s2 center-align tooltipped" data-position="right"
+                                             data-delay="50" data-tooltip="Get tickets">
+                                            <a href="#" class="eventURL">
+                                                <i class="flaticon-commerce media-icon-smaller"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </section>
-
-
-
 
 
             </div>
@@ -991,8 +1111,8 @@
             </form>
         </div>
     </div>
-    <div class="modal-footer grey darken-4">
-        <a href="#!" class="modal-action modal-close waves-effect waves-orange btn-flat white-text "
+    <div class="modal-footer">
+        <a href="#!" class="modal-action modal-close waves-effect waves-orange btn-flat deep-orange-text"
            id="addReviewButton">CONFIRM</a>
     </div>
 </div>
@@ -1040,6 +1160,9 @@
 
 <!-- NUMERAL JS -->
 <script src="js/numbro.js"></script>
+
+<!-- RANGESLIDER -->
+<script src="js/nouislider.min.js"></script>
 
 <!-- API SCRIPTS -->
 <script src="js/musicbrainz.js"></script>
@@ -1150,6 +1273,8 @@
             $('.albumArtIMG').attr("src", albumArtURL);
             $('.artistPhotoIMG').attr("src", artistPhotoURL);
         }
+
+        /*--------END OF MAIN FLOW FUNCTIONS--------*/
 
 
         var artistColor = "red darken-4";
@@ -1489,6 +1614,26 @@
         /*=================INITIALISE MATERIAL SELECTS===============*/
         $('.select-material').material_select();
 
+
+        /*==================MATERIAL SLIDER=================*/
+
+        var artistEventSlider = document.getElementById('artistEventSlider');
+
+        noUiSlider.create(artistEventSlider, {
+                    start: 50,
+                    connect: 'lower',
+                    step: 1,
+                    range: {
+                        'min': 1,
+                        'max': 500
+                    },
+                }
+        );
+
+        artistEventSlider.noUiSlider.on('update', function (values, handle) {
+            var value = values[handle].slice(0, -3);
+            $('#artistEventSliderValue').html(value + " km");
+        })
 
     });
 
