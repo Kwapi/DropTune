@@ -29,6 +29,15 @@
 
 </head>
 <body class="blue-grey darken-3 white-text">
+<div id="loadingOverlay">
+    <!--<div class="spinner">
+    <div class="rect3"></div>
+        </div>
+    -->
+    <!--<img src="loading2.gif">-->
+    <div class="loader">Loading</div>
+</div>
+
 <div class="wrapper">
 
     <header>
@@ -36,7 +45,7 @@
         <nav class="top-nav" id="top-nav">
             <div class="row valign-wrapper" id="topNavContent">
                 <div class="col s12">
-                    <h3 class="center-align light" id="topNavText">dasdas</h3>
+                    <h3 class="center-align" id="topNavText">dasdas</h3>
                 </div>
             </div>
         </nav>
@@ -45,7 +54,7 @@
         <div id="sidenav" class="side-nav fixed blue-grey darken-4 z-depth-3">
             <div id="sidenav-content">
                 <div class="row z-depth-1">
-                    <div id="sidenav-header">
+                    <div id="sidenav-header" class="thumbnail">
                         <img src="artist.jpg" class="materialboxed">
                     </div>
                 </div>
@@ -53,16 +62,16 @@
                 <div id="songAlbumArtistFloat">
                     <div id="songAlbumArtistContent">
                         <div class="valign-wrapper">
-                            <i class="small material-icons pad-right">equalizer</i><h6 class="valign" class="songTitle">
+                            <i class="small material-icons pad-right">equalizer</i><h6 class="valign songTitle">
                             Song title</h6><br>
                         </div>
                         <div class="valign-wrapper">
-                            <i class="small material-icons pad-right">album</i><h6 class="valign" class="albumTitle">
+                            <i class="small material-icons pad-right">album</i><h6 class="valign albumTitle">
                             Album title</h6><br>
                         </div>
                         <div class="valign-wrapper">
-                            <i class="small material-icons pad-right">perm_identity</i><h6 class="valign"
-                                                                                           class="artistName">Artist
+                            <i class="small material-icons pad-right">perm_identity</i><h6 class="valign artistName">
+                            Artist
                             name</h6><br>
                         </div>
                     </div>
@@ -288,20 +297,20 @@
                                     </ul>
                                 </div>
                                 <!-- SPOTIFY PLAY BUTTON -->
-                                <iframe src="https://embed.spotify.com/?uri=spotify:track:5JunxkcjfCYcY7xJ29tLai"
-                                        id="spotifyPlayButton" width="731" height="80" frameborder="0"
-                                        allowtransparency="true"></iframe>
+                                <div id="spotifyPlayButton">
+                                </div>
                             </div>
                         </div>
 
                         <!-- MEDIALINKS -->
                         <div class="row" id="mediaLinksRow">
                             <div class="col s4 center-align">
-                                <a href="#" id="youtubeButton" class="active"><i class="flaticon-video media-icon"></i>
+                                <a href="#" id="youtubeButton" class="disabled"><i
+                                        class="flaticon-video media-icon"></i>
                                     <h6>YouTube Video</h6></a>
                             </div>
                             <div class="col s4 center-align">
-                                <a href="#" id="imvdbVidButton" class="active"><i
+                                <a href="#" id="imvdbVidButton" class="disabled"><i
                                         class="flaticon-multimedia media-icon"></i>
                                     <h6>Official Music Video</h6></a>
                             </div>
@@ -314,7 +323,7 @@
 
 
                         <!-- SONGFACTS -->
-                        <div class="row" id="songFactRow">
+                        <div class="row" id="songFactRow" style="display:none">
                             <div class="col s12">
                                 <div class="card blue-grey darken-3">
                                     <div class="card-content white-text">
@@ -340,20 +349,20 @@
 
                 <section id="userLinkedContentSection">
                     <div id="userLinkedContentParallax"
-                         class="parallax-container valign-wrapper parallax-thin parallax-overlay-pink">
+                         class="parallax-container valign-wrapper parallax-thin">
                         <div class="section no-pad-bot">
                             <div class="container">
                                 <div class="row center">
-                                    <h5 class="header col s12 light">USER-LINKED CONTENT</h5>
+                                    <h5 class="header col s12 light text-shadow">USER-LINKED CONTENT</h5>
                                 </div>
                             </div>
                         </div>
-                        <div class="parallax"><img src="album.jpg" alt="album art" class="albumArtIMG"></div>
+                        <div class="parallax"><img src="album.jpg" alt="album art" class="opacity80 albumArtIMG blur-desaturate"></div>
                     </div>
                     <div class="container section" id="userLinkedContent">
-                        <div class="row content-filters">
+                        <div class="row content-filters valign-wrapper">
                             <div class="input-field col s3">
-                                <select class="select-material">
+                                <select class="select-material" id="userLinkedContent-cat-filter">
                                     <option value="1" selected>All</option>
                                     <option value="2">Live</option>
                                     <option value="3">Cover</option>
@@ -367,6 +376,10 @@
                                     <option value="2">Latest</option>
                                 </select>
                                 <label>Display</label>
+                            </div>
+                            <div class="col s6 offset-s3 center-align">
+                                <a id="userLinkedContentAdd-open"
+                                   class="waves-effect btn deep-orange darken-3">ADD CONTENT</a>
                             </div>
                         </div>
                         <div class="row content">
@@ -475,25 +488,29 @@
 
                 <section id="reviewsSection">
                     <div id="reviews">
-                        <div class="parallax-container valign-wrapper parallax-thin parallax-overlay-pink">
+                        <div class="parallax-container valign-wrapper parallax-thin">
                             <div class="section no-pad-bot">
                                 <div class="container">
                                     <div class="row center">
-                                        <h5 class="header col s12 light">REVIEWS</h5>
+                                        <h5 class="header col s12 light text-shadow">REVIEWS</h5>
                                     </div>
                                 </div>
                             </div>
-                            <div class="parallax"><img src="album.jpg" alt="album art" class="albumArtIMG"></div>
+                            <div class="parallax"><img src="album.jpg" alt="album art" class="opacity80 albumArtIMG blur-desaturate"></div>
                         </div>
 
-                        <div class="container" id="reviews-content">
-                            <div class="row review-filters">
+                        <div class="container section" id="reviews-content">
+                            <div class="row review-filters valign-wrapper">
                                 <div class="input-field col s3">
                                     <select class="select-material">
                                         <option value="1" selected>Top rated</option>
                                         <option value="2">Latest</option>
                                     </select>
                                     <label>Display</label>
+                                </div>
+                                <div class="col s9 center-align">
+                                    <a id="addReview-btn-second"
+                                       class="waves-effect btn deep-orange darken-3">ADD REVIEW</a>
                                 </div>
                             </div>
                             <div class="row">
@@ -622,7 +639,8 @@
                                     <!-- ON TOUR -->
                                     <div class="col s6 ">
                                         <div class="row">
-                                            <div class="col s12 center-align hvr-shutter-out-horizontal" id="onTour">
+                                            <div class="col s12 center-align hvr-shutter-out-horizontal"
+                                                 id="artistOnTour">
                                                 NOT ON TOUR
                                             </div>
                                         </div>
@@ -645,7 +663,7 @@
                                                 <div class="col s4">
                                                     <i class="flaticon-location"></i>
                                                 </div>
-                                                <div class="col s8 center-align" id="location">
+                                                <div class="col s8 center-align" id="artistLocation">
                                                     LOCATION
                                                 </div>
                                             </div>
@@ -679,7 +697,7 @@
                                         <div class="col s4">
                                             <i class="flaticon-people-1"></i>
                                         </div>
-                                        <div class="col s8 center-align bigger" id="listeners">
+                                        <div class="col s8 center-align bigger" id="artistListeners">
                                             1232415
                                         </div>
 
@@ -690,7 +708,7 @@
                                         <div class="col s4">
                                             <i class="flaticon-arrow"></i>
                                         </div>
-                                        <div class="col s8 center-align bigger" id="playcount">
+                                        <div class="col s8 center-align bigger" id="artistPlaycount">
                                             1232415342
                                         </div>
                                     </div>
@@ -700,7 +718,7 @@
                                 <div class="row">
                                     <div class="col s12 tooltipped" data-position="left"
                                          data-delay="50" data-tooltip="Biography">
-                                        <p id="biography">There are at least three artists who have used this name
+                                        <p id="artistBiography">There are at least three artists who have used this name
                                             1. A
                                             popular indie band from London, England 2. A singer from Belgium 3. A
                                             rock
@@ -718,33 +736,20 @@
                                     </div>
 
                                 </div>
-                                <div class="divider-custom row"></div>
+                                <div class="divider-custom"></div>
+                                <div class="row"></div>
 
                                 <!-- TAGS -->
                                 <div class="row">
                                     <div class="col s12 center-align tooltipped" data-position="left"
-                                         data-delay="50" data-tooltip="Tags" id="tags">
-                                        <div class="chip deep-orange darken-4 hoverable">
-                                            <a href="#" class="tag">Funk rock</a>
-                                        </div>
-                                        <div class="chip deep-orange darken-4 hoverable">
-                                            <a href="#" class="tag">Elevator music</a>
-                                        </div>
-                                        <div class="chip deep-orange darken-4 hoverable">
-                                            <a href="#" class="tag">Christmas</a>
-                                        </div>
-                                        <div class="chip deep-orange darken-4 hoverable">
-                                            <a href="#" class="tag">Doom jazz</a>
-                                        </div>
-                                        <div class="chip deep-orange darken-4 hoverable">
-                                            <a href="#" class="tag">Prog-country</a>
-                                        </div>
+                                         data-delay="50" data-tooltip="Tags" id="artistTags">
                                     </div>
                                 </div>
-                                <div class="divider-custom row"></div>
+                                <div class="divider-custom"></div>
+                                <div class="row"></div>
                                 <div class="row">
                                     <div class="col s12 center-align tooltipped" data-position="left"
-                                         data-delay="50" data-tooltip="Similar artists" id="similarArtists">
+                                         data-delay="50" data-tooltip="Similar artists" id="artistSimilarArtists">
                                         <div class="similarArtist">
                                             <a href="?song=5ZKMPRDHc7qElVJFh3uRqB" class="similarArtistURL">
                                                 <div class="chip red darken-4 white-text hoverable">
@@ -780,84 +785,85 @@
                                     </div>
 
                                 </div>
-                                <div class="divider-custom row"></div>
+                                <div class="divider-custom"></div>
+                                <div class="row"></div>
 
 
                                 <!-- LINKS -->
                                 <div class="row tooltipped" data-position="left"
                                      data-delay="50" data-tooltip="Online presence" id="artistLinksRow">
                                     <div class="col s2 center-align">
-                                        <a href="#" id="official" class="active">
+                                        <a href="#" id="officialLink" class="disabled">
                                             <i class="flaticon-home link-icon"></i>
                                             <span class="link-name">Official</span>
                                         </a>
                                     </div>
                                     <div class="col s2 center-align">
-                                        <a href="#" id="facebook" class="active">
+                                        <a href="#" id="facebookLink" class="disabled">
                                             <i class="flaticon-social-2 link-icon"></i>
                                             <span class="link-name">Facebook</span>
                                         </a>
                                     </div>
                                     <div class="col s2 center-align">
-                                        <a href="#" id="instagram" class="active">
+                                        <a href="#" id="instagramLink" class="disabled">
                                             <i class="flaticon-social-3 link-icon"></i>
                                             <span class="link-name">Instagram</span>
                                         </a>
                                     </div>
                                     <div class="col s2 center-align">
-                                        <a href="#" id="twitter" class="active">
+                                        <a href="#" id="twitterLink" class="disabled">
                                             <i class="flaticon-social-1 link-icon"></i>
                                             <span class="link-name">Twitter</span>
                                         </a>
                                     </div>
                                     <div class="col s2 center-align">
-                                        <a href="#" id="youtube" class="active">
+                                        <a href="#" id="youtubeLink" class="disabled">
                                             <i class="flaticon-video link-icon"></i>
                                             <span class="link-name">YouTube</span>
                                         </a>
                                     </div>
                                     <div class="col s2 center-align">
-                                        <a href="#" id="soundcloud" class="active">
+                                        <a href="#" id="soundcloudLink" class="disabled">
                                             <i class="flaticon-technology link-icon"></i>
                                             <span class="link-name">Soundcloud</span>
                                         </a>
                                     </div>
                                     <div class="col s2 center-align">
-                                        <a href="#" id="wikipedia" class="active">
+                                        <a href="#" id="wikipediaLink" class="disabled">
                                             <i class="flaticon-sign link-icon"></i>
                                             <span class="link-name">Wikipedia</span>
                                         </a>
                                     </div>
 
                                     <div class="col s2 center-align">
-                                        <a href="#" id="lastFm" class="active">
+                                        <a href="#" id="lastFmLink" class="disabled">
                                             <i class="flaticon-music-5 link-icon"></i>
                                             <span class="link-name">Last.fm</span>
                                         </a>
                                     </div>
                                     <div class="col s2 center-align">
-                                        <a href="#" id="musicbrainz" class="active">
+                                        <a href="#" id="musicbrainzLink" class="disabled">
                                             <i class="flaticon-medical link-icon"></i>
                                             <span class="link-name">MusicBrainz</span>
                                         </a>
                                     </div>
 
                                     <div class="col s2 center-align">
-                                        <a href="#" id="whosampled" class="active">
+                                        <a href="#" id="whosampledLink" class="disabled">
                                             <i class="flaticon-music-4 link-icon"></i>
                                             <span class="link-name">Whosampled</span>
                                         </a>
                                     </div>
 
                                     <div class="col s2 center-align">
-                                        <a href="#" id="myspace" class="active">
+                                        <a href="#" id="myspaceLink" class="disabled">
                                             <i class="flaticon-social link-icon"></i>
                                             <span class="link-name">MySpace</span>
                                         </a>
                                     </div>
 
                                     <div class="col s2 center-align">
-                                        <a href="#" id="rateyourmusic" class="active">
+                                        <a href="#" id="rateyourmusicLink" class="disabled">
                                             <i class="flaticon-people link-icon"></i>
                                             <span class="link-name">RateYourMusic</span>
                                         </a>
@@ -867,20 +873,38 @@
                             </div>
 
                         </div>
+                        <div class="row" id="artistFactRow" style="display:none">
+                            <div class="col s12">
+                                <div class="card blue-grey darken-3">
+                                    <div class="card-content white-text">
+                                        <span class="card-title">Artist fact</span>
+
+                                        <p id="artistFactText">This is the first single by British alternative rock band
+                                            White Lies, from their sophomore album Ritual. The song received its first
+                                            airplay on Zane Lowe's BBC Radio 1 show on November 16, 2010. It was
+                                            officially released in the U.K. on January 3, 2011 and as a download in
+                                            North America on November 22, 2010</p>
+                                    </div>
+                                    <div class="card-action">
+                                        <a href="#" id="artistFactURL">More facts</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </section>
 
                 <section id="artistTopTracksSection">
                     <div id="artistTopTracksParallax"
-                         class="parallax-container valign-wrapper parallax-thin parallax-overlay-red">
+                         class="parallax-container valign-wrapper parallax-thin">
                         <div class="section no-pad-bot">
                             <div class="container">
                                 <div class="row center">
-                                    <h5 class="header col s12 light">TOP TRACKS</h5>
+                                    <h5 class="header col s12 light text-shadow">TOP TRACKS</h5>
                                 </div>
                             </div>
                         </div>
-                        <div class="parallax"><img src="album.jpg" alt="artist" class="artistPhotoIMG"></div>
+                        <div class="parallax"><img src="album.jpg" alt="artist" class="opacity80 artistPhotoIMG blur-desaturate"></div>
                     </div>
 
                     <div id=artistTopTracks" class="container">
@@ -930,17 +954,17 @@
                     </div>
                 </section>
                 <!--PARALLAX -->
-                <section id="artistGigsSection">
+                <section style="display: none" id="artistGigsSection">
                     <div id="artistGigsParallax"
-                         class="parallax-container valign-wrapper parallax-thin parallax-overlay-red">
+                         class="parallax-container valign-wrapper parallax-thin">
                         <div class="section no-pad-bot">
                             <div class="container">
                                 <div class="row center">
-                                    <h5 class="header col s12 light">GIGS NEAR YOU</h5>
+                                    <h5 class="header col s12 text-shadow light">GIGS NEAR YOU</h5>
                                 </div>
                             </div>
                         </div>
-                        <div class="parallax"><img src="album.jpg" alt="artist" class="artistPhotoIMG"></div>
+                        <div class="parallax"><img src="album.jpg" alt="artist" class="opacity80 artistPhotoIMG blur-desaturate"></div>
                     </div>
 
 
@@ -973,94 +997,8 @@
                         </div>
 
                         <!--EVENTS LIST -->
-                        <div class="row">
-                            <div class="row eventTemplate">
-                                <div class="card-panel white-text med-rounded hoverable">
-                                    <div class="row no-mar-bot">
-                                        <div class="col s10">
-                                            <h5 class="eventName">Wolf ALice @ Brixton
-                                                Academy )2 London (2014)</h5>
+                        <div class="row" id="artistEvents">
 
-                                            <div class="row no-mar-bot">
-                                                <div class="valign-wrapper no-mar-bot light">
-                                                    <div class="col s4">
-                                                        <i class="flaticon-location"></i>
-                                                        <span class="eventLocation nudge-right">London, UK</span>
-                                                    </div>
-                                                    <div class="col s8">
-                                                        <i class="flaticon-time-1"></i>
-                                                        <span class="eventDateTime nudge-right">2015-04-23</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col s2 center-align tooltipped" data-position="right"
-                                             data-delay="50" data-tooltip="Get tickets">
-                                            <a href="#" class="eventURL">
-                                                <i class="flaticon-commerce media-icon-smaller"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row eventTemplate">
-                                <div class="card-panel white-text med-rounded hoverable">
-                                    <div class="row no-mar-bot">
-                                        <div class="col s10">
-                                            <h5 class="eventName">Wolf ALice @ Brixton
-                                                Academy )2 London (2014)</h5>
-
-                                            <div class="row no-mar-bot">
-                                                <div class="valign-wrapper no-mar-bot light">
-                                                    <div class="col s4">
-                                                        <i class="flaticon-location"></i>
-                                                        <span class="eventLocation nudge-right">London, UK</span>
-                                                    </div>
-                                                    <div class="col s8">
-                                                        <i class="flaticon-time-1"></i>
-                                                        <span class="eventDateTime nudge-right">2015-04-23</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col s2 center-align tooltipped" data-position="right"
-                                             data-delay="50" data-tooltip="Get tickets">
-                                            <a href="#" class="eventURL">
-                                                <i class="flaticon-commerce media-icon-smaller"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row eventTemplate">
-                                <div class="card-panel white-text med-rounded hoverable">
-                                    <div class="row no-mar-bot">
-                                        <div class="col s10">
-                                            <h5 class="eventName">Wolf ALice @ Brixton
-                                                Academy )2 London (2014)</h5>
-
-                                            <div class="row no-mar-bot">
-                                                <div class="valign-wrapper no-mar-bot light">
-                                                    <div class="col s4">
-                                                        <i class="flaticon-location"></i>
-                                                        <span class="eventLocation nudge-right">London, UK</span>
-                                                    </div>
-                                                    <div class="col s8">
-                                                        <i class="flaticon-time-1"></i>
-                                                        <span class="eventDateTime nudge-right">2015-04-23</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col s2 center-align tooltipped" data-position="right"
-                                             data-delay="50" data-tooltip="Get tickets">
-                                            <a href="#" class="eventURL">
-                                                <i class="flaticon-commerce media-icon-smaller"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </section>
@@ -1076,7 +1014,65 @@
 </div>
 
 
-<!--    MODALS      -->
+<!--==============================TEMPLATES===============================-->
+
+<!-- ARTIST TAG TEMPLATE -->
+<script id="artistTagTemplate" type="text/template">
+    {{#.}}
+    <div class="chip deep-orange darken-4 hoverable artistTag">
+        <a href="{{url}}" class="tag">{{name}}</a>
+    </div>
+    {{/.}}
+</script>
+
+<!-- SIMILAR ARTIST TEMPLATE -->
+<script id="artistSimilarArtistTemplate" type="text/template">
+    {{#.}}
+    <div class="similarArtist">
+        <a href="{{url}}">
+            <div class="chip red darken-4 white-text hoverable">
+                <img src="{{photo}}">{{name}}
+            </div>
+        </a>
+    </div>
+    {{/.}}
+</script>
+
+<script id="artistEventTemplate" type="text/template">
+    {{#.}}
+    <div class="row eventTemplate">
+        <div class="card-panel white-text med-rounded hoverable">
+            <div class="row no-mar-bot">
+                <div class="col s10">
+                    <h5 class="eventName">{{name}}</h5>
+                    <div class="row no-mar-bot">
+                        <div class="valign-wrapper no-mar-bot light">
+                            <div class="col s4">
+                                <i class="flaticon-location"></i>
+                                <span class="eventLocation nudge-right">{{location}}</span>
+                            </div>
+                            <div class="col s8">
+                                <i class="flaticon-time-1"></i>
+                                <span class="eventDateTime nudge-right">{{startDate}} | {{startTime}}</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s2 center-align tooltipped" data-position="right"
+                     data-delay="50" data-tooltip="Get tickets">
+                    <a href="{{url}}" class="eventURL">
+                        <i class="flaticon-commerce media-icon-smaller"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    {{/.}}
+</script>
+<!--==============================/TEMPLATES===============================-->
+
+
+<!--==============================MODALS===============================-->
 
 <!-- ADD REVIEW MODAL STRUCTURE -->
 <div id="addReviewModal" class="modal blue-grey darken-4">
@@ -1116,10 +1112,59 @@
            id="addReviewButton">CONFIRM</a>
     </div>
 </div>
+<!-- ADD REVIEW HELPER MODAL-->
+<div id="addReview-helpCard-modal" class="modal blue-grey darken-4">
+    <div class="modal-content">
+        In order to add a review please select the song rating on the navigation bar on the left side.
+    </div>
+</div>
 
-<!-- YOUTBE MODAL STRUCTURE -->
+<!-- ADD USER-LINKED CONTENT MODAL -->
+<div id="addUserLinkedContentModal" class="modal blue-grey darken-4">
+
+    <div class="modal-content">
+        <div class="row">
+            <div class="col s8">
+                <h4 class="text-darken-3 deep-orange-text">Add content</h4>
+            </div>
+        </div>
+        <!--LINK -->
+        <div class="row">
+            <div class="input-field col s6">
+                <input placeholder="Paste URL here" id="userLinkedContentAdd-link" type="text" class="validate">
+                <label for="userLinkedContentAdd-link">Link to content</label>
+            </div>
+        </div>
+        <!--CATEGORY -->
+        <div class="row">
+            <div class="input-field col s3">
+                <select class="select-material" id="userLinkedContentAdd-cat-select">
+                    <option value="1" selected>All</option>
+                    <option value="2">Live</option>
+                    <option value="3">Cover</option>
+                    <option value="4">Remix</option>
+                </select>
+                <label>Category</label>
+            </div>
+        </div>
+        <!--DESCRIPTION -->
+        <div class="row">
+            <div class="input-field col s12">
+                <textarea id="userLinkedContentAdd-description" class="materialize-textarea"></textarea>
+                <label for="userLinkedContentAdd-description">Provide a short description for this link</label>
+            </div>
+        </div>
+    </div>
+    <!--SUBMIT-->
+    <div class="modal-footer">
+        <a href="#!" class="modal-action modal-close waves-effect waves-orange btn-flat deep-orange-text"
+           id="userLinkedContentAdd-submit">CONFIRM</a>
+    </div>
+
+</div>
+
+<!-- YOUTUBE MODAL STRUCTURE -->
 <div id="YouTubeVideoModal" class="modal blue-grey darken-4 modal-yt">
-
     <div class="modal-content">
         <iframe width="560" height="315" src="https://www.youtube.com/embed/-6vLp07ZePY" frameborder="0"
                 allowfullscreen></iframe>
@@ -1127,12 +1172,11 @@
 </div>
 
 <!--    IMVDB MODAL     -->
-
 <div id="IMVDBModal" class="modal blue-grey darken-4 modal-imvdb">
     <div class="imvdb-embed" data-embed-type="video" data-id="263039060632" data-include-credits="y"></div>
 </div>
 
-
+<!--==============================/MODALS===============================-->
 </div>
 
 <!--  Scripts-->
@@ -1141,79 +1185,109 @@
 <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 -->
 <!--JQUERY OFFLINE -->
-<script src="js/jquery-2.2.2.min.js"></script>
+<script src="js/external/jquery-2.2.2.min.js"></script>
 
-<script src="js/materialize.js"></script>
-<script src="js/init.js"></script>
+<!-- DO NOT CHANGE TO MATERIALIZE.MIN-->
+<script src="js/external/materialize.js"></script>
+
+
+<script src="js/external/init.js"></script>
 
 <!-- STAR RATING -->
-<script src="js/jquery.barrating.min.js"></script>
+<script src="js/external/jquery.barrating.min.js"></script>
 
 <!-- Include jQuery ScrollTo -->
-<script src="js/jquery-scrollto.js"></script>
+<script src="js/external/jquery-scrollto.js"></script>
 
 <!-- IMVDB EMBED LOAD -->
 <script async type="text/javascript" src="//s3.amazonaws.com/static.imvdb.com/embed.min.js" charset="utf-8"></script>
 
 <!--PROGRESS BAR -->
-<script src="js/progressbar.js"></script>
+<script src="js/external/progressbar.js"></script>
 
 <!-- NUMERAL JS -->
-<script src="js/numbro.js"></script>
+<script src="js/external/numbro.js"></script>
 
 <!-- RANGESLIDER -->
-<script src="js/nouislider.min.js"></script>
+<script src="js/external/nouislider.min.js"></script>
+
+<!--- MUSTACHE -->
+<script src="js/external/mustache.min.js"></script>
+
+<script src="js/external/underscore-min.js"></script>
 
 <!-- API SCRIPTS -->
+<script src="js/external/spotify-web-api.js"></script>
 <script src="js/musicbrainz.js"></script>
+<script src="js/spotify.js"></script>
+<script src="js/lastfm.js"></script>
+<script src="js/echonest.js"></script>
+<script src="js/youtube.js"></script>
+<script src="js/imvdb.js"></script>
+<script src="js/songfacts.js"></script>
+<script src="js/songkick.js"></script>
 
+
+<!--YOUTUBE EMBED-->
+<!--onload = call function googleAPIInit() in youtube.js-->
+<script src="https://apis.google.com/js/client.js?onload=googleAPIinit"></script>
+<!--GOOGLE MAPS FOR EVENTS -->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC3a5NNA_aFcW0Gws10AcPydJaXFH9bHYY&libraries=geometry"></script>
+
+
+<!--ADDITIONAL SCRIPTS-->
+<script src="js/helpers.js"></script>
+<script src="js/ui.js"></script>
 
 <!-- THIS PAGE SCRIPTS -->
 <script>
 
+    /*-----------------INFO VARIABLES-------------------*/
+    var artistInfo = {};
+    var songInfo = {};
+    var albumInfo = {};
+
+    var currentLocationLat;
+    var currentLocationLng;
+
+    /*-----------------API KEYS------------------------*/
+    var openAuraAPIKey = '3fae951c8f76048e0aa6aa732e5b396848ac7870';
+    var googleMapsAPIKey = 'AIzaSyC3a5NNA_aFcW0Gws10AcPydJaXFH9bHYY';
+    var songkickAPIkey = 'vEgVhcmroApX2dTx';
+    var echoNestAPIKey = "E95ZS8JWWUXFWR55M";
+    var lastFMApiKey = "4459216827f26c926e3124115f751c06";
+    var songFactsAPIKey = "YVHejE0Gb3";
+    var youTubeAPIKey = "AIzaSyDjMCLbxy0wmqr1SbuMDo8W7SRn8flWIqw";
+    var imvdbAPIKey = 'KQbF4kkULllv1i6Fpa8HBVgjuy5qlKR6B3LFo6A9';
+
+    // PHOTOS
+    var albumArtURL = "album.jpg";
+    var artistPhotoURL = "artist.jpg";
+
+    // IDs
+    var musicbrainzId = "5bdb38bd-5c5b-4d0f-8901-8bbe1d7062d8";
+
+
     $(document).ready(function () {
-        $('.materialboxed').materialbox();
-
-        /*-----------------INFO VARIABLES-------------------*/
-        // PHOTOS
-        var albumArtURL = "album.jpg";
-        var artistPhotoURL = "artist.jpg";
 
 
-        var songTitle = "What is Your Name";
-        var albumTitle = "Break the Bananas";
-        var artistName = "Happycopters";
 
-        var artistListeners = "121231";
-        var artistPlaycount = "34834293";
+        /*=========GET TRACK SPOTIFY ID=========*/
+        $(function () {
+            var spotifyID = window.location.search.replace("?", "");
 
-        var artistLocation = "London, United Kingdom";
-        var artistYearsActive = "2014 - ";
-
-        var onTour = true;
-
-        // IDs
-        var musicbrainzId = "5bdb38bd-5c5b-4d0f-8901-8bbe1d7062d8";
+            if (spotifyID != "") {
+                startMainFlow(spotifyID);
+            } else {
+                alert("NO SPOTIFY ID");
+            }
+        });
 
 
-        /*-----------------MAIN FLOW------------------------*/
-
-        // ARTIST   ->   LINKS   ->   SOUNDCLOUD,YT,WIKI
-        getMusicbrainzLinks(musicbrainzId);
-
-        displaySongAlbumArtist(songTitle, albumTitle, artistName);
-
-        displayTour(onTour);
-
-        displayArtistListenersPlaycount(artistListeners, artistPlaycount);
-
-        initialiseParallaxImages(albumArtURL, artistPhotoURL);
-
-        displayArtistLocationYearsActive(artistLocation, artistYearsActive);
-
-
-        /*--------------END OF MAIN FLOW--------------------*/
-
+        function startMainFlow(spotifyID) {
+            songInfo.spotifyID = spotifyID;
+            sp_getSongInfo(songInfo.spotifyID, getMoreInfo);
+        }
 
         /*----MAIN FLOW FUNCTIONS----*/
 
@@ -1232,47 +1306,6 @@
             $('#top-nav').attr('class', 'top-nav');
         }
 
-        //  set songTitle, albumTitle and artistName to corresponding classes
-        function displaySongAlbumArtist(song, album, artist) {
-
-            $('.songTitle').html(song);
-            $('.albumTitle').html(album);
-            $('.artistName').html(artist);
-        }
-
-        // set the onTour panel, initialise and show songkick events
-        function displayTour(onTour) {
-
-            if (onTour) {
-                $('#onTour').html("ON TOUR");
-                $('#onTour').addClass("onTour");
-
-                //initialise songkick
-
-            } else {
-                $('#onTour').html("NOT ON TOUR");
-                $('#onTour').removeClass("onTour");
-            }
-        }
-
-        function displayArtistLocationYearsActive(location, yearsActive) {
-            $('#location').html(location);
-            $('#yearsActive').html(yearsActive);
-
-        }
-
-        function displayArtistListenersPlaycount(listeners, playcount) {
-            var listenersFormatted = numbro(listeners).format('0a');
-            var playcountFormatted = numbro(playcount).format('0a');
-            $('#listeners').html(listenersFormatted);
-            $('#playcount').html(playcountFormatted);
-        }
-
-        // INITIALISE PARALLAX IMAGES
-        function initialiseParallaxImages(albumArtURL, artistPhotoURL) {
-            $('.albumArtIMG').attr("src", albumArtURL);
-            $('.artistPhotoIMG').attr("src", artistPhotoURL);
-        }
 
         /*--------END OF MAIN FLOW FUNCTIONS--------*/
 
@@ -1280,33 +1313,29 @@
         var artistColor = "red darken-4";
         var artistColorHex = "#B71C1C";
 
-        var songColor = "pink darken-4";
-        var songColorHex = "#880e4f";
+        var songColor = "deep-orange darken-4";
+        var songColorHex = "#bf360c";
 
         //  CHANGE TO ARTIST INFO
         $('#artistContentAnchor').click(function openArtistContent(event) {
-
-            var artistName = "Artist name";
 
             event.preventDefault();
             $('#songContent').hide();
             $('#artistContent').show();
 
-
             deactivateLink($('#songContentAnchor'), songColor);
             activateLink($(this), artistColor, artistColorHex);
 
-
-            $('#sidenav-header img').attr("src", "artist.jpg");
-
-            $('#topNavText').html(artistName);
-
+            if (exists(artistInfo)) {
+                $('#topNavText').html(artistInfo.name);
+                dsp_artistProfilePhoto(artistInfo.profilePhoto);
+            } else {
+                console.error("artistInfo.name or photo_1 problem");
+            }
         });
 
         // CHANGE TO SONG INFO
         $('#songContentAnchor').click(function openSongContent(event) {
-
-            var songTitle = "Song title";
 
             event.preventDefault();
             $('#artistContent').hide();
@@ -1316,11 +1345,17 @@
             activateLink($(this), songColor, songColorHex);
 
 
-            $('#sidenav-header img').attr("src", "album.jpg");
+            if (exists(songInfo)) {
+                $('#topNavText').html(songInfo.name);
+            } else {
+                console.error("songInfo.name problem");
+            }
 
-
-            $('#topNavText').html(songTitle);
-
+            if (exists(albumInfo)) {
+                $('#sidenav-header img').attr("src", albumInfo.albumArt);
+            } else {
+                console.error("albumInfo.albumArt problem");
+            }
 
         });
 
@@ -1354,6 +1389,7 @@
 
 
         //YOUR RATING INITIALISE
+        // - on select open modal
         $('#yourSongRating').barrating('show', {
                     theme: 'bars-square',
                     showValues: true,
@@ -1381,6 +1417,11 @@
                 }
         );
 
+        // OPEN USER LINKED CONTENT MODAL
+        $('#userLinkedContentAdd-open').click(function () {
+            $('#addUserLinkedContentModal').openModal();
+        })
+
 
         //SET AVERAGE RATING
         $('#avgSongRating').barrating('set', 5);
@@ -1406,23 +1447,19 @@
                 });
 
 
+        // REVIEW IS ADDED - DISPLAY TOAST
         $('#addReviewButton').click(function () {
             Materialize.toast("Review added", 2000);
         });
 
 
         /*=================SONG STATS===============*/
-        var songPopularity = 45;
-        var songEnergy = 0.567;
-        var songDanceability = 0.89;
-        var songValence = 0.10;
 
         //  bars
         var songPopularityBar;
         var songEnergyBar;
         var songDanceabilityBar;
         var songValenceBar;
-
 
         //  colours
         var songPopularityStartCol = '#ff9800';  //  orange
@@ -1437,7 +1474,7 @@
         var songValenceStartCol = '#9c27b0';  //  purple
         var songValenceEndCol = '#b71c1c';  //  purple darken -4
 
-        var trailColor = '#37474f';
+        var trailColor = '#37474f';         // grey
 
         songPopularityBar = new ProgressBar.Line('#songPopularityBar', {
             color: songPopularityStartCol,
@@ -1503,12 +1540,20 @@
             }
         });
 
-        //  ANIMATE IN AND OUT
+        //  ANIMATE SONG STATS CARD BARS IN AND OUT
         $('#songStatsCard').mouseover(function () {
-                    songPopularityBar.animate(songPopularity / 100);
-                    songEnergyBar.animate(songEnergy);
-                    songDanceabilityBar.animate(songDanceability);
-                    songValenceBar.animate(songValence);
+                    if (exists(songInfo.popularity)) {
+                        songPopularityBar.animate(songInfo.popularity / 100);
+                    }
+                    if (exists(songInfo.energy)) {
+                        songEnergyBar.animate(songInfo.energy);
+                    }
+                    if (exists(songInfo.danceability)) {
+                        songDanceabilityBar.animate(songInfo.danceability);
+                    }
+                    if (exists(songInfo.valence)) {
+                        songValenceBar.animate(songInfo.valence);
+                    }
                 })
                 .mouseout(function () {
                     songPopularityBar.animate(0);
@@ -1520,11 +1565,8 @@
 
         /*=================ARTIST STATS==============================*/
 
-        var artistPopularity = 50;
         var artistPopularityBar;
-        var artistFamiliarity = 0.67;
         var artistFamiliarityCircle;
-        var artistHotness = 0.98;
         var artistHotnessCircle;
 
 
@@ -1582,37 +1624,42 @@
             }
         });
 
-
         // animate all stats on artistCard mouseover/mouseout
         $('#artistCard').mouseenter(function () {
-                    artistPopularityBar.animate(artistPopularity / 100);
-                    artistFamiliarityCircle.animate(artistFamiliarity);
-                    artistHotnessCircle.animate(artistHotness);
-                    $('#onTour').addClass("active");
+                    if (exists(artistInfo.popularity)) {
+                        artistPopularityBar.animate(artistInfo.popularity / 100);
+                    }
+
+                    if (exists(artistInfo.familiarity)) {
+                        artistFamiliarityCircle.animate(artistInfo.familiarity);
+                    }
+                    if (exists(artistInfo.hotness)) {
+                        artistHotnessCircle.animate(artistInfo.hotness);
+                    }
+
+                    $('#artistOnTour').addClass("active");
 
                 })
                 .mouseleave(function () {
                     artistPopularityBar.animate(0);
                     artistFamiliarityCircle.animate(0);
                     artistHotnessCircle.animate(0);
-                    $('#onTour').removeClass("active");
+                    $('#artistOnTour').removeClass("active");
                 });
 
 
         /*=================MEDIA LINKS===============================*/
+        //  open YouTube modal
         $('#youtubeButton').click(function (e) {
             e.preventDefault();    //stop hash from positioning the view to the top
             $('#YouTubeVideoModal').openModal();
         });
 
+        //  open IMVDB modal
         $('#imvdbVidButton').click(function (e) {
             e.preventDefault();    //stop hash from positioning the view to the top
             $('#IMVDBModal').openModal();
         });
-
-
-        /*=================INITIALISE MATERIAL SELECTS===============*/
-        $('.select-material').material_select();
 
 
         /*==================MATERIAL SLIDER=================*/
@@ -1637,9 +1684,11 @@
 
     });
 
+
+    /*======FINISHED LOADING EVERYTHING======*/
     $(window).load(function () {
         $('#songContentAnchor').trigger("click"); // WHEN EVERYTHING LOADS START WITH SONG PAGE
-        alert("finished loading");
+        $('#loadingOverlay').hide();
     });
 
 

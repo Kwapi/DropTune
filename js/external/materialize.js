@@ -2566,6 +2566,8 @@ if ($) {
 
             $(this).addClass('initialized');
 
+
+
             var overlayActive = false;
             var doneAnimating = true;
             var inDuration = 275;
@@ -2580,6 +2582,7 @@ if ($) {
 
 
             origin.on('click', function () {
+
                 var placeholder = origin.parent('.material-placeholder');
                 var windowWidth = window.innerWidth;
                 var windowHeight = window.innerHeight;
@@ -2680,6 +2683,8 @@ if ($) {
                     newHeight = windowHeight * 0.9;
                 }
 
+                $("#sidenav-header").removeClass("thumbnail");
+
                 // Animate image + set z-index
                 if (origin.hasClass('responsive-img')) {
                     origin.velocity({'max-width': newWidth, 'width': originalWidth}, {
@@ -2749,6 +2754,7 @@ if ($) {
 
             // This function returns the modaled image to the original spot
             function returnToOriginal() {
+
                 $('#sidenav').css("width", "250px");
                 doneAnimating = false;
 
@@ -2770,6 +2776,7 @@ if ($) {
                         // Remove Overlay
                         overlayActive = false;
                         $(this).remove();
+                        //$("#sidenav-header").addClass("thumbnail");
                     }
                 });
 
@@ -2786,6 +2793,8 @@ if ($) {
                         queue: false, easing: 'easeOutQuad'
                     }
                 );
+
+
 
                 // Remove Caption + reset css settings on image
                 $('.materialbox-caption').velocity({opacity: 0}, {
@@ -2815,11 +2824,12 @@ if ($) {
                         doneAnimating = true;
                         $(this).remove();
 
+                        $("#sidenav-header").addClass("thumbnail");
+
                         // Remove overflow overrides on ancestors
                         ancestorsChanged.css('overflow', '');
                     }
                 });
-
             }
         });
     };
