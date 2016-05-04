@@ -206,13 +206,6 @@ function en_explodeArtistInfo(data) {
 }
 
 
-//todo: move somewhere else
-function activateMediaLink(domID, url) {
-    var linkDiv = $(domID);
-    linkDiv.removeClass("disabled");
-    linkDiv.addClass("active");
-    linkDiv.attr("href", url);
-}
 
 
 function applyArtistForeignIDs(artistForeignIDs) {

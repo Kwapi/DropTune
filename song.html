@@ -908,47 +908,7 @@
                     </div>
 
                     <div id=artistTopTracks" class="container">
-                        <ul class="collection blue-grey darken-4 hoverable z-depth-1">
-                            <li class="collection-item avatar topTrack">
-                                <img src="album.jpg" alt="" class="circle topTrackAlbumArtIMG">
-                                <span class="title topTrackTitle">Best Song Ever</span>
-
-                                <p class="topTrackAlbumTitle">Best album ever
-                                </p>
-                                <a href="#" class="topTrackLink secondary-content">SONG PROFILE</a>
-                            </li>
-                            <li class="collection-item avatar topTrack">
-                                <img src="album.jpg" alt="" class="circle topTrackAlbumArtIMG">
-                                <span class="title topTrackTitle">Best Song Ever</span>
-
-                                <p class="topTrackAlbumTitle">Best album ever
-                                </p>
-                                <a href="#" class="topTrackLink secondary-content">SONG PROFILE</a>
-                            </li>
-                            <li class="collection-item avatar topTrack">
-                                <img src="album.jpg" alt="" class="circle topTrackAlbumArtIMG">
-                                <span class="title topTrackTitle">Best Song Ever</span>
-
-                                <p class="topTrackAlbumTitle">Best album ever
-                                </p>
-                                <a href="#" class="topTrackLink secondary-content">SONG PROFILE</a>
-                            </li>
-                            <li class="collection-item avatar topTrack">
-                                <img src="album.jpg" alt="" class="circle topTrackAlbumArtIMG">
-                                <span class="title topTrackTitle">Best Song Ever</span>
-
-                                <p class="topTrackAlbumTitle">Best album ever
-                                </p>
-                                <a href="#" class="topTrackLink secondary-content">SONG PROFILE</a>
-                            </li>
-                            <li class="collection-item avatar topTrack">
-                                <img src="album.jpg" alt="" class="circle topTrackAlbumArtIMG">
-                                <span class="title topTrackTitle">Best Song Ever</span>
-
-                                <p class="topTrackAlbumTitle">Best album ever
-                                </p>
-                                <a href="#" class="topTrackLink secondary-content">SONG PROFILE</a>
-                            </li>
+                        <ul class="collection blue-grey darken-4 hoverable z-depth-1" id="artistTopTracksList">
 
                         </ul>
                     </div>
@@ -1067,6 +1027,20 @@
             </div>
         </div>
     </div>
+    {{/.}}
+</script>
+
+
+<script id="topTrackTemplate" type="text/template">
+    {{#.}}
+    <li class="collection-item avatar topTrack">
+        <img src="{{albumArt}}" alt="" class="circle topTrackAlbumArtIMG">
+        <span class="title topTrackTitle">{{name}}</span>
+
+        <p class="topTrackAlbumTitle">{{album}}
+        </p>
+        <a href="{{songProfile}}" class="topTrackLink secondary-content">SONG PROFILE</a>
+    </li>
     {{/.}}
 </script>
 <!--==============================/TEMPLATES===============================-->

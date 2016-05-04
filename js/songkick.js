@@ -46,7 +46,7 @@ function sk_prepareRadiusFilter(parameters) {
     });
 }
 function sk_filterArtistEventsByRadius(parameters) {
-    //todo: figure out wtf
+  
     var eventFilterRadius = parameters[0];
     var eventsData = parameters[1];
 
@@ -83,7 +83,7 @@ function fmt_sk_artistEvents(eventsData) {
     return result;
 }
 function dsp_artistEvents(eventsData) {
-    //todo: document - we don't save the data into the artist object
+
 
     var $artistEvents = $('#artistEvents');
 
@@ -98,9 +98,7 @@ function dsp_artistEvents(eventsData) {
 
         output = Mustache.render(template, eventsData);
 
-        //todo: document using jquery plugin in phpstorm helps a lot
         $('#artistEvents').html(output);
-
 
     }
     console.log("Songkick - getArtistEvents - success");

@@ -37,11 +37,19 @@ function refreshSelects(){
 }
 
 
+function activateMediaLink(domID, url) {
+    var linkDiv = $(domID);
+    linkDiv.removeClass("disabled");
+    linkDiv.addClass("active");
+    linkDiv.attr("href", url);
+}
+
 function getMoreInfo(){
     dsp_spotifyPlayButton(songInfo.spotifyID);
     lfm_getArtistInfo(artistInfo.name);
     en_getSongInfo(songInfo.spotifyID,songInfo.name,artistInfo.name);
     en_getArtistInfo(artistInfo.spotifyID, artistInfo.name);
+    sp_getArtistTopTracks(artistInfo.spotifyID);
     imvdb_getSongOfficialVideo(songInfo.name,artistInfo.name);
     sf_getSongFacts(songInfo.name,artistInfo.name);
     sf_getArtistFacts(songInfo.name,artistInfo.name);
