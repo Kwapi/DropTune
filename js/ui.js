@@ -45,6 +45,7 @@ function activateMediaLink(domID, url) {
 }
 
 function getMoreInfo(){
+    db_getSongReviews(songInfo.spotifyID);
     dsp_spotifyPlayButton(songInfo.spotifyID);
     lfm_getArtistInfo(artistInfo.name);
     en_getSongInfo(songInfo.spotifyID,songInfo.name,artistInfo.name);
@@ -103,6 +104,25 @@ function findGigsAroundYou(){
 
     /** Find gigs around you**/
     $('#applyFilterEventBTN').click(findGigsAroundYou);
+
+    /** Add song review **/
+    $('#addReviewButton').click(function(event){
+        //no page reload
+        event.preventDefault();
+        db_addSongReview(songInfo.spotifyID,$('#addReviewText').val(),songInfo.yourRating);
+    })
+
+function refreshContentReviewMouseover(){
+
+    $('.card-background, .review-bg').off();
+
+    $('.card-background, .review-bg').mouseover(function () {
+            $(this).find('.ratings').show();
+        })
+        .mouseout(function () {
+            $(this).find('.ratings').hide();
+        });
+}
 
 
 /**==========================UI ELEMENTS INITIALISIATION=========**/
