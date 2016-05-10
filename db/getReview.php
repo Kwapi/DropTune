@@ -3,9 +3,17 @@ require_once 'connect.php';
 if($_GET["spotifyId"]) {
 
     $spotifyId = $_GET["spotifyId"];
+    $orderBy = $_GET["orderBy"];
 
-    $stmt = $db->prepare("SELECT id,text,posted,rating,rank FROM review WHERE spotifyId=? ORDER BY rank DESC");
+    if($orderBy == 'rank') {
 
+
+        $stmt = $db->prepare("SELECT id,text,posted,rating,rank FROM review WHERE spotifyId=? ORDER BY rank DESC");
+    }
+
+    if($orderBy == 'posted'){
+        $stmt = $db->prepare("SELECT id,text,posted,rating,rank FROM review WHERE spotifyId=? ORDER BY posted DESC");
+    }
     $stmt->bind_param("s", $spotifyId);
 
     $stmt->execute();

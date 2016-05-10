@@ -110,9 +110,28 @@ function findGigsAroundYou(){
         //no page reload
         event.preventDefault();
         db_addSongReview(songInfo.spotifyID,$('#addReviewText').val(),songInfo.yourRating);
-    })
+    });
 
+    /** vote for review **/
 
+    $(document).on('click','.review-upvote, .review-downvote',function(){
+
+        var reviewID = $(this).parent().find("~ .reviewID").val();
+
+        if($(this).hasClass("review-upvote")){
+          db_voteForReview(reviewID,1);
+        }else if($(this).hasClass("review-downvote")){
+            db_voteForReview(reviewID,-1);
+        }else{
+            console.error("Upvote/Downvote Review error");
+        }
+    }
+
+    );
+
+    $('#songReviewFilter').change(function(){
+        db_getSongReviews(songInfo.spotifyID);
+    });
 
 function refreshContentReviewMouseover(){
 

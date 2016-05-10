@@ -502,7 +502,7 @@
                         <div class="container section" id="reviews-content">
                             <div class="row review-filters valign-wrapper">
                                 <div class="input-field col s3">
-                                    <select class="select-material">
+                                    <select class="select-material" id="songReviewFilter">
                                         <option value="1" selected>Top rated</option>
                                         <option value="2">Latest</option>
                                     </select>
@@ -911,7 +911,7 @@
 
 <script id="songReviewTemplate" type="text/template">
 <div class="review-template col s12">
-    <input type="hidden" class="reviewID" value="{{reviewID}}">
+
     <div class="row">
         <div class="review-bg hoverable card-background">
             <div class="col review-card s11">
@@ -934,13 +934,14 @@
                 <div class="ratings center-align">
 
                     <div class="ratings">{{rank}}</div>
-                    <a class="upvote">
+                    <a class="review-upvote upvote">
                     <i class="material-icons">thumb_up</i>
                         </a>
-                    <a class="downvote">
+                    <a class="review-downvote downvote">
                     <i class="material-icons">thumb_down</i>
                         </a>
                 </div>
+                <input type="hidden" class="reviewID" value="{{reviewID}}">
             </div>
         </div>
     </div>
@@ -1140,12 +1141,9 @@
     var youTubeAPIKey = "AIzaSyDjMCLbxy0wmqr1SbuMDo8W7SRn8flWIqw";
     var imvdbAPIKey = 'KQbF4kkULllv1i6Fpa8HBVgjuy5qlKR6B3LFo6A9';
 
-    // PHOTOS
+    // PHOTOS PLACEHOLDERS
     var albumArtURL = "album.jpg";
     var artistPhotoURL = "artist.jpg";
-
-    // IDs
-    var musicbrainzId = "5bdb38bd-5c5b-4d0f-8901-8bbe1d7062d8";
 
 
     $(document).ready(function () {
@@ -1249,7 +1247,7 @@
                 }
         );
 
-        //AVG RATING INITIALISE
+        //YOUR RATING INITIALISE
         $('#yourSongRatingModal').barrating('show', {
                     theme: 'bars-square',
                     showValues: true,
@@ -1295,11 +1293,6 @@
         $('#userLinkedContentAdd-open').click(function () {
             $('#addUserLinkedContentModal').openModal();
         })
-
-
-        //SET AVERAGE RATING
-        $('#avgSongRating').barrating('set', 5);
-
 
         // CLICK AVERAGE RATING -> SCROLL TO REVIEWS
         $('#avgSongRatingWrap, #average-rating-show-reviews').click(function () {

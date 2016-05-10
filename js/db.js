@@ -1,11 +1,23 @@
 function db_getSongReviews(songSpotifyID){
+    var orderBy;
+    var filter = $('#songReviewFilter').val();
+    switch(parseInt(filter)){
+        case 1 : orderBy = 'rank';
+            break;
+        case 2 : orderBy = 'posted';
+            break;
+    };
+
+
     var args = {
-        spotifyId:songSpotifyID
+        spotifyId:songSpotifyID,
+        orderBy: orderBy
     };
 
     $.getJSON("db/getReview.php",args,
         function(data){
             dsp_db_songReviews(data);
+            db_getAverageSongRating(songInfo.spotifyID);
             console.log("DB - getSongReviews - success");
         },
         function(data){
@@ -79,7 +91,6 @@ function db_addSongReview(spotifyID,text,rating){
     $.getJSON("db/addReview.php",args,
         function(){
             db_getSongReviews(songInfo.spotifyID);
-            //db_getAverageSongRating(songInfo.spotifyID);
         },
         function(data){
             alert("DB doesn't work");
@@ -92,7 +103,6 @@ function db_getAverageSongRating(spotifyID){
     };
 
 
-
     $.getJSON("db/getAverageReviewRating.php",args,
         function(data){
             dsp_db_averageSongRating(data);
@@ -103,12 +113,28 @@ function db_getAverageSongRating(spotifyID){
 }
 
 function dsp_db_averageSongRating(averageSongRating){
-    var avg = data[0].averageRating;
-    var reviewCount = data[0].count; // todo: use
+    var avg = averageSongRating[0].averageRating;
+    var reviewCount = averageSongRating[0].count; // todo: use
 
+    var avgRound = Math.round(avg);
     if(avg==null){
-        $('#review-average-rating').html("No reviews yet");
+        // do nothing
     }else {
-        $('#review-average-rating').html(avg + "<small> out of " + reviewCount + " reviews");
+        $('#avgSongRating').barrating('set', avgRound);
     }
+}
+
+function db_voteForReview(reviewID, vote){
+    var args = {
+        review_id: reviewID,
+        vote: vote
+    };
+
+    $.getJSON("db/voteReview.php",args,
+        function(){
+            db_getSongReviews(songInfo.spotifyID);
+        },
+        function(){
+            alert("DB doesn't work");
+        })
 }
