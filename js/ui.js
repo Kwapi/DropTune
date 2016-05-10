@@ -112,6 +112,8 @@ function findGigsAroundYou(){
         db_addSongReview(songInfo.spotifyID,$('#addReviewText').val(),songInfo.yourRating);
     })
 
+
+
 function refreshContentReviewMouseover(){
 
     $('.card-background, .review-bg').off();

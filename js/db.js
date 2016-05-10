@@ -65,11 +65,7 @@ function dsp_db_songReviews(reviews){
         //$(selector) select").val(reviewRatings[k]);
         $(selector).barrating('set',rating);
     }
-
-
     refreshContentReviewMouseover();
-
-
 }
 
 function db_addSongReview(spotifyID,text,rating){
@@ -88,4 +84,31 @@ function db_addSongReview(spotifyID,text,rating){
         function(data){
             alert("DB doesn't work");
         })
+}
+
+function db_getAverageSongRating(spotifyID){
+    var args = {
+        spotifyId: spotifyID
+    };
+
+
+
+    $.getJSON("db/getAverageReviewRating.php",args,
+        function(data){
+            dsp_db_averageSongRating(data);
+        },
+        function(data){
+            alert("average rating fetch failed");
+        });
+}
+
+function dsp_db_averageSongRating(averageSongRating){
+    var avg = data[0].averageRating;
+    var reviewCount = data[0].count; // todo: use
+
+    if(avg==null){
+        $('#review-average-rating').html("No reviews yet");
+    }else {
+        $('#review-average-rating').html(avg + "<small> out of " + reviewCount + " reviews");
+    }
 }
