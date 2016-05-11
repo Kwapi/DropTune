@@ -138,3 +138,94 @@ function db_voteForReview(reviewID, vote){
             alert("DB doesn't work");
         })
 }
+
+function db_getContent(spotifyID){
+    var filter = $('#userLinkedContent-cat-filter').val();
+    var orderByRaw =$('#contentOrderBy').val();
+    var orderBy;
+    switch(parseInt(orderByRaw)){
+        case 1 : orderBy = 'rank';
+            break;
+        case 2 : orderBy = 'posted';
+            break;
+    };
+
+    var args = {
+        spotifyId:spotifyID,
+        filter: filter,
+        orderBy: orderBy
+    };
+
+    $.getJSON("db/getContent.php",args,
+        function(data){
+            dsp_db_content(data);
+        },
+        function(data){
+            alert("DB doesn't work");
+        })
+}
+
+function dsp_db_content(data){
+    var $contentList = $('#contentList');
+
+    //clear first
+    $contentList.html("");
+
+    if(data.length==0){
+        $contentList.html("No content available");
+    }
+
+    for (var i=0; i< data.length; i++) {
+        var content = data[i];
+
+        var template;
+        var output;
+        switch(content.category){
+            case 'live':
+                template = $('#contentTemplate-live').html();
+            break;
+            case 'behind the scenes':
+                template = $('#contentTemplate-bts').html();
+                break;
+            case 'remix':
+                template = $('#contentTemplate-remix').html();
+                break;
+            case 'cover':
+                template = $('#contentTemplate-cover').html();
+                break;
+            case 'article':
+                template = $('#contentTemplate-article').html();
+                break;
+            case 'review':
+                template = $('#contentTemplate-review').html();
+                break;
+            case 'other':
+                template = $('#contentTemplate-other').html();
+                break;
+        }
+
+        output = Mustache.render(template,content);
+
+        $contentList.append(output);
+
+    }
+    refreshContentReviewMouseover()
+}
+
+function db_addContent(spotifyID, link, description, category, title){
+    var args = {
+        spotifyId:spotifyID,
+        link: link,
+        description: description,
+        title: title,
+        category: category
+    };
+
+    $.getJSON("db/addContent.php",args,
+        function(){
+            db_getContent(songInfo.spotifyID);
+        },
+        function(data){
+            alert("DB doesn't work");
+        })
+}

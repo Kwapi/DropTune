@@ -96,11 +96,43 @@ footer.page-footer {
   border-radius:2px;
 }
 
+
 .cat-live:hover{
   background-color: #f50057;
   transition:background-color 0.25s;
-
 }
+
+.cat-bts:hover{
+  background-color: #d500f9;
+  transition:background-color 0.25s;
+}
+
+.cat-remix:hover{
+  background-color: #c6ff00;
+  transition:background-color 0.25s;
+}
+
+.cat-review:hover{
+  background-color: #ff9100;
+  transition:background-color 0.25s;
+}
+
+.cat-cover:hover{
+  background-color: #00e676;
+  transition:background-color 0.25s;
+}
+
+.cat-other:hover{
+  background-color: #651fff;
+  transition:background-color 0.25s;
+}
+
+.cat-article:hover{
+  background-color: #00e5ff;
+  transition:background-color 0.25s;
+}
+
+
 
 .review-bg:hover{
   background-color: rgb(240, 95, 64);
