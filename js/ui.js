@@ -45,6 +45,7 @@ function activateMediaLink(domID, url) {
 }
 
 function getMoreInfo(){
+    $(document).attr("title", songInfo.name +" - " + artistInfo.name + " | DropTune");
     db_getSongReviews(songInfo.spotifyID);
     db_getContent(songInfo.spotifyID);
     dsp_spotifyPlayButton(songInfo.spotifyID);

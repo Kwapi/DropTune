@@ -96,7 +96,10 @@ footer.page-footer {
   border-radius:2px;
 }
 
-
+.big-parallax{
+  min-height: 800px;
+  line-height: 5;
+}
 .cat-live:hover{
   background-color: #f50057;
   transition:background-color 0.25s;
