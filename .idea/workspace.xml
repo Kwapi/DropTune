@@ -122,16 +122,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="connect.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/db/connect.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="2" selection-start-line="6" selection-start-column="2" selection-end-line="6" selection-end-column="2" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
@@ -145,8 +135,8 @@
       <file leaf-file-name="ui.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/ui.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="153" column="41" selection-start-line="153" selection-start-column="41" selection-end-line="153" selection-end-column="41" />
+            <state relative-caret-position="544">
+              <caret line="135" column="51" selection-start-line="135" selection-start-column="51" selection-end-line="135" selection-end-column="51" />
               <folding>
                 <element signature="n#!!block;n#populateCategoryDropdown#0" expanded="false" />
                 <element signature="n#!!block;n#refreshSelects#0" expanded="false" />
@@ -171,15 +161,29 @@
       <file leaf-file-name="db.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/db.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="123">
-              <caret line="173" column="23" selection-start-line="173" selection-start-column="23" selection-end-line="173" selection-end-column="23" />
+            <state relative-caret-position="467">
+              <caret line="233" column="26" selection-start-line="233" selection-start-column="9" selection-end-line="233" selection-end-column="26" />
               <folding>
                 <element signature="n#!!block;n#db_getSongReviews#0" expanded="false" />
                 <element signature="n#!!block;n#dsp_db_songReviews#0" expanded="false" />
                 <element signature="n#!!block;n#db_addSongReview#0" expanded="false" />
                 <element signature="n#!!block;n#db_getAverageSongRating#0" expanded="false" />
                 <element signature="n#!!block;n#dsp_db_averageSongRating#0" expanded="false" />
-                <element signature="n#!!block;n#db_voteForReview#0" expanded="false" />
+                <element signature="n#!!block;n#db_getContent#0" expanded="false" />
+                <element signature="n#!!block;n#dsp_db_content#0" expanded="false" />
+                <element signature="n#!!block;n#db_addContent#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="voteContent.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/db/voteContent.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <marker date="1462913536761" expanded="true" signature="144:185" placeholder="UPDATE conte... " />
               </folding>
             </state>
           </provider>
@@ -236,8 +240,8 @@
         <option value="$PROJECT_DIR$/db/getReview.php" />
         <option value="$PROJECT_DIR$/css/style.css" />
         <option value="$PROJECT_DIR$/db/getContent.php" />
-        <option value="$PROJECT_DIR$/js/db.js" />
         <option value="$PROJECT_DIR$/song.html" />
+        <option value="$PROJECT_DIR$/js/db.js" />
         <option value="$PROJECT_DIR$/js/ui.js" />
       </list>
     </option>
@@ -252,10 +256,10 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="112" />
-    <option name="y" value="114" />
-    <option name="width" value="1440" />
-    <option name="height" value="780" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -432,12 +436,12 @@
       <workItem from="1461669359979" duration="3804000" />
       <workItem from="1461708826113" duration="1625000" />
       <workItem from="1462401981319" duration="2716000" />
-      <workItem from="1462913543373" duration="11590000" />
+      <workItem from="1462913543373" duration="11909000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19735000" />
+    <option name="totallyTimeSpent" value="20054000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -449,14 +453,14 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="112" y="114" width="1440" height="780" extended-state="0" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33216292" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24635416" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20916906" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19104478" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13530655" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3120915" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -503,18 +507,11 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="48" />
+      <option name="time" value="49" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/css/bars-square.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="23" column="28" selection-start-line="23" selection-start-column="28" selection-end-line="23" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/external/jquery.barrating.min.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -914,17 +911,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="99" column="16" selection-start-line="99" selection-start-column="16" selection-end-line="99" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/voteContent.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1462913536761" expanded="true" signature="144:185" placeholder="UPDATE conte... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/js/db.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="123">
-          <caret line="173" column="23" selection-start-line="173" selection-start-column="23" selection-end-line="173" selection-end-column="23" />
+        <state relative-caret-position="467">
+          <caret line="233" column="26" selection-start-line="233" selection-start-column="9" selection-end-line="233" selection-end-column="26" />
           <folding>
             <element signature="n#!!block;n#db_getSongReviews#0" expanded="false" />
             <element signature="n#!!block;n#dsp_db_songReviews#0" expanded="false" />
             <element signature="n#!!block;n#db_addSongReview#0" expanded="false" />
             <element signature="n#!!block;n#db_getAverageSongRating#0" expanded="false" />
             <element signature="n#!!block;n#dsp_db_averageSongRating#0" expanded="false" />
-            <element signature="n#!!block;n#db_voteForReview#0" expanded="false" />
+            <element signature="n#!!block;n#db_getContent#0" expanded="false" />
+            <element signature="n#!!block;n#dsp_db_content#0" expanded="false" />
+            <element signature="n#!!block;n#db_addContent#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -955,18 +972,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="99" column="16" selection-start-line="99" selection-start-column="16" selection-end-line="99" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/ui.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="153" column="41" selection-start-line="153" selection-start-column="41" selection-end-line="153" selection-end-column="41" />
+        <state relative-caret-position="544">
+          <caret line="135" column="51" selection-start-line="135" selection-start-column="51" selection-end-line="135" selection-end-column="51" />
           <folding>
             <element signature="n#!!block;n#populateCategoryDropdown#0" expanded="false" />
             <element signature="n#!!block;n#refreshSelects#0" expanded="false" />

@@ -114,7 +114,6 @@ function findGigsAroundYou(){
     });
 
     /** vote for review **/
-
     $(document).on('click','.review-upvote, .review-downvote',function(){
 
         var reviewID = $(this).parent().find("~ .reviewID").val();
@@ -127,7 +126,21 @@ function findGigsAroundYou(){
             console.error("Upvote/Downvote Review error");
         }
     }
+    );
 
+    /** vote for content **/
+    $(document).on('click','.content-upvote, .content-downvote',function(){
+
+            var reviewID = $(this).parent().find("~ .contentID").val();
+
+            if($(this).hasClass("content-upvote")){
+                db_voteForContent(reviewID,1);
+            }else if($(this).hasClass("content-downvote")){
+                db_voteForContent(reviewID,-1);
+            }else{
+                console.error("Upvote/Downvote content error");
+            }
+        }
     );
 
     /** ON SONG REVIE FILTER CHANGE - RELOAD REVIEWS */

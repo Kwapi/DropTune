@@ -229,3 +229,19 @@ function db_addContent(spotifyID, link, description, category, title){
             alert("DB doesn't work");
         })
 }
+
+
+function db_voteForContent(contentID, vote){
+    var args = {
+        content_id: contentID,
+        vote: vote
+    };
+
+    $.getJSON("db/voteContent.php",args,
+        function(){
+            db_getContent(songInfo.spotifyID);
+        },
+        function(){
+            alert("DB doesn't work");
+        })
+}
