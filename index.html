@@ -147,7 +147,7 @@
             var spotifyURL = $(this).val().trim();
             var spotifyId = extractSpotifyIdFromSpotifyURL(spotifyURL);
             var endUrl = "song.html?"+spotifyId;
-            $("#dragDrop").attr('placeholder', "Drag and drop a spotify song link").val("").focus().blur();
+            $("#dragDrop").attr('placeholder', "Drag and drop a Spotify song link here").val("").focus().blur();
             window.location.replace(endUrl);
         });
     });

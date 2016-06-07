@@ -28,6 +28,8 @@ function sk_getArtistEvents(artistMusicbrainzID, filterFunction, filterParameter
                 }
 
 
+            }else{
+                $('#artistEvents').html("No events found for the specified radius");
             }
 
         },
